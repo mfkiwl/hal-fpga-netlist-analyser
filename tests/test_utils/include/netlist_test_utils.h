@@ -118,11 +118,20 @@ namespace hal
         /**
          * Given a vector of endpoints. Returns the first Endpoint that has a certain pin type
          *
-         * @param[in] dsts - vector of endpoints
+         * @param[in] dsts - vector of destination endpoints
          * @param[in] pin_type - pin type
          * @returns the first Endpoint of a certain pin type. (nullptr, "") if no Endpoint matches.
          */
         Endpoint get_destination_by_pin_type(const std::vector<Endpoint> dsts, const std::string pin_type);
+
+        /**
+         * Given a vector of endpoints. Returns the firstEndpoint that has a certain pin type
+         *
+         * @param[in] dsts - vector of source endpoints
+         * @param[in] pin_type - pin type
+         * @returns the first Endpoint of a certain pin type. (nullptr, "") if no Endpoint matches.
+         */
+        Endpoint get_source_by_pin_type(const std::vector<Endpoint> srcs, const std::string pin_type);
 
         // NOTE: Using create_test_gate is messy. It should not exist. Will be removed someday...
         /**
