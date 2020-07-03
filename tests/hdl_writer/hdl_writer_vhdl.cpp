@@ -41,7 +41,7 @@ namespace hal {
      */
     TEST_F(HDLWriterVHDLTest, check_write_and_parse_main_example) {
         TEST_START
-            { //NOTE: Fails because of an issue in the parser (empty 'port map' can't be parsed)
+            {
                 // Write and parse the example netlist (with some additions) and compare the result with the original netlist
                 std::shared_ptr<Netlist> nl = test_utils::create_example_parse_netlist(0);
 
@@ -49,17 +49,13 @@ namespace hal {
                 nl->mark_gnd_gate(nl->get_gate_by_id(MIN_GATE_ID + 1));
                 nl->mark_vcc_gate(nl->get_gate_by_id(MIN_GATE_ID + 2));
 
-                // Write and parse the netlist now
-                test_def::capture_stdout();
+                // Write and parse the netlist
                 std::stringstream parser_input;
                 HDLWriterVHDL vhdl_writer(parser_input);
 
                 // Writes the netlist in the sstream
                 bool writer_suc = vhdl_writer.write(nl);
 
-                if (!writer_suc) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_TRUE(writer_suc);
 
                 HDLParserVHDL vhdl_parser(parser_input);
@@ -67,15 +63,10 @@ namespace hal {
                 // Parse the .vhdl file
                 std::shared_ptr<Netlist> parsed_nl = vhdl_parser.parse_and_instantiate(m_gl);
 
-                if (parsed_nl == nullptr) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_NE(parsed_nl, nullptr);
-                test_def::get_captured_stdout();
 
                 // Check if the original netlist and the parsed one are equal
 
-                // FIXME
                 // -- Check if gates and nets are the same
                 EXPECT_EQ(nl->get_gates().size(), parsed_nl->get_gates().size());
                 for(auto g_0 : nl->get_gates()){
@@ -97,7 +88,11 @@ namespace hal {
                 EXPECT_EQ(nl->get_vcc_gates().size(), parsed_nl->get_vcc_gates().size());
                 for(auto gl_vcc_0 : nl->get_vcc_gates()){
                     EXPECT_TRUE(parsed_nl->is_vcc_gate(test_utils::get_gate_by_subname(parsed_nl, gl_vcc_0->get_name())));
-                }//
+                }
+
+                // -- Compare the netlists as a whole
+                nl->get_top_module()->set_data("key", "categ", "data_type", "value");
+                // EXPECT_TRUE(test_utils::netlists_are_equal(nl,parsed_nl,true)); // IN_PROGRESS...
             }
         TEST_END
     }
@@ -566,7 +561,7 @@ namespace hal {
                 EXPECT_FALSE(parsed_nl->get_nets(test_utils::net_name_filter("net_6")).empty());
                 EXPECT_FALSE(parsed_nl->get_nets(test_utils::net_name_filter("net_7")).empty());
                 EXPECT_FALSE(parsed_nl->get_nets(test_utils::net_name_filter("net_8")).empty());
-                EXPECT_FALSE(parsed_nl->get_nets(test_utils::net_name_filter("NET_9")).empty());//
+                EXPECT_FALSE(parsed_nl->get_nets(test_utils::net_name_filter("NET_9")).empty());
             }
             {
                 // Testing the handling of special Gate names
