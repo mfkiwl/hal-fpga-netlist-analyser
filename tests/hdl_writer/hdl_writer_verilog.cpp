@@ -1,13 +1,6 @@
 #include "gtest/gtest.h"
 #include "netlist_test_utils.h"
-#include <core/log.h>
-#include <core/utils.h>
-#include <iostream>
-#include <netlist/gate.h>
-#include <netlist/net.h>
-#include "netlist/gate_library/gate_library_manager.h"
 #include "netlist/netlist_factory.h"
-#include "netlist/netlist.h"
 #include "netlist/hdl_parser/hdl_parser_verilog.h"
 #include "netlist/hdl_writer/hdl_writer_verilog.h"
 
@@ -18,15 +11,12 @@ namespace hal {
 
     class HDLWriterVerilogTest : public ::testing::Test {
     protected:
-        const std::string m_pseudo_simprim_lib_name = "PSEUDO_SIMPRIM_GATE_LIBRARY"; // old
         const std::string m_gate_suffix = "_inst";
-        std::filesystem::path m_pseudo_simprim_lib_path; //old
         std::shared_ptr<GateLibrary> m_gl;
 
         virtual void SetUp() {
             NO_COUT_BLOCK;
             test_utils::init_log_channels();
-            m_pseudo_simprim_lib_path = core_utils::get_gate_library_directories()[0] / "pseudo_simprim_lib.json";
             m_gl = test_utils::get_testing_gate_library();
         }
 
@@ -132,26 +122,18 @@ namespace hal {
                 nl->mark_global_input_net(global_in_1);
 
                 // Write and parse the netlist now
-                test_def::capture_stdout();
                 std::stringstream parser_input;
                 HDLWriterVerilog verilog_writer(parser_input);
 
                 // Writes the netlist in the sstream
                 bool writer_suc = verilog_writer.write(nl);
-                if (!writer_suc) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_TRUE(writer_suc);
 
                 HDLParserVerilog verilog_parser(parser_input);
                 // Parse the .verilog file
                 std::shared_ptr<Netlist> parsed_nl = verilog_parser.parse_and_instantiate(m_gl);
 
-                if (parsed_nl == nullptr) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_NE(parsed_nl, nullptr);
-                test_def::get_captured_stdout();
 
                 // Check if the nets are written/parsed correctly
                 std::shared_ptr<Net> p_global_in_0 = test_utils::get_net_by_subname(parsed_nl, "0_global_in");
@@ -174,26 +156,18 @@ namespace hal {
                 nl->mark_global_output_net(global_out_1);
 
                 // Write and parse the netlist now
-                test_def::capture_stdout();
                 std::stringstream parser_input;
                 HDLWriterVerilog verilog_writer(parser_input);
 
                 // Writes the netlist in the sstream
                 bool writer_suc = verilog_writer.write(nl);
-                if (!writer_suc) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_TRUE(writer_suc);
 
                 HDLParserVerilog verilog_parser(parser_input);
                 // Parse the .verilog file
                 std::shared_ptr<Netlist> parsed_nl = verilog_parser.parse_and_instantiate(m_gl);
 
-                if (parsed_nl == nullptr) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_NE(parsed_nl, nullptr);
-                test_def::get_captured_stdout();
 
                 // Check if the nets are written/parsed correctly
                 std::shared_ptr<Net> p_global_out_0 = test_utils::get_net_by_subname(parsed_nl, "0_global_out");
@@ -271,28 +245,20 @@ namespace hal {
                 test_gate_6->set_data("generic", "1_key_bit_value", "bit_value", "01010011");
 
                 // Write and parse the netlist now
-                test_def::capture_stdout();
                 std::stringstream parser_input;
                 HDLWriterVerilog verilog_writer(parser_input);
 
                 // Writes the netlist in the sstream
                 bool writer_suc = verilog_writer.write(nl);
-                if (!writer_suc) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
+
                 ASSERT_TRUE(writer_suc);
 
-                std::cout << parser_input.str() << std::endl;
                 HDLParserVerilog verilog_parser(parser_input);
 
                 // Parse the .verilog file
                 std::shared_ptr<Netlist> parsed_nl = verilog_parser.parse_and_instantiate(m_gl);
 
-                if (parsed_nl == nullptr) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_NE(parsed_nl, nullptr);
-                test_def::get_captured_stdout();
 
                 // Since bit_vectors and bit_values are stored in the same format and both parsed as bit_vectors,
                 // the data must be changed in the original netlist for comparison
@@ -356,15 +322,12 @@ namespace hal {
                 nl->mark_global_input_net(global_in);
 
                 // Write and parse the netlist now
-                test_def::capture_stdout();
                 std::stringstream parser_input;
                 HDLWriterVerilog verilog_writer(parser_input);
 
                 // Writes the netlist in the sstream
                 bool writer_suc = verilog_writer.write(nl);
-                if (!writer_suc) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
+
                 ASSERT_TRUE(writer_suc);
 
                 HDLParserVerilog verilog_parser(parser_input);
@@ -372,11 +335,7 @@ namespace hal {
                 // Parse the .verilog file
                 std::shared_ptr<Netlist> parsed_nl = verilog_parser.parse_and_instantiate(m_gl);
 
-                if (parsed_nl == nullptr) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_NE(parsed_nl, nullptr);
-                test_def::get_captured_stdout();
 
                 // Check if the net_name is written/parsed correctly
                 ASSERT_EQ(parsed_nl->get_nets().size(), (size_t) 1);
@@ -432,26 +391,19 @@ namespace hal {
                 }
 
                 // Write and parse the netlist now
-                test_def::capture_stdout();
                 std::stringstream parser_input;
                 HDLWriterVerilog verilog_writer(parser_input);
 
                 // Writes the netlist in the sstream
                 bool writer_suc = verilog_writer.write(nl);
-                if (!writer_suc) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
+
                 ASSERT_TRUE(writer_suc);
 
                 HDLParserVerilog verilog_parser(parser_input);
                 // Parse the .verilog file
                 std::shared_ptr<Netlist> parsed_nl = verilog_parser.parse_and_instantiate(m_gl);
 
-                if (parsed_nl == nullptr) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_NE(parsed_nl, nullptr);
-                test_def::get_captured_stdout();
 
                 // Check if the net_name is translated correctly
                 EXPECT_FALSE(parsed_nl->get_nets(test_utils::net_name_filter("net_0")).empty());
@@ -502,26 +454,19 @@ namespace hal {
                 }
 
                 // Write and parse the netlist now
-                test_def::capture_stdout();
                 std::stringstream parser_input;
                 HDLWriterVerilog verilog_writer(parser_input);
 
                 // Writes the netlist in the sstream
                 bool writer_suc = verilog_writer.write(nl);
-                if (!writer_suc) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
+
                 ASSERT_TRUE(writer_suc);
 
                 HDLParserVerilog verilog_parser(parser_input);
                 // Parse the .verilog file
                 std::shared_ptr<Netlist> parsed_nl = verilog_parser.parse_and_instantiate(m_gl);
 
-                if (parsed_nl == nullptr) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_NE(parsed_nl, nullptr);
-                test_def::get_captured_stdout();
 
                 EXPECT_FALSE(parsed_nl->get_gates(test_utils::gate_name_filter("gate_0" + m_gate_suffix)).empty());
                 EXPECT_FALSE(parsed_nl->get_gates(test_utils::gate_name_filter("gate_1" + m_gate_suffix)).empty());
@@ -558,15 +503,12 @@ namespace hal {
                 test_net->add_destination(test_gate, "I");
 
                 // Write and parse the netlist now
-                test_def::capture_stdout();
                 std::stringstream parser_input;
                 HDLWriterVerilog verilog_writer(parser_input);
 
                 // Writes the netlist in the sstream
                 bool writer_suc = verilog_writer.write(nl);
-                if (!writer_suc) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
+
                 ASSERT_TRUE(writer_suc);
 
                 HDLParserVerilog verilog_parser(parser_input);
@@ -574,11 +516,7 @@ namespace hal {
                 // Parse the .verilog file
                 std::shared_ptr<Netlist> parsed_nl = verilog_parser.parse_and_instantiate(m_gl);
 
-                if (parsed_nl == nullptr) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_NE(parsed_nl, nullptr);
-                test_def::get_captured_stdout();
 
                 // Check if the Gate name was added a "_inst"
                 EXPECT_NE(test_utils::get_net_by_subname(parsed_nl, "gate_net_name"), nullptr);
@@ -685,15 +623,12 @@ namespace hal {
 
 
                 // Write and parse the netlist now
-                test_def::capture_stdout();
                 std::stringstream parser_input;
                 HDLWriterVerilog verilog_writer(parser_input);
 
                 // Writes the netlist in the sstream
                 bool writer_suc = verilog_writer.write(nl);
-                if (!writer_suc) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
+
                 ASSERT_TRUE(writer_suc);
 
                 HDLParserVerilog verilog_parser(parser_input);
@@ -701,13 +636,7 @@ namespace hal {
                 // Parse the .verilog file
                 std::shared_ptr<Netlist> parsed_nl = verilog_parser.parse_and_instantiate(m_gl);
 
-                if (parsed_nl == nullptr) {
-                    std::cout << test_def::get_captured_stdout() << std::endl;
-                }
                 ASSERT_NE(parsed_nl, nullptr);
-                test_def::get_captured_stdout();
-
-                std::cout << "\n========\n" << parser_input.str() << "\n========\n" <<std::endl;
 
                 ASSERT_EQ(parsed_nl->get_nets(test_utils::net_name_filter("test_gnd_net")).size(), 1);
                 ASSERT_EQ(parsed_nl->get_nets(test_utils::net_name_filter("test_vcc_net")).size(), 1);
