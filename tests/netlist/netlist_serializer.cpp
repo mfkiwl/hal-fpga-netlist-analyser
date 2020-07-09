@@ -5,17 +5,7 @@
 #include "netlist/netlist_factory.h"
 #include "netlist_test_utils.h"
 
-#include "gtest/gtest.h"
-#include <core/log.h>
-#include <core/utils.h>
 #include <experimental/filesystem>
-#include <fstream>
-#include <iostream>
-#include <netlist/gate.h>
-#include <netlist/module.h>
-#include <netlist/net.h>
-#include <streambuf>
-#include <string>
 
 namespace hal {
 
