@@ -1,13 +1,6 @@
 #include "netlist/hdl_parser/hdl_parser_vhdl.h"
-
-#include "netlist/gate.h"
-#include "netlist/netlist.h"
-#include "netlist/netlist_factory.h"
 #include "netlist_test_utils.h"
-
-#include "gtest/gtest.h"
 #include <experimental/filesystem>
-#include <iostream>
 
 namespace hal {
 

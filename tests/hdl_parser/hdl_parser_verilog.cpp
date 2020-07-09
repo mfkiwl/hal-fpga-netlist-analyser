@@ -1,16 +1,8 @@
 #include "netlist/hdl_parser/hdl_parser_verilog.h"
-
-#include "netlist/gate.h"
-#include "netlist/netlist.h"
-#include "netlist/netlist_factory.h"
 #include "netlist/persistent/netlist_serializer.h"
 #include "netlist_test_utils.h"
-
-#include "gtest/gtest.h"
 #include <bitset>
-#include <core/log.h>
 #include <experimental/filesystem>
-#include <iostream>
 
 namespace hal {
 

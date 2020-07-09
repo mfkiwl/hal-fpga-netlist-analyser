@@ -1,8 +1,5 @@
 #include "test_def.h"
-#include "gtest/gtest.h"
-#include <core/log.h>
 #include <core/program_arguments.h>
-#include <iostream>
 #include "netlist_test_utils.h"
 
 namespace hal {

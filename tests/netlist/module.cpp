@@ -4,11 +4,6 @@
 #include "netlist/netlist.h"
 #include "netlist/netlist_factory.h"
 #include "netlist_test_utils.h"
-#include "gtest/gtest.h"
-#include <core/log.h>
-#include <iostream>
-#include <netlist/gate.h>
-#include <netlist/net.h>
 
 namespace hal {
 

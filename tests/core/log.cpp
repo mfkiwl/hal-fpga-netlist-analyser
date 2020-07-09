@@ -1,6 +1,5 @@
 #include "gtest/gtest.h"
 #include <core/log.h>
-#include <iostream>
 #include <test_def.h>
 
 namespace hal
@@ -26,7 +25,7 @@ namespace hal
     TEST_F(LogTest, check_channel_functions)
     {
         TEST_START
-            unsigned int current_channel_count = m_lm.get_channels().size();
+            unsigned long current_channel_count = m_lm.get_channels().size();
 
             // ########################
             // POSITIVE TESTS

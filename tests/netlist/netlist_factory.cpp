@@ -1,23 +1,17 @@
 #include "netlist/netlist_factory.h"
 
 #include "core/program_arguments.h"
-#include "core/utils.h"
 #include "netlist/gate_library/gate_library_manager.h"
 #include "netlist/netlist.h"
 #include "netlist/persistent/netlist_serializer.h"
 #include "netlist_test_utils.h"
 
-#include "gtest/gtest.h"
-#include <core/log.h>
 #include <experimental/filesystem>
-#include <fstream>
-#include <iostream>
 
 /*
  * In this file aren't the tests for the various parsers, however it uses the vhdl parser as an example. If there occure
  * any errors, it can be an issue of the vhdl parser as well...
  */
-
 
 namespace hal {
 

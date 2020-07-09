@@ -497,23 +497,23 @@ namespace hal
             if (n0 == n1)
                 return true;
             else {
-                log_info("test_utils", "gates_are_equal: Nets are not equal! Reason: One net is a nullptr.");
+                log_info("test_utils", "nets_are_equal: Nets are not equal! Reason: One net is a nullptr.");
                 return false;
             }
         }
         if (!ignore_id && n0->get_id() != n1->get_id()) {
-            log_info("test_utils", "gates_are_equal: Nets are not equal! Reason: IDs are different (\"{}\" vs \"{}\")", n0->get_id(), n1->get_id());
+            log_info("test_utils", "nets_are_equal: Nets are not equal! Reason: IDs are different (\"{}\" vs \"{}\")", n0->get_id(), n1->get_id());
             return false;
         }
         if (!ignore_name && n0->get_name() != n1->get_name()) {
-            log_info("test_utils", "gates_are_equal: Nets are not equal! Reason: Names are different (\"{}\" vs \"{}\")", n0->get_name(),n1->get_name());
+            log_info("test_utils", "nets_are_equal: Nets are not equal! Reason: Names are different (\"{}\" vs \"{}\")", n0->get_name(),n1->get_name());
             return false;
         }
         for (auto n0_source : n0->get_sources())
         {
             if (!gates_are_equal(n0_source.get_gate(), get_source_by_pin_type(n1->get_sources(), n0_source.get_pin()).get_gate(), ignore_id, ignore_name))
             {
-                log_info("test_utils", "gates_are_equal: Nets are not equal! Reason: Connected gates at source pin \"{}\" are different.", n0_source.get_pin());
+                log_info("test_utils", "nets_are_equal: Nets are not equal! Reason: Connected gates at source pin \"{}\" are different.", n0_source.get_pin());
                 return false;
             }
         }
@@ -521,20 +521,20 @@ namespace hal
         {
             if (!gates_are_equal(n0_destination.get_gate(), get_destination_by_pin_type(n1->get_destinations(), n0_destination.get_pin()).get_gate(), ignore_id, ignore_name))
             {
-                log_info("test_utils", "gates_are_equal: Nets are not equal! Reason: Connected gates at destination pin \"{}\" are different.", n0_destination.get_pin());
+                log_info("test_utils", "nets_are_equal: Nets are not equal! Reason: Connected gates at destination pin \"{}\" are different.", n0_destination.get_pin());
                 return false;
             }
         }
         if (n0->get_data() != n1->get_data()) {
-            log_info("test_utils", "gates_are_equal: Nets are not equal! Reason: The stored data is different.");
+            log_info("test_utils", "nets_are_equal: Nets are not equal! Reason: The stored data is different.");
             return false;
         }
         if (n0->is_global_input_net() != n1->is_global_input_net()) {
-            log_info("test_utils", "gates_are_equal: Nets are not equal! Reason: One net is a global input net, the other one isn't.");
+            log_info("test_utils", "nets_are_equal: Nets are not equal! Reason: One net is a global input net, the other one isn't.");
             return false;
         }
         if (n0->is_global_output_net() != n1->is_global_output_net()) {
-            log_info("test_utils", "gates_are_equal: Nets are not equal! Reason: One net is a global output net, the other one isn't.");
+            log_info("test_utils", "nets_are_equal: Nets are not equal! Reason: One net is a global output net, the other one isn't.");
             return false;
         }
 

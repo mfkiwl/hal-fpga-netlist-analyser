@@ -2,15 +2,7 @@
 #include "netlist/netlist.h"
 #include "netlist/netlist_factory.h"
 #include "netlist_test_utils.h"
-#include "gtest/gtest.h"
-#include <iostream>
-#include <netlist/gate.h>
-#include <netlist/net.h>
-#include <netlist/module.h>
 #include <netlist/gate_library/gate_type/gate_type_lut.h>
-#include <iomanip>
-#include <algorithm>
-#include <cassert>
 
 namespace hal {
 

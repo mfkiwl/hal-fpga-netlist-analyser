@@ -4,14 +4,6 @@
 #include "netlist/netlist_factory.h"
 #include "netlist_test_utils.h"
 
-#include "gtest/gtest.h"
-#include <core/log.h>
-#include <core/utils.h>
-#include <fstream>
-#include <iostream>
-#include <netlist/gate.h>
-#include <netlist/net.h>
-
 namespace hal {
 
     class GateLibraryManagerTest : public ::testing::Test {

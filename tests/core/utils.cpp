@@ -1,13 +1,6 @@
 #include "netlist_test_utils.h"
-#include "test_def.h"
 
-#include "gtest/gtest.h"
-#include <core/log.h>
-#include <core/utils.h>
-#include <cstdio>
 #include <experimental/filesystem>
-#include <fstream>
-#include <iostream>
 
 namespace hal {
     using namespace core_utils;

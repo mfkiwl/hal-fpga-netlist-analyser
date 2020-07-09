@@ -1,12 +1,6 @@
 #include "netlist_test_utils.h"
-#include "test_def.h"
-
-#include "gtest/gtest.h"
 #include <core/plugin_interface_cli.h>
-#include <core/log.h>
 #include <core/plugin_manager.h>
-#include <iostream>
-
 
 namespace hal
 {
@@ -111,7 +105,7 @@ namespace hal
                 PluginManager::load_all_plugins();
                 plugin_names = PluginManager::get_plugin_names();
 
-                int plugin_amount = plugin_names.size();
+                unsigned long plugin_amount = plugin_names.size();
                 if (plugin_amount == 0)
                 {
                     std::cout << "Warning: No builded plugins are found! Tests might not find issues...";
@@ -127,7 +121,7 @@ namespace hal
                 auto dirs = core_utils::get_plugin_directories();
                 PluginManager::load_all_plugins(dirs);
 
-                int plugin_amount = PluginManager::get_plugin_names().size();
+                unsigned long plugin_amount = PluginManager::get_plugin_names().size();
                 if (plugin_amount == 0)
                 {
                     std::cout << "Warning: No builded plugins are found! Tests might not find issues...";

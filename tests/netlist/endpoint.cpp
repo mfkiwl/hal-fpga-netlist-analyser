@@ -1,10 +1,6 @@
 #include "netlist/gate_library/gate_library_manager.h"
 #include "netlist/netlist.h"
 #include "netlist_test_utils.h"
-#include "gtest/gtest.h"
-#include <iostream>
-#include <netlist/gate.h>
-#include <netlist/net.h>
 
 namespace hal {
 

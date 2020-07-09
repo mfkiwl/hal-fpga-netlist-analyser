@@ -1,12 +1,7 @@
 #include "netlist/hdl_writer/hdl_writer_dispatcher.h"
-
 #include "netlist/gate.h"
 #include "netlist/hdl_parser/hdl_parser_dispatcher.h"
-#include "netlist/netlist.h"
 #include "netlist_test_utils.h"
-
-#include "gtest/gtest.h"
-#include <core/program_arguments.h>
 #include <experimental/filesystem>
 
 namespace hal {

@@ -1,12 +1,6 @@
 #include "netlist/hdl_parser/hdl_parser_dispatcher.h"
-
-#include "netlist/netlist.h"
 #include "netlist_test_utils.h"
-
-#include "gtest/gtest.h"
-#include <core/program_arguments.h>
 #include <experimental/filesystem>
-#include <sstream>
 
 namespace hal {
     class HDLParserDispatcherTest : public ::testing::Test {

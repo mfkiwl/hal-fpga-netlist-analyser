@@ -8,10 +8,6 @@
 #include "netlist/netlist_factory.h"
 #include "netlist_test_utils.h"
 
-#include "gtest/gtest.h"
-#include <core/log.h>
-#include <iostream>
-
 namespace hal {
     using test_utils::MIN_NETLIST_ID;
     using test_utils::MIN_MODULE_ID;
