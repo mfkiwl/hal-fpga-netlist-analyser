@@ -197,7 +197,8 @@ namespace hal {
      */
     TEST_F(NetlistTest, check_add_gate) {
         TEST_START
-            {// Add a Gate the normal way
+            {
+                // Add a Gate the normal way
                 std::shared_ptr<Netlist> nl = test_utils::create_empty_netlist();
                 std::shared_ptr<Gate>
                     g_0 = nl->create_gate(MIN_GATE_ID + 0, test_utils::get_gate_type_by_name("gate_1_to_1"), "gate_0");
@@ -252,6 +253,24 @@ namespace hal {
                     g_0 = nl->create_gate(MIN_GATE_ID + 0, test_utils::get_gate_type_by_name("gate_1_to_1"), "");
                 EXPECT_EQ(g_0, nullptr);
             }
+            {
+                // Try to add a gate of an unknown gate type
+                NO_COUT_TEST_BLOCK;
+                std::shared_ptr<Netlist> nl = test_utils::create_empty_netlist();
+                std::shared_ptr<GateType> unknown_gt(new GateType("gt_gnd"));
+                std::shared_ptr<Gate>
+                    g_0 = nl->create_gate(MIN_GATE_ID + 0, unknown_gt, "");
+                EXPECT_EQ(g_0, nullptr);
+            }
+            /*{
+                // The passed gate type is a nullptr ISSUE: Fails with SIGSEGV (l.128 gt is nullptr in gt->get_name())
+                // ...ISSUE: Also l.38 (log_error(...,gt->get_name()) may lead to problems with nullptrs
+                NO_COUT_TEST_BLOCK;
+                std::shared_ptr<Netlist> nl = test_utils::create_empty_netlist();
+                std::shared_ptr<Gate>
+                    g_0 = nl->create_gate(MIN_GATE_ID + 0, nullptr, "");
+                EXPECT_EQ(g_0, nullptr);
+            }*/
         TEST_END
     }
 
@@ -263,7 +282,8 @@ namespace hal {
     TEST_F(NetlistTest, check_delete_gate) {
         TEST_START
             // POSITIVE
-            {// Add and delete an unconnected Gate in a normal way
+            {
+                // Add and delete an unconnected Gate in a normal way
                 std::shared_ptr<Netlist> nl = test_utils::create_empty_netlist();
                 std::shared_ptr<Gate>
                     g_0 = nl->create_gate(MIN_GATE_ID + 0, test_utils::get_gate_type_by_name("gate_1_to_1"), "gate_0");

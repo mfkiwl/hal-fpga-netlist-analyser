@@ -33,6 +33,7 @@ namespace hal {
             test_utils::init_log_channels();
             test_utils::create_sandbox_directory();
             m_g_lib_path = test_utils::create_sandbox_file("min_test_gate_lib.lib", m_min_gl_content);
+            gate_library_manager::load_file(m_g_lib_path);
         }
 
         virtual void TearDown() {
@@ -81,7 +82,7 @@ namespace hal {
                 NO_COUT_TEST_BLOCK;
                 std::shared_ptr<Netlist> nl = netlist_factory::create_netlist(nullptr);
                 // ISSUE: should be nullptr
-                //EXPECT_EQ(nl, nullptr);
+                EXPECT_EQ(nl, nullptr);
                 // ISSUE: if nl != nullptr, the following expression leads to a segfault:
                 //nl->create_gate( 815, get_testing_gate_library()->get_gate_types().begin()->second, "dont_crush");
             }
@@ -193,7 +194,7 @@ namespace hal {
 
     /**
      * Testing the creation of an empty netlist by passing a hal or hdl file via
-     * program arguments.
+     * program arguments. FIXME: very slow
      *
      * Functions: create_netlist(hdl_file, ...)
      */
@@ -237,7 +238,7 @@ namespace hal {
                 ProgramArguments p_args;
                 p_args.set_option("--input-file", std::vector<std::string>({tmp_hdl_file_path}));
                 p_args.set_option("--language", std::vector<std::string>({"vhdl"}));
-                p_args.set_option("--Gate-library", std::vector<std::string>({m_g_lib_path}));
+                p_args.set_option("--gate-library", std::vector<std::string>({m_g_lib_path}));
 
                 // NO_COUT_TEST_BLOCK;
                 std::shared_ptr<Netlist> nl = netlist_factory::load_netlist(p_args);
@@ -261,7 +262,7 @@ namespace hal {
             }
             {
                 // Create a netlist but of an invalid .vhdl file
-                NO_COUT_TEST_BLOCK;
+                //NO_COUT_TEST_BLOCK;
 
                 std::filesystem::path tmp_hdl_file_path =
                     test_utils::create_sandbox_file("tmp_2.vhdl", "This file does not contain a valid vdl format...");
@@ -269,7 +270,7 @@ namespace hal {
                 ProgramArguments p_args;
                 p_args.set_option("--input-file", std::vector<std::string>({tmp_hdl_file_path}));
                 p_args.set_option("--language", std::vector<std::string>({"vhdl"}));
-                p_args.set_option("--Gate-library", std::vector<std::string>({test_utils::g_lib_name}));
+                p_args.set_option("--gate-library", std::vector<std::string>({m_g_lib_path}));
                 std::shared_ptr<Netlist> nl = netlist_factory::load_netlist(p_args);
 
                 EXPECT_EQ(nl, nullptr);
