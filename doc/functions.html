@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>hal: Class Members</title>
+<title>HAL: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -22,8 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="hal_icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">hal
-   &#160;<span id="projectnumber">2.0.0.</span>
+   <div id="projectname">HAL
    </div>
   </td>
  </tr>
@@ -48,6 +51,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,90 +84,32 @@ $(function() {
 <div class="contents">
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
-<h3><a id="index_a"></a>- a -</h3><ul>
-<li>A_REQUIRED_PARAMETER
-: <a class="el" href="d3/dfa/classhal_1_1ProgramOptions.html#af558ab13189b6d4442edfd7bff2a832d">hal::ProgramOptions</a>
+<h3><a id="index_:"></a>- : -</h3><ul>
+<li>::nlohmann::detail::binary_reader
+: <a class="el" href="classnlohmann_1_1basic__json.html#a3226693341c251507fec5d6f4fa5ce79">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
-<li>activate_channel()
-: <a class="el" href="d5/d2e/classhal_1_1LogManager.html#a2141d31e95e066170a1e3658faeca830">hal::LogManager</a>
+<li>::nlohmann::detail::binary_writer
+: <a class="el" href="classnlohmann_1_1basic__json.html#a69d491bbda88ade6d3c7a2b11309e8bf">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
-<li>add()
-: <a class="el" href="d3/dfa/classhal_1_1ProgramOptions.html#a5fe1cdf2ec39e1dd01093c45dbf8c6cb">hal::ProgramOptions</a>
+<li>::nlohmann::detail::iter_impl
+: <a class="el" href="classnlohmann_1_1basic__json.html#a842e5c7ca096025c18b11e715d3401f4">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
-<li>add_boolean_function()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a86bc448620b92e78da68b4b220f709af">hal::Gate</a>
-, <a class="el" href="d1/d05/classhal_1_1GateType.html#a9398391ce181d65a71ea1c1654f01311">hal::GateType</a>
+<li>::nlohmann::detail::json_sax_dom_callback_parser
+: <a class="el" href="classnlohmann_1_1basic__json.html#a95574da8d12905ea99dc348934c837da">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
-<li>add_boolean_functions()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#ac2c99cd64ec542bfb38b17225d5af901">hal::GateType</a>
-</li>
-<li>add_callback()
-: <a class="el" href="d8/d33/classhal_1_1CallbackHook_3_01R_07ArgTypes_8_8_8_08_4.html#ad25b213d27b6ff208e1e2e1563f3fc45">hal::CallbackHook&lt; R(ArgTypes...)&gt;</a>
-</li>
-<li>add_channel()
-: <a class="el" href="d5/d2e/classhal_1_1LogManager.html#a1af82acd668588c8a9e31ae61e166ce2">hal::LogManager</a>
-</li>
-<li>add_clock_pin()
-: <a class="el" href="dd/dd1/classhal_1_1GateTypeSequential.html#acf5be1284906e05613f327fa5f893c4c">hal::GateTypeSequential</a>
-</li>
-<li>add_destination()
-: <a class="el" href="de/db0/classhal_1_1Net.html#a84fa149d571424a64ca438259f9e2764">hal::Net</a>
-</li>
-<li>add_gate_type()
-: <a class="el" href="d7/daf/classhal_1_1GateLibrary.html#a3b5a37289ae6fa4cafd37089ae09bca5">hal::GateLibrary</a>
-</li>
-<li>add_include()
-: <a class="el" href="d7/daf/classhal_1_1GateLibrary.html#a8a704f948603b277844a8f8bb20fa6a9">hal::GateLibrary</a>
-</li>
-<li>add_input_pin()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#a7ddd68c056b59959645acb053f29729a">hal::GateType</a>
-</li>
-<li>add_input_pins()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#aae27dedac16c5f630f825ce1c3030a97">hal::GateType</a>
-</li>
-<li>add_inverted_state_output_pin()
-: <a class="el" href="dd/dd1/classhal_1_1GateTypeSequential.html#aeb5b0c691cb79a8c92dc51fae4b2c670">hal::GateTypeSequential</a>
-</li>
-<li>add_output_from_init_string_pin()
-: <a class="el" href="d1/d08/classhal_1_1GateTypeLut.html#a2f57c3724a2b78730b42983910e68fa8">hal::GateTypeLut</a>
-</li>
-<li>add_output_pin()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#af3d7398d9b061bbb7daca0a51d3b0bfe">hal::GateType</a>
-</li>
-<li>add_output_pins()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#a59461312db7dce2ab9d80b5ba818c73a">hal::GateType</a>
-</li>
-<li>add_source()
-: <a class="el" href="de/db0/classhal_1_1Net.html#aa62fea0598dfe92f6a950ada68446eb4">hal::Net</a>
-</li>
-<li>add_state_output_pin()
-: <a class="el" href="dd/dd1/classhal_1_1GateTypeSequential.html#ad2f039a8b13580850604056f4890011d">hal::GateTypeSequential</a>
-</li>
-<li>assign_gate()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a7446c45dc94cefbf49a51261e0299e1d">hal::Module</a>
-</li>
-<li>assign_input_pin_group()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#a76b79290e35d96eaf05308e946a2bc80">hal::GateType</a>
-</li>
-<li>assign_input_pin_groups()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#a2a403161b1f0b1e4a73f609dee638321">hal::GateType</a>
-</li>
-<li>assign_output_pin_group()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#a26a56701e8c4332dba03ef20e7aa38f0">hal::GateType</a>
-</li>
-<li>assign_output_pin_groups()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#ac6d2590015783a106e8998cc0dbfde08">hal::GateType</a>
-</li>
-<li>at()
-: <a class="el" href="db/d9d/classhal_1_1TokenStream.html#a41a6a977f6adbbacf250be5ad1b78b83">hal::TokenStream&lt; T &gt;</a>
+<li>::nlohmann::detail::json_sax_dom_parser
+: <a class="el" href="classnlohmann_1_1basic__json.html#a47aabb1eceae32e8a6e8e7f0ff34be60">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 10 2020 09:52:35 for hal by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sun Dec 4 2022 22:38:04 for HAL by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

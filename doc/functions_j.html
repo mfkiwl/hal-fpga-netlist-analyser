@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>hal: Class Members</title>
+<title>HAL: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -22,8 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="hal_icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">hal
-   &#160;<span id="projectnumber">2.0.0.</span>
+   <div id="projectname">HAL
    </div>
   </td>
  </tr>
@@ -48,6 +51,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_j.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,18 +86,71 @@ $(function() {
 
 <h3><a id="index_j"></a>- j -</h3><ul>
 <li>join()
-: <a class="el" href="db/d9d/classhal_1_1TokenStream.html#ae4346d26864f6943820f83af91896420">hal::TokenStream&lt; T &gt;</a>
+: <a class="el" href="classhal_1_1_token_stream.html#ae4346d26864f6943820f83af91896420">hal::TokenStream&lt; T &gt;</a>
 </li>
 <li>join_until()
-: <a class="el" href="db/d9d/classhal_1_1TokenStream.html#a8cd436414ae5483c8cb37b24fffd88e2">hal::TokenStream&lt; T &gt;</a>
+: <a class="el" href="classhal_1_1_token_stream.html#a8cd436414ae5483c8cb37b24fffd88e2">hal::TokenStream&lt; T &gt;</a>
+</li>
+<li>json_pointer
+: <a class="el" href="classnlohmann_1_1basic__json.html#a6886a5001f5b449ad316101a311ce536">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1json__pointer.html#a7f32d7c62841f0c4a6784cf741a6e4f8">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
+</li>
+<li>json_ref()
+: <a class="el" href="classnlohmann_1_1detail_1_1json__ref.html#a8a31d6c588d6c3c06b62008fd5d36c6c">nlohmann::detail::json_ref&lt; BasicJsonType &gt;</a>
+</li>
+<li>json_reverse_iterator()
+: <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a0246de16ece16293f2917dfa5d96e278">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+</li>
+<li>json_sax_dom_callback_parser()
+: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#afec9434e54590f10df51b062973d4daf">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
+</li>
+<li>json_sax_dom_parser()
+: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#afc50fee0a92ce84afb84041ebbdfba80">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
+</li>
+<li>json_sax_t
+: <a class="el" href="classnlohmann_1_1basic__json.html#aa865c3eb68b6ebdd647173774d2b5cdb">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>json_serializer
+: <a class="el" href="classnlohmann_1_1basic__json.html#a7768841baaaa7a21098a401c932efaff">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>JsonWriteArray()
+: <a class="el" href="classhal_1_1_json_write_array.html#a45a489cd2edfef34742316ebd5c06b13">hal::JsonWriteArray</a>
+, <a class="el" href="classhal_1_1_json_write_complex.html#a42a5f69ea97d64807050171267e0929a">hal::JsonWriteComplex</a>
+</li>
+<li>JsonWriteComplex()
+: <a class="el" href="classhal_1_1_json_write_complex.html#ad0ac4c8ba23dbc2ad3b4dd6c97ca71ac">hal::JsonWriteComplex</a>
+, <a class="el" href="classhal_1_1_json_write_data.html#a713d13fd5f0953c0ff11168482863458">hal::JsonWriteData</a>
+</li>
+<li>JsonWriteData
+: <a class="el" href="classhal_1_1_json_write_array.html#a164b2a703fdcd6611aa2beebced6c2af">hal::JsonWriteArray</a>
+, <a class="el" href="classhal_1_1_json_write_complex.html#a164b2a703fdcd6611aa2beebced6c2af">hal::JsonWriteComplex</a>
+, <a class="el" href="classhal_1_1_json_write_data.html#a1a9981b2074ec9de4d05820d89925606">hal::JsonWriteData</a>
+, <a class="el" href="classhal_1_1_json_write_document.html#a164b2a703fdcd6611aa2beebced6c2af">hal::JsonWriteDocument</a>
+, <a class="el" href="classhal_1_1_json_write_object.html#a164b2a703fdcd6611aa2beebced6c2af">hal::JsonWriteObject</a>
+</li>
+<li>JsonWriteDocument
+: <a class="el" href="classhal_1_1_json_write_array.html#abe080fc9d0efa9c44af302e5e2501af6">hal::JsonWriteArray</a>
+, <a class="el" href="classhal_1_1_json_write_complex.html#abe080fc9d0efa9c44af302e5e2501af6">hal::JsonWriteComplex</a>
+, <a class="el" href="classhal_1_1_json_write_document.html#aabc926a0a79048eb859d89f12e02309a">hal::JsonWriteDocument</a>
+, <a class="el" href="classhal_1_1_json_write_object.html#abe080fc9d0efa9c44af302e5e2501af6">hal::JsonWriteObject</a>
+</li>
+<li>JsonWriteObject
+: <a class="el" href="classhal_1_1_json_write_complex.html#af11569e24e7dbffd025f900dbe1c2c86">hal::JsonWriteComplex</a>
+, <a class="el" href="classhal_1_1_json_write_object.html#a17b1918bf8760e9327e7419c0bc19fe2">hal::JsonWriteObject</a>
+</li>
+<li>junctionPoint()
+: <a class="el" href="classhal_1_1_net_layout_junction_net.html#a4427e2762ae595b1135016dd345cb943">hal::NetLayoutJunctionNet</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 10 2020 09:52:35 for hal by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sun Dec 4 2022 22:38:04 for HAL by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

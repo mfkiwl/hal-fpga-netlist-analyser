@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['json_5fstr_5fhelper_1232',['JSON_STR_HELPER',['../d4/d84/netlist__serializer_8cpp.html#ad9bde63b1c828a1328bf592ad5325fa6',1,'netlist_serializer.cpp']]]
+  ['include_5fnlohmann_5fjson_5ffwd_5fhpp_5f_39551',['INCLUDE_NLOHMANN_JSON_FWD_HPP_',['../json_8hpp.html#ae7fdc438c6d6cb1f17c4373bce5a802d',1,'json.hpp']]],
+  ['internal_39552',['INTERNAL',['../defines_8h.html#a02c5e2eafaed44878fd8e6c54c8dde4d',1,'defines.h']]]
 ];

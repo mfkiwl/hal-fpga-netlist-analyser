@@ -1,8 +1,25 @@
 var searchData=
 [
-  ['callbackhook_617',['CallbackHook',['../d3/d2c/classhal_1_1CallbackHook.html',1,'hal']]],
-  ['callbackhook_3c_20r_28argtypes_2e_2e_2e_29_3e_618',['CallbackHook&lt; R(ArgTypes...)&gt;',['../d8/d33/classhal_1_1CallbackHook_3_01R_07ArgTypes_8_8_8_08_4.html',1,'hal']]],
-  ['callbackhook_3c_20void_28const_20spdlog_3a_3alevel_3a_3alevel_5fenum_20_26_2c_20const_20std_3a_3astring_20_26_2c_20const_20std_3a_3astring_20_26_29_3e_619',['CallbackHook&lt; void(const spdlog::level::level_enum &amp;, const std::string &amp;, const std::string &amp;)&gt;',['../d3/d2c/classhal_1_1CallbackHook.html',1,'hal']]],
-  ['caseinsensitivechartraits_620',['CaseInsensitiveCharTraits',['../df/def/structhal_1_1core__strings_1_1CaseInsensitiveCharTraits.html',1,'hal::core_strings']]],
-  ['cliplugininterface_621',['CLIPluginInterface',['../d1/d82/classhal_1_1CLIPluginInterface.html',1,'hal']]]
+  ['basepin_18633',['BasePin',['../classhal_1_1_base_pin.html',1,'hal']]],
+  ['basepin_3c_20gatepin_20_3e_18634',['BasePin&lt; GatePin &gt;',['../classhal_1_1_base_pin.html',1,'hal']]],
+  ['basepin_3c_20modulepin_20_3e_18635',['BasePin&lt; ModulePin &gt;',['../classhal_1_1_base_pin.html',1,'hal']]],
+  ['baseplugininterface_18636',['BasePluginInterface',['../classhal_1_1_base_plugin_interface.html',1,'hal']]],
+  ['basetreemodel_18637',['BaseTreeModel',['../classhal_1_1_base_tree_model.html',1,'hal']]],
+  ['basic_5fjson_18638',['basic_json',['../classnlohmann_1_1basic__json.html',1,'nlohmann']]],
+  ['binary_5freader_18639',['binary_reader',['../classnlohmann_1_1detail_1_1binary__reader.html',1,'nlohmann::detail']]],
+  ['binary_5fwriter_18640',['binary_writer',['../classnlohmann_1_1detail_1_1binary__writer.html',1,'nlohmann::detail']]],
+  ['binder_18641',['Binder',['https://doc.qt.io/qt-5/qopenglvertexarrayobject-binder.html',1,'QOpenGLVertexArrayObject']]],
+  ['booleanfunction_18642',['BooleanFunction',['../classhal_1_1_boolean_function.html',1,'hal']]],
+  ['booleanfunctiondecorator_18643',['BooleanFunctionDecorator',['../classhal_1_1_boolean_function_decorator.html',1,'hal']]],
+  ['booleanfunctionentry_18644',['BooleanFunctionEntry',['../classhal_1_1_boolean_function_entry.html',1,'hal']]],
+  ['booleanfunctionnetdecorator_18645',['BooleanFunctionNetDecorator',['../classhal_1_1_boolean_function_net_decorator.html',1,'hal']]],
+  ['booleanfunctiontable_18646',['BooleanFunctionTable',['../classhal_1_1_boolean_function_table.html',1,'hal']]],
+  ['booleanfunctiontableentry_18647',['BooleanFunctionTableEntry',['../classhal_1_1_boolean_function_table_entry.html',1,'hal']]],
+  ['booleanfunctiontablemodel_18648',['BooleanFunctionTableModel',['../classhal_1_1_boolean_function_table_model.html',1,'hal']]],
+  ['booleaninfluenceplugin_18649',['BooleanInfluencePlugin',['../classhal_1_1_boolean_influence_plugin.html',1,'hal']]],
+  ['boundaries_18650',['boundaries',['../structnlohmann_1_1detail_1_1dtoa__impl_1_1boundaries.html',1,'nlohmann::detail::dtoa_impl']]],
+  ['buffer_18651',['Buffer',['../classsubprocess_1_1_buffer.html',1,'subprocess']]],
+  ['bufsize_18652',['bufsize',['../structsubprocess_1_1bufsize.html',1,'subprocess']]],
+  ['busyanimation_18653',['BusyAnimation',['../classhal_1_1_busy_animation.html',1,'hal']]],
+  ['busyindicator_18654',['BusyIndicator',['../classhal_1_1_busy_indicator.html',1,'hal']]]
 ];

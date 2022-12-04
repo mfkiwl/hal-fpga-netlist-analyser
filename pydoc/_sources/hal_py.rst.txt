@@ -1,25 +1,39 @@
-hal_py Documentation
-=====================
+HAL Core Documentation
+======================
 
 .. toctree::
    :maxdepth: 1
 
+   base_plugin_interface
+   boolean_function
+   boolean_function_decorator
+   boolean_function_net_decorator
    core_utils
    data_container
-   gate_library
    endpoint
-   netlist
-   boolean_function
-   gate_type
-   gate_type_lut
-   gate_type_sequential
    gate
-   net
-   module
-   path
-   i_base
+   gate_library
+   gate_library_manager
+   gate_pin
+   gate_pin_group
+   gate_type
+   gate_type_component
+   gate_type_property
+   grouping
    gui_plugin_interface
-   plugin_manager
+   module
+   module_pin
+   module_pin_group
+   net
+   netlist
    netlist_factory
-   hdl_writer_manager
-   graph_algorithm
+   netlist_utils
+   netlist_serializer
+   netlist_writer_manager
+   path
+   pin_direction
+   pin_type
+   plugin_manager
+   project_manager
+   smt
+   subgraph_netlist_decorator

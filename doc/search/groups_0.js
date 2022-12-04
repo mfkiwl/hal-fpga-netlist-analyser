@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['event_20handler_1244',['Event Handler',['../d7/d82/group__handler.html',1,'']]]
+  ['context_20management_39696',['Context Management',['../group__graph-contexts.html',1,'']]],
+  ['context_20manager_20widget_39697',['Context Manager Widget',['../group__utility__widgets-context.html',1,'']]]
 ];

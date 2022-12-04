@@ -1,5 +1,5 @@
-Graph Algorithm
+Graph Algorithms
 ==========================
 
-.. autoclass:: libgraph_algorithm.graph_algorithm
+.. autoclass:: graph_algorithm.GraphAlgorithmPlugin
    :members:

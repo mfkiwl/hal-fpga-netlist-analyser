@@ -1,0 +1,14 @@
+HAL Plugins Documentation
+=========================
+
+.. toctree::
+   :maxdepth: 1
+
+   boolean_influence
+   dataflow
+   graph_algorithm
+   gui
+   netlist_simulator
+   netlist_simulator_controller
+   verilator
+   solve_fsm

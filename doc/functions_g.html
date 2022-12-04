@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>hal: Class Members</title>
+<title>HAL: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -22,8 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="hal_icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">hal
-   &#160;<span id="projectnumber">2.0.0.</span>
+   <div id="projectname">HAL
    </div>
   </td>
  </tr>
@@ -48,6 +51,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_g.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,373 +86,1515 @@ $(function() {
 
 <h3><a id="index_g"></a>- g -</h3><ul>
 <li>Gate
-: <a class="el" href="d1/d1b/classhal_1_1NetlistInternalManager.html#ad8205f09f8efdf8fab19078d103cd6e7">hal::NetlistInternalManager</a>
+: <a class="el" href="classhal_1_1_netlist_internal_manager.html#ad8205f09f8efdf8fab19078d103cd6e7">hal::NetlistInternalManager</a>
+, <a class="el" href="classhal_1_1_node.html#a6c45a5cdff7a8605756256c939244e34a62114aae0cfe74a2f09f2bbdced26fa6">hal::Node</a>
+, <a class="el" href="classhal_1_1_user_action_object_type.html#a2de00e63df4cf86816f688fad6754d79a99746b093673bdff7c734ae19f147b72">hal::UserActionObjectType</a>
+</li>
+<li>gate_to_clock_signals
+: <a class="el" href="structhal_1_1dataflow_1_1_netlist_abstraction.html#a8e3ebcdd544f9a20982420a98a64ebdc">hal::dataflow::NetlistAbstraction</a>
+</li>
+<li>gate_to_enable_signals
+: <a class="el" href="structhal_1_1dataflow_1_1_netlist_abstraction.html#ae0302491b61a7cdb77e4d0e904f9a8c4">hal::dataflow::NetlistAbstraction</a>
+</li>
+<li>gate_to_fingerprint
+: <a class="el" href="structhal_1_1dataflow_1_1_netlist_abstraction.html#a0dddbac87e60f675f17c407cef867c3d">hal::dataflow::NetlistAbstraction</a>
+</li>
+<li>gate_to_input_shape
+: <a class="el" href="structhal_1_1dataflow_1_1_netlist_abstraction.html#a2f435404c1c2420b366f8159fcf470a2">hal::dataflow::NetlistAbstraction</a>
+</li>
+<li>gate_to_output_shape
+: <a class="el" href="structhal_1_1dataflow_1_1_netlist_abstraction.html#afef3984e6484837ca97de53dd52d3d5e">hal::dataflow::NetlistAbstraction</a>
+</li>
+<li>gate_to_predecessors
+: <a class="el" href="structhal_1_1dataflow_1_1_netlist_abstraction.html#a594a243f713eb110245ee40d6f838669">hal::dataflow::NetlistAbstraction</a>
+</li>
+<li>gate_to_register_stages
+: <a class="el" href="structhal_1_1dataflow_1_1_netlist_abstraction.html#a7737af5453b1aec804f165a8008a8562">hal::dataflow::NetlistAbstraction</a>
+</li>
+<li>gate_to_reset_signals
+: <a class="el" href="structhal_1_1dataflow_1_1_netlist_abstraction.html#a86f1640a4885b744e27d6f5c5ccd5bda">hal::dataflow::NetlistAbstraction</a>
+</li>
+<li>gate_to_set_signals
+: <a class="el" href="structhal_1_1dataflow_1_1_netlist_abstraction.html#a52c88dce8d042835eb5274a810b40766">hal::dataflow::NetlistAbstraction</a>
+</li>
+<li>gate_to_successors
+: <a class="el" href="structhal_1_1dataflow_1_1_netlist_abstraction.html#aa9fd25c1e03f29673d15fd28337e5eb7">hal::dataflow::NetlistAbstraction</a>
+</li>
+<li>gateBaseColor
+: <a class="el" href="classhal_1_1_graphics_qss_adapter.html#a06ae39054b47c0a44a7e69e0245d5265">hal::GraphicsQssAdapter</a>
+</li>
+<li>gateBooleanFunctionChanged()
+: <a class="el" href="classhal_1_1_netlist_relay.html#aee82e354e1fa507aaf83bec60389f94d">hal::NetlistRelay</a>
+</li>
+<li>gateCreated()
+: <a class="el" href="classhal_1_1_netlist_relay.html#a93c5d6a0e037911aae0cc93291d98131">hal::NetlistRelay</a>
+</li>
+<li>GateDetailsTabWidget()
+: <a class="el" href="classhal_1_1_gate_details_tab_widget.html#a3fb4afef2c86b42bd1367af65141b4f9">hal::GateDetailsTabWidget</a>
+</li>
+<li>GateDialog()
+: <a class="el" href="classhal_1_1_gate_dialog.html#ac15738b680ca1b562494af128cf6d32b">hal::GateDialog</a>
+</li>
+<li>gateId()
+: <a class="el" href="classhal_1_1_gate_select_model.html#a54f107239a678a3c19814badbebbd115">hal::GateSelectModel</a>
+</li>
+<li>GateInfoTable()
+: <a class="el" href="classhal_1_1_gate_info_table.html#afd1c6ea10c340508575232821f1ad8d4">hal::GateInfoTable</a>
+</li>
+<li>GateInput
+: <a class="el" href="classhal_1_1_python_thread.html#ae153632cff534a9bcb961ffc35718c8caae93f8e0b2de62f1fcd588ee5a5559c2">hal::PythonThread</a>
+</li>
+<li>GateItem
+: <a class="el" href="classhal_1_1_selection_tree_item.html#a9035c6a32a5ddf83771aad02b549b177adc47f95a324a32a8eecb50e412f743f9">hal::SelectionTreeItem</a>
+</li>
+<li>GatelibError
+: <a class="el" href="classhal_1_1_file_manager.html#a5911170f4c0730fb3a214d4d3e7788f2a757fc6ec3efb014850d383aa09dbef7c">hal::FileManager</a>
 </li>
 <li>GateLibrary()
-: <a class="el" href="d7/daf/classhal_1_1GateLibrary.html#a5ad57ba019b35e2ceb386c3b0be1e0b1">hal::GateLibrary</a>
+: <a class="el" href="classhal_1_1_gate_library.html#a5ad57ba019b35e2ceb386c3b0be1e0b1">hal::GateLibrary</a>
+, <a class="el" href="classhal_1_1_gate_type.html#acaf9a4267eaeba61fa2cf28952d58bc4">hal::GateType</a>
+</li>
+<li>GatelibraryManagementDialog()
+: <a class="el" href="classhal_1_1_gatelibrary_management_dialog.html#aedc78f2a6ecd0c33030495a2748896c7">hal::GatelibraryManagementDialog</a>
 </li>
 <li>GateLibraryParser()
-: <a class="el" href="d2/d3d/classhal_1_1GateLibraryParser.html#ae465d61b825304d2c03f2bcd795a55c0">hal::GateLibraryParser</a>
+: <a class="el" href="classhal_1_1_gate_library_parser.html#ae465d61b825304d2c03f2bcd795a55c0">hal::GateLibraryParser</a>
 </li>
-<li>GateType()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#a91e01b2dbf4c01154f141d59f0837119">hal::GateType</a>
+<li>gateLibraryPath()
+: <a class="el" href="classhal_1_1_import_netlist_dialog.html#acfc20710d0d6528edfbc0b49105947ed">hal::ImportNetlistDialog</a>
+, <a class="el" href="classhal_1_1_new_project_dialog.html#af252573e21cb2865972da077ef84972e">hal::NewProjectDialog</a>
 </li>
-<li>GateTypeLut()
-: <a class="el" href="d1/d08/classhal_1_1GateTypeLut.html#aea787bfd523b223bb974ca4efde05851">hal::GateTypeLut</a>
+<li>GatelibraryProxyModel()
+: <a class="el" href="classhal_1_1_gatelibrary_proxy_model.html#a8a6379cf19d8760f446688d48f11de97">hal::GatelibraryProxyModel</a>
 </li>
-<li>GateTypeSequential()
-: <a class="el" href="dd/dd1/classhal_1_1GateTypeSequential.html#ae6d88e61b3059a160edad1b1f5c3ec6e">hal::GateTypeSequential</a>
+<li>GatelibraryTableModel()
+: <a class="el" href="classhal_1_1_gatelibrary_table_model.html#a84a5ffa7430f06a54c1c360b89e25e40">hal::GatelibraryTableModel</a>
+</li>
+<li>GatelibraryTableView()
+: <a class="el" href="classhal_1_1_gatelibrary_table_view.html#a9dca4c033142570e496058b73912c81b">hal::GatelibraryTableView</a>
+</li>
+<li>GateLibraryWriter()
+: <a class="el" href="classhal_1_1_gate_library_writer.html#a9d59a4cdd3f9169f81846b3a4d5365c6">hal::GateLibraryWriter</a>
+</li>
+<li>gateLocationChanged()
+: <a class="el" href="classhal_1_1_netlist_relay.html#af33291efb9fbfa54ec9c171942297dbe">hal::NetlistRelay</a>
+</li>
+<li>gateNameChanged()
+: <a class="el" href="classhal_1_1_netlist_elements_tree_model.html#ac287407533985cf34acf8ac76e7c9383">hal::NetlistElementsTreeModel</a>
+, <a class="el" href="classhal_1_1_netlist_relay.html#ab02f9f5376b48c985eaaa8e0fc5abf80">hal::NetlistRelay</a>
+</li>
+<li>gateNameFont
+: <a class="el" href="classhal_1_1_graphics_qss_adapter.html#aa0870b481502c8f744944b0f848d36e4">hal::GraphicsQssAdapter</a>
+</li>
+<li>GatePin()
+: <a class="el" href="classhal_1_1_gate_pin.html#a5c5e1c3ebb5b9b781dd550a3017fd435">hal::GatePin</a>
+</li>
+<li>gatePinFont
+: <a class="el" href="classhal_1_1_graphics_qss_adapter.html#ade8e16418e0c0cb14366b7f6c7040511">hal::GraphicsQssAdapter</a>
+</li>
+<li>GatePinsTreeModel()
+: <a class="el" href="classhal_1_1_gate_pins_tree_model.html#a10512e7ad81c53d77a9228e798b2f376">hal::GatePinsTreeModel</a>
+</li>
+<li>GatePinTree()
+: <a class="el" href="classhal_1_1_gate_pin_tree.html#ac5fd95d1ed5e9a6762aa8ed3fa42b1c8">hal::GatePinTree</a>
+</li>
+<li>gateRemoved()
+: <a class="el" href="classhal_1_1_netlist_elements_tree_model.html#a3881516cf0419a5dfe8da055b87565eb">hal::NetlistElementsTreeModel</a>
+, <a class="el" href="classhal_1_1_netlist_relay.html#aaff5f9e3a6d5bd66df2d50ff625e2a71">hal::NetlistRelay</a>
+</li>
+<li>gates()
+: <a class="el" href="classhal_1_1_graph_context.html#a6e32cfa5e0c18cb334c716cd3861b052">hal::GraphContext</a>
+, <a class="el" href="classhal_1_1_module_select_exclude.html#adf3988a21300cc37d47d68b11ee77c42">hal::ModuleSelectExclude</a>
+</li>
+<li>gates_of_group
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#a12d0f2048d7975b505d8ee7381dbf882">hal::dataflow::Grouping</a>
+</li>
+<li>gateSelected()
+: <a class="el" href="classhal_1_1_gate_select_view.html#a81ff2ad1145228a4eb8153c7cfc5c903">hal::GateSelectView</a>
+</li>
+<li>GateSelectEntry()
+: <a class="el" href="classhal_1_1_gate_select_entry.html#adcf61769da81352845e533ecaf71ba0e">hal::GateSelectEntry</a>
+</li>
+<li>gateSelectionColor
+: <a class="el" href="classhal_1_1_graphics_qss_adapter.html#ae6a8afb321af8574b45ea1045b0d222c">hal::GraphicsQssAdapter</a>
+</li>
+<li>GateSelectModel()
+: <a class="el" href="classhal_1_1_gate_select_model.html#a12f8299a8797658b34faa023c6ae4b6f">hal::GateSelectModel</a>
+</li>
+<li>GateSelectPicker()
+: <a class="el" href="classhal_1_1_gate_select_picker.html#a44d5a34a72a2603e777fca24ec5e26ef">hal::GateSelectPicker</a>
+</li>
+<li>GateSelectProxy()
+: <a class="el" href="classhal_1_1_gate_select_proxy.html#a5942907cbfc55bd7c9f35bb8f7c42d78">hal::GateSelectProxy</a>
+</li>
+<li>GateSelectReceiver()
+: <a class="el" href="classhal_1_1_gate_select_receiver.html#a722d87dc7b8f56f83c1802ed3217d89c">hal::GateSelectReceiver</a>
+</li>
+<li>GateSelectView()
+: <a class="el" href="classhal_1_1_gate_select_view.html#a85dbb149497218d1e754535e84a93163">hal::GateSelectView</a>
+</li>
+<li>gatesPicked()
+: <a class="el" href="classhal_1_1_gate_select_picker.html#a884a4fe77892fbf234d46b131ba3b38c">hal::GateSelectPicker</a>
+</li>
+<li>gateTypeFont
+: <a class="el" href="classhal_1_1_graphics_qss_adapter.html#a07cbb4166eeb91e920533e4a82db64f7">hal::GraphicsQssAdapter</a>
+</li>
+<li>GeneralTableWidget()
+: <a class="el" href="classhal_1_1_general_table_widget.html#a01b5a18a451a5de8d07382ef282036c0">hal::GeneralTableWidget</a>
+</li>
+<li>generate_dot_graph()
+: <a class="el" href="classhal_1_1_solve_fsm_plugin.html#a8b1460fd1c7e7c5c810b58f4462245a9">hal::SolveFsmPlugin</a>
+</li>
+<li>generate_model
+: <a class="el" href="structhal_1_1_s_m_t_1_1_query_config.html#a079ce610a89e273a18a7cda4d03023cd">hal::SMT::QueryConfig</a>
+</li>
+<li>generate_random()
+: <a class="el" href="classhal_1_1_project_directory.html#a66c2e74a77bef4d0eab40bbc221c9897">hal::ProjectDirectory</a>
+</li>
+<li>GenericName
+: <a class="el" href="classhal_1_1_python_editor.html#a9b4f48fba9f7d8fa68ec8669f46ebb6da16d9041a22b0bd4b22db1092dd87a540">hal::PythonEditor</a>
+</li>
+<li>gentleZoom()
+: <a class="el" href="classhal_1_1_graph_graphics_view.html#af6979d59eec7813f8a06df0dd0132a3e">hal::GraphGraphicsView</a>
 </li>
 <li>get()
-: <a class="el" href="d0/dd6/classRawPtrWrapper.html#ab226e1e9ec9e3253f683eae9029713bc">RawPtrWrapper&lt; T &gt;</a>
+: <a class="el" href="classhal_1_1_error.html#a2e4b14d0e534342b55fa0ba6821385ab">hal::Error</a>
+, <a class="el" href="classhal_1_1_result.html#a70cdbd43e423b50b0758dd2799788e36">hal::Result&lt; T &gt;</a>
+, <a class="el" href="classhal_1_1_s_m_t_1_1_symbolic_state.html#a1c9bd4903f4e05927b1f0012b03e7423">hal::SMT::SymbolicState</a>
+, <a class="el" href="classnlohmann_1_1basic__json.html#a6b187a22994c12c8cae0dd5ee99dc85e">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>get_address_group()
+: <a class="el" href="classhal_1_1_r_a_m_port_component.html#aa946590a84c87481c87e0df2b9b70178">hal::RAMPortComponent</a>
+</li>
+<li>get_allocator()
+: <a class="el" href="classnlohmann_1_1basic__json.html#af4ac14224fbdd29d3547fcb11bb55c8f">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>get_arity()
+: <a class="el" href="structhal_1_1_boolean_function_1_1_node.html#a43c91ca11b662b751f9c105124a510cc">hal::BooleanFunction::Node</a>
+</li>
+<li>get_arity_of_type()
+: <a class="el" href="structhal_1_1_boolean_function_1_1_node.html#a6e05ce44a823c93ec1904297b098f5ec">hal::BooleanFunction::Node</a>
+</li>
+<li>get_assignment()
+: <a class="el" href="structhal_1_1_s_m_t_1_1_constraint.html#aee42492e79b7687b210d4605c750bd31">hal::SMT::Constraint</a>
+</li>
+<li>get_async_reset_function()
+: <a class="el" href="classhal_1_1_f_f_component.html#aa897dfa9346371f3d1acb4b4342be54b">hal::FFComponent</a>
+, <a class="el" href="classhal_1_1_latch_component.html#a04ca048eb04051494193b3f39af4d05f">hal::LatchComponent</a>
+</li>
+<li>get_async_set_function()
+: <a class="el" href="classhal_1_1_f_f_component.html#a67c35a9f0e9a921848a8fabb2b8de4e7">hal::FFComponent</a>
+, <a class="el" href="classhal_1_1_latch_component.html#abaf37f1927310e4ef2e5bad676913777">hal::LatchComponent</a>
+</li>
+<li>get_async_set_reset_behavior()
+: <a class="el" href="classhal_1_1_f_f_component.html#a57ab652c529001acba4b6137fbcad59f">hal::FFComponent</a>
+, <a class="el" href="classhal_1_1_latch_component.html#a970617404459aab9839dbe00f3d149f8">hal::LatchComponent</a>
 </li>
 <li>get_available_log_levels()
-: <a class="el" href="d5/d2e/classhal_1_1LogManager.html#af45a31acd9c308ffe832035b7cb9fc7f">hal::LogManager</a>
+: <a class="el" href="classhal_1_1_log_manager.html#af45a31acd9c308ffe832035b7cb9fc7f">hal::LogManager</a>
 </li>
-<li>get_base_type()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#abbfebac5d20601b45513bb584ce2b413">hal::GateType</a>
+<li>get_bit_size()
+: <a class="el" href="classhal_1_1_r_a_m_component.html#a485a103ce9412f33a7aa968874af7d11">hal::RAMComponent</a>
 </li>
 <li>get_boolean_function()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a85e1b1097c28a695df849f11b87c2a2f">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a09610256a3b39521b1325ea095a38b62">hal::Gate</a>
+, <a class="el" href="classhal_1_1_gate_type.html#af14f2febe7d501c08291f38f68c97869">hal::GateType</a>
+</li>
+<li>get_boolean_function_from()
+: <a class="el" href="classhal_1_1_boolean_function_decorator.html#a027fab5322110aa10cb3d6448c7418a5">hal::BooleanFunctionDecorator</a>
 </li>
 <li>get_boolean_functions()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#afa206d7a1f84eeb201466cf7e6f211bd">hal::Gate</a>
-, <a class="el" href="d1/d05/classhal_1_1GateType.html#ae89bd271135c968e2fe59dfda0602acc">hal::GateType</a>
+: <a class="el" href="classhal_1_1_gate.html#afa206d7a1f84eeb201466cf7e6f211bd">hal::Gate</a>
+, <a class="el" href="classhal_1_1_gate_type.html#af205511b9029e75c0c2300046a367b56">hal::GateType</a>
+</li>
+<li>get_boolean_influence()
+: <a class="el" href="classhal_1_1_boolean_influence_plugin.html#a1c693c3d0a79feacdaa2480de0618c54">hal::BooleanInfluencePlugin</a>
+</li>
+<li>get_boolean_influences_of_gate()
+: <a class="el" href="classhal_1_1_boolean_influence_plugin.html#a13b51b48783e88ba10e169735055587b">hal::BooleanInfluencePlugin</a>
+</li>
+<li>get_boolean_influences_of_subcircuit()
+: <a class="el" href="classhal_1_1_boolean_influence_plugin.html#a0cb81e101a5dae8106c39f3c01b86cc6">hal::BooleanInfluencePlugin</a>
+</li>
+<li>get_boolean_variable()
+: <a class="el" href="classhal_1_1_boolean_function_net_decorator.html#ad7f326ae8eb8cacec99e1009d28c3db4">hal::BooleanFunctionNetDecorator</a>
+</li>
+<li>get_boolean_variable_name()
+: <a class="el" href="classhal_1_1_boolean_function_net_decorator.html#a68c2d7aaa24c940c33bc040aa7437e76">hal::BooleanFunctionNetDecorator</a>
+</li>
+<li>get_canonical_path()
+: <a class="el" href="classhal_1_1_project_directory.html#a2ce61d5bf709b4e75b00dce4e5ffa392">hal::ProjectDirectory</a>
 </li>
 <li>get_channel()
-: <a class="el" href="d5/d2e/classhal_1_1LogManager.html#ab0f66a23f31c9f40fd17d31d45cfd881">hal::LogManager</a>
+: <a class="el" href="classhal_1_1_log_manager.html#ab0f66a23f31c9f40fd17d31d45cfd881">hal::LogManager</a>
 </li>
 <li>get_channels()
-: <a class="el" href="d5/d2e/classhal_1_1LogManager.html#a91c934b15fe7853ae434fe96029130fa">hal::LogManager</a>
+: <a class="el" href="classhal_1_1_log_manager.html#a91c934b15fe7853ae434fe96029130fa">hal::LogManager</a>
+</li>
+<li>get_character()
+: <a class="el" href="classnlohmann_1_1detail_1_1file__input__adapter.html#a0d4ff48617c8f63c30babdfd09482329">nlohmann::detail::file_input_adapter</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1input__adapter__protocol.html#aac10a6a4048a8ce8e2ed50277692a3ca">nlohmann::detail::input_adapter_protocol</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#ae9e195b04f3551fafb0925aafba00124">nlohmann::detail::input_buffer_adapter</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1input__stream__adapter.html#ae0760af923583de6354725e901d1869d">nlohmann::detail::input_stream_adapter</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1wide__string__input__adapter.html#abb62b34cf77e557ce5321b7f2490c3b0">nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;</a>
 </li>
 <li>get_cli_options()
-: <a class="el" href="d1/d82/classhal_1_1CLIPluginInterface.html#ad8ef97cbc2f3c5ae5280d48c6c25a7c6">hal::CLIPluginInterface</a>
-, <a class="el" href="dd/d86/classhal_1_1UIPluginInterface.html#aa402ba253b62f31e37ffa2f140600da3">hal::UIPluginInterface</a>
+: <a class="el" href="classhal_1_1_c_l_i_plugin_interface.html#ad8ef97cbc2f3c5ae5280d48c6c25a7c6">hal::CLIPluginInterface</a>
+, <a class="el" href="classhal_1_1plugin__dataflow.html#a181d750108725a66b573232454842d43">hal::plugin_dataflow</a>
+, <a class="el" href="classhal_1_1_u_i_plugin_interface.html#aa402ba253b62f31e37ffa2f140600da3">hal::UIPluginInterface</a>
 </li>
-<li>get_clock_pins()
-: <a class="el" href="dd/dd1/classhal_1_1GateTypeSequential.html#ab5700e3e162e472ad50a7e2b843f5f7a">hal::GateTypeSequential</a>
+<li>get_clock_function()
+: <a class="el" href="classhal_1_1_f_f_component.html#a26af1e05ec08def8ece5890b9296cd8d">hal::FFComponent</a>
+, <a class="el" href="classhal_1_1_r_a_m_port_component.html#aa0dcc4d24215aa62fb80938990dad8d3">hal::RAMPortComponent</a>
 </li>
-<li>get_config_data_category()
-: <a class="el" href="d1/d08/classhal_1_1GateTypeLut.html#ab6d95aedef0d3f3f091fc34ef12f1e45">hal::GateTypeLut</a>
+<li>get_clock_signals_of_group()
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#a8844dffd76e315b5da81191d2e4efff5">hal::dataflow::Grouping</a>
 </li>
-<li>get_config_data_identifier()
-: <a class="el" href="d1/d08/classhal_1_1GateTypeLut.html#a966b8969d951c11240ac6b7ab5e0a353">hal::GateTypeLut</a>
+<li>get_color()
+: <a class="el" href="classhal_1_1_grouping.html#a309d7952a4c0fc0feb78db56a4c15cbd">hal::Grouping</a>
+</li>
+<li>get_communities()
+: <a class="el" href="classhal_1_1_graph_algorithm_plugin.html#ae32ee8a59a9ff8b24fdeea7359222560">hal::GraphAlgorithmPlugin</a>
+</li>
+<li>get_communities_fast_greedy()
+: <a class="el" href="classhal_1_1_graph_algorithm_plugin.html#af82475a54f82d29378db571359a3f9f5">hal::GraphAlgorithmPlugin</a>
+</li>
+<li>get_communities_spinglass()
+: <a class="el" href="classhal_1_1_graph_algorithm_plugin.html#abf2f2b094763a46218ac2cfc5c0ac998">hal::GraphAlgorithmPlugin</a>
+</li>
+<li>get_component()
+: <a class="el" href="classhal_1_1_gate_type.html#aa9df15aa0cd043bca80751f0665e0210">hal::GateType</a>
+, <a class="el" href="classhal_1_1_gate_type_component.html#acb0075c46f66aa6004b6cd529cb4c411">hal::GateTypeComponent</a>
+</li>
+<li>get_component_as()
+: <a class="el" href="classhal_1_1_gate_type.html#adcd3bbe2eccad65c88f5333237bc2848">hal::GateType</a>
+, <a class="el" href="classhal_1_1_gate_type_component.html#a8bf498a579f67d9b5e2f0d915d00eb49">hal::GateTypeComponent</a>
+</li>
+<li>get_components()
+: <a class="el" href="classhal_1_1_f_f_component.html#ad7093fb5186768112b4fea6da8e0ad85">hal::FFComponent</a>
+, <a class="el" href="classhal_1_1_gate_type.html#a86d15f2d10d4c95944b758835d3c0403">hal::GateType</a>
+, <a class="el" href="classhal_1_1_gate_type_component.html#a0e836f153556f93f7830390e465cda49">hal::GateTypeComponent</a>
+, <a class="el" href="classhal_1_1_init_component.html#aac4ee7240cdbffbe707660784ff5b437">hal::InitComponent</a>
+, <a class="el" href="classhal_1_1_latch_component.html#a660756f882293334ad98a13147c2328a">hal::LatchComponent</a>
+, <a class="el" href="classhal_1_1_l_u_t_component.html#a8f6370099b3ee28c75c1829957af989e">hal::LUTComponent</a>
+, <a class="el" href="classhal_1_1_m_a_c_component.html#a55a877db2c7b6e38d9fdabc22d64bac4">hal::MACComponent</a>
+, <a class="el" href="classhal_1_1_r_a_m_component.html#a6024f01a0337ec1a435f68ffadac91f2">hal::RAMComponent</a>
+, <a class="el" href="classhal_1_1_r_a_m_port_component.html#a6285b6c026b434affa0603ef8772bfe4">hal::RAMPortComponent</a>
+, <a class="el" href="classhal_1_1_state_component.html#ab3273a5373a9567076f3bafb77941354">hal::StateComponent</a>
+</li>
+<li>get_constant_value()
+: <a class="el" href="classhal_1_1_boolean_function.html#ab5dcf3d2880965e2b490e65e928e7d76">hal::BooleanFunction</a>
+</li>
+<li>get_constraints()
+: <a class="el" href="classhal_1_1_s_m_t_1_1_solver.html#a893f60adb9ff88b60841d02e5992277c">hal::SMT::Solver</a>
+</li>
+<li>get_control_signals_of_group()
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#a16ce09c89aec2f247da1f86d0c940e4f">hal::dataflow::Grouping</a>
 </li>
 <li>get_data()
-: <a class="el" href="d1/d7d/classhal_1_1DataContainer.html#a63285acfb387b56dea0651afd5503dc0">hal::DataContainer</a>
+: <a class="el" href="classhal_1_1_data_container.html#a15ddfdb9e6d693c4e29d535ad2be215b">hal::DataContainer</a>
 </li>
-<li>get_data_by_key()
-: <a class="el" href="d1/d7d/classhal_1_1DataContainer.html#a7d12a6336bf5662cd00ad27970bea0d6">hal::DataContainer</a>
+<li>get_data_group()
+: <a class="el" href="classhal_1_1_r_a_m_port_component.html#a4f2b30cb68bc2b8dd79c628dc33b3d8a">hal::RAMPortComponent</a>
 </li>
-<li>get_data_keys()
-: <a class="el" href="d1/d7d/classhal_1_1DataContainer.html#a5c2da0be8eead17fa03f5b8b8e89b878">hal::DataContainer</a>
+<li>get_data_in_function()
+: <a class="el" href="classhal_1_1_latch_component.html#ae6d2c0a9d6b9bc227aa85355c050dee8">hal::LatchComponent</a>
+</li>
+<li>get_data_map()
+: <a class="el" href="classhal_1_1_data_container.html#a1067630aa486e2a76391c0572d263a24">hal::DataContainer</a>
+</li>
+<li>get_default_filename()
+: <a class="el" href="classhal_1_1_project_directory.html#adc4b09f2b9e56e57813bc00e447fc004">hal::ProjectDirectory</a>
 </li>
 <li>get_dependencies()
-: <a class="el" href="d5/ddc/classhal_1_1BasePluginInterface.html#a17ecf8929723bb20a2b154420e4e6560">hal::BasePluginInterface</a>
+: <a class="el" href="classhal_1_1_base_plugin_interface.html#a17ecf8929723bb20a2b154420e4e6560">hal::BasePluginInterface</a>
 </li>
 <li>get_design_name()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a0ff62e377eab88e6fbae17ae1d1604ce">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#ac1f1003a5491f4fb7dd75d36b6a000f4">hal::Netlist</a>
 </li>
 <li>get_destinations()
-: <a class="el" href="de/db0/classhal_1_1Net.html#ab8947aa24e7c234b984da284a20558c7">hal::Net</a>
+: <a class="el" href="classhal_1_1_net.html#ab8947aa24e7c234b984da284a20558c7">hal::Net</a>
 </li>
 <li>get_device_name()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#ae339f011fd95f51ded3b281c0f198fe7">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#a9a4a577fa3cd6252f728067a06b18bc8">hal::Netlist</a>
 </li>
-<li>get_dnf_clauses()
-: <a class="el" href="d6/d9d/classhal_1_1BooleanFunction.html#a9a7638db9c73a22dde7768a87d02eaaa">hal::BooleanFunction</a>
+<li>get_direction()
+: <a class="el" href="classhal_1_1_base_pin.html#a8027dbd47c6dcb221f5333f3ee269dc3">hal::BasePin&lt; T &gt;</a>
+, <a class="el" href="classhal_1_1_pin_group.html#ac9b30b31956f5c9670d61f1163f737b7">hal::PinGroup&lt; T &gt;</a>
+</li>
+<li>get_enable_function()
+: <a class="el" href="classhal_1_1_latch_component.html#ac3f21d6a0e0de9e4ee65ae94a1cf0ccb">hal::LatchComponent</a>
+, <a class="el" href="classhal_1_1_r_a_m_port_component.html#a7fabba1220d9391dccc8dc2dade7279b">hal::RAMPortComponent</a>
+</li>
+<li>get_error()
+: <a class="el" href="classhal_1_1_result.html#a9a85e813a3f52096c1ca54dee1494923">hal::Result&lt; T &gt;</a>
+</li>
+<li>get_error_message()
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a53cebbc684ef97fa49651eb442d58f86">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+</li>
+<li>get_event_handler()
+: <a class="el" href="classhal_1_1_netlist.html#aedc720597caab3ff1cb6ad4e5839c429">hal::Netlist</a>
 </li>
 <li>get_fan_in_endpoint()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a2bb7660dab70b6eb878328565f32cba3">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a77f1d1747daf72237dc3d5b725548b3f">hal::Gate</a>
 </li>
 <li>get_fan_in_endpoints()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a963338d9ae39c39fcdd60353e533c716">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a963338d9ae39c39fcdd60353e533c716">hal::Gate</a>
 </li>
 <li>get_fan_in_net()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#adc1350d1fa7c318c08bd1188f8806c6e">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a02c60f2e75338675a36b884a4d65da8a">hal::Gate</a>
 </li>
 <li>get_fan_in_nets()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a8e4c1d4f77683babcdf5c834ef1723a5">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a8e4c1d4f77683babcdf5c834ef1723a5">hal::Gate</a>
 </li>
 <li>get_fan_out_endpoint()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a07a6aead63e62bbd7d5ca75d46905b8a">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#af465d80e0ce1a2777f3fde0783d39363">hal::Gate</a>
 </li>
 <li>get_fan_out_endpoints()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#aa129e49b4e029a1f47fc2b5998d77d1f">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#aa129e49b4e029a1f47fc2b5998d77d1f">hal::Gate</a>
 </li>
 <li>get_fan_out_net()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#aaeecea9fb6d0532d9ed3c7ba64c538b7">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a4d925950a2f8c04248b535b96967148b">hal::Gate</a>
 </li>
 <li>get_fan_out_nets()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#af5288f4473c529fa29b5a347091ffc2f">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#af5288f4473c529fa29b5a347091ffc2f">hal::Gate</a>
+</li>
+<li>get_ff_dependency_matrix()
+: <a class="el" href="classhal_1_1_boolean_influence_plugin.html#a4414a642f5f41569c7d4254795d9eea0">hal::BooleanInfluencePlugin</a>
 </li>
 <li>get_file_name()
-: <a class="el" href="d7/d66/classhal_1_1RuntimeLibrary.html#a214a3c0acc3d6e3d9d31e18e62fed7ec">hal::RuntimeLibrary</a>
+: <a class="el" href="classhal_1_1_runtime_library.html#a214a3c0acc3d6e3d9d31e18e62fed7ec">hal::RuntimeLibrary</a>
+</li>
+<li>get_filename()
+: <a class="el" href="classhal_1_1_project_directory.html#a05266d178bc1bb73cea16768ae75d269">hal::ProjectDirectory</a>
+, <a class="el" href="classhal_1_1_project_manager.html#a4585f530d243d1ede4d4774392700987">hal::ProjectManager</a>
+</li>
+<li>get_free_gate_ids()
+: <a class="el" href="classhal_1_1_netlist.html#a5f7900676fda58ddebf01044f10a7312">hal::Netlist</a>
+</li>
+<li>get_free_grouping_ids()
+: <a class="el" href="classhal_1_1_netlist.html#ab6f2ca6f0f49b95d39b3637d30849a9a">hal::Netlist</a>
+</li>
+<li>get_free_module_ids()
+: <a class="el" href="classhal_1_1_netlist.html#a349e8a245c3c36d2ce27196958dcd824">hal::Netlist</a>
+</li>
+<li>get_free_net_ids()
+: <a class="el" href="classhal_1_1_netlist.html#ae4e985be054eb29cf3a218edbe23f390">hal::Netlist</a>
 </li>
 <li>get_function()
-: <a class="el" href="d7/d66/classhal_1_1RuntimeLibrary.html#ad3c8ab46c127e3611ed29701dd0bd610">hal::RuntimeLibrary</a>
+: <a class="el" href="classhal_1_1_runtime_library.html#ad3c8ab46c127e3611ed29701dd0bd610">hal::RuntimeLibrary</a>
+, <a class="el" href="structhal_1_1_s_m_t_1_1_constraint.html#acd000cf79ba939edb410d652cc2df510">hal::SMT::Constraint</a>
 </li>
 <li>get_gate()
-: <a class="el" href="d9/df8/classhal_1_1Endpoint.html#aa5d98029f04ec9dc36da48b3fece7bd6">hal::Endpoint</a>
+: <a class="el" href="classhal_1_1_endpoint.html#aa5d98029f04ec9dc36da48b3fece7bd6">hal::Endpoint</a>
 </li>
 <li>get_gate_by_id()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a3498d3a2a908f8c9beb7c8a741fc6cef">hal::Module</a>
-, <a class="el" href="dc/d06/classhal_1_1Netlist.html#a26d0f67be01c66f22422f40938e29237">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_module.html#a3498d3a2a908f8c9beb7c8a741fc6cef">hal::Module</a>
+, <a class="el" href="classhal_1_1_netlist.html#a26d0f67be01c66f22422f40938e29237">hal::Netlist</a>
+</li>
+<li>get_gate_ids()
+: <a class="el" href="classhal_1_1_grouping.html#a0284ba2eaa2efc592d79303798da0b72">hal::Grouping</a>
 </li>
 <li>get_gate_library()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#adeae0f508eb65ca66c78d560f89340c2">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_gate_type.html#a09290296b2b3f8ca839cf1d428b81f05">hal::GateType</a>
+, <a class="el" href="classhal_1_1_netlist.html#adeae0f508eb65ca66c78d560f89340c2">hal::Netlist</a>
+</li>
+<li>get_gate_location_data_category()
+: <a class="el" href="classhal_1_1_gate_library.html#af63f080c714ecfd2e5d569200a92b397">hal::GateLibrary</a>
+</li>
+<li>get_gate_location_data_identifiers()
+: <a class="el" href="classhal_1_1_gate_library.html#a31ea99ad04afe238972f0890fba6771b">hal::GateLibrary</a>
+</li>
+<li>get_gate_type_by_name()
+: <a class="el" href="classhal_1_1_gate_library.html#a515857dc13b6592f77f192009d24a708">hal::GateLibrary</a>
 </li>
 <li>get_gate_types()
-: <a class="el" href="d7/daf/classhal_1_1GateLibrary.html#af244ebe63555e8ee771e3d0dca62095b">hal::GateLibrary</a>
+: <a class="el" href="classhal_1_1_gate_library.html#a4af85f352307e0cead8336be95cf2fea">hal::GateLibrary</a>
 </li>
 <li>get_gates()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a49b749b873deac748be305b71aca962c">hal::Module</a>
-, <a class="el" href="dc/d06/classhal_1_1Netlist.html#a747f7afeaa0187353882cdc4ac3248ee">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_grouping.html#a2fb20b8ceae1870744ce17af655471e2">hal::Grouping</a>
+, <a class="el" href="classhal_1_1_module.html#a49b749b873deac748be305b71aca962c">hal::Module</a>
+, <a class="el" href="classhal_1_1_netlist.html#a0d6c2c4b712ac8964253627e7adf3266">hal::Netlist</a>
 </li>
 <li>get_global_input_nets()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a099ab97938cf02c0f50ddad8fa00ed90">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#a14f90b67d5536b381ff3774523eed04d">hal::Netlist</a>
 </li>
 <li>get_global_output_nets()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a2e965807232e675eb9f5475d55b5d2b2">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#ac536d7aebe1058d6ed2c54fa71e84c5c">hal::Netlist</a>
 </li>
 <li>get_gnd_gate_types()
-: <a class="el" href="d7/daf/classhal_1_1GateLibrary.html#a7d66afe693bdd824761470bd3311cc31">hal::GateLibrary</a>
+: <a class="el" href="classhal_1_1_gate_library.html#abc606af53f4d9c1fc42e029851410e1e">hal::GateLibrary</a>
 </li>
 <li>get_gnd_gates()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a29f3c8cc0d7f9fb9828044a292476da4">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#a5024423d773b9705545bf62f64c749a9">hal::Netlist</a>
+</li>
+<li>get_graph_cut()
+: <a class="el" href="classhal_1_1_graph_algorithm_plugin.html#a6ded910dd4dcf488aba3e104f5af957b">hal::GraphAlgorithmPlugin</a>
+</li>
+<li>get_group()
+: <a class="el" href="classhal_1_1_base_pin.html#a4dbfb3431aacf0cfcb8ebcc747514286">hal::BasePin&lt; T &gt;</a>
+</li>
+<li>get_grouping()
+: <a class="el" href="classhal_1_1_gate.html#a5b0652086f601967e3fac66118571117">hal::Gate</a>
+, <a class="el" href="classhal_1_1_module.html#a8b32ef344fda511501b3eefcb34abfdc">hal::Module</a>
+, <a class="el" href="classhal_1_1_net.html#a871510d25bdfd08d2b40e5013868a13c">hal::Net</a>
+</li>
+<li>get_grouping_by_id()
+: <a class="el" href="classhal_1_1_netlist.html#ae41916880e2d766ab5367d26ee6cb2b3">hal::Netlist</a>
+</li>
+<li>get_groupings()
+: <a class="el" href="classhal_1_1_netlist.html#ad160f871d2d498b67a64562404eb59e2">hal::Netlist</a>
 </li>
 <li>get_gui_callback()
-: <a class="el" href="d5/d2e/classhal_1_1LogManager.html#ad7f16741dd004b289a2d353b9d2e56f8">hal::LogManager</a>
+: <a class="el" href="classhal_1_1_log_manager.html#ad7f16741dd004b289a2d353b9d2e56f8">hal::LogManager</a>
+</li>
+<li>get_hash()
+: <a class="el" href="classhal_1_1_gate.html#a99c1b9a0cad7b9f5e04d48d636b36ee6">hal::Gate</a>
+, <a class="el" href="classhal_1_1_module.html#af095c826fa1e507107519455f0cba13a">hal::Module</a>
+, <a class="el" href="classhal_1_1_net.html#aa02ab8f0bac9d569c43f6bf67cd3ab9c">hal::Net</a>
 </li>
 <li>get_id()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#afc66cb905518bd5b03c1323caea00b81">hal::Gate</a>
-, <a class="el" href="d1/d05/classhal_1_1GateType.html#ad72821321f4c0394d735b4862a66ad9d">hal::GateType</a>
-, <a class="el" href="d1/d10/classhal_1_1Module.html#af771e486709f93e4abab9f0fe092010b">hal::Module</a>
-, <a class="el" href="de/db0/classhal_1_1Net.html#a086e0fa561405ac8b0beae95d8caa69d">hal::Net</a>
-, <a class="el" href="dc/d06/classhal_1_1Netlist.html#a7dc3f04d8b357b25fc129bf85b3b2dec">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_base_pin.html#a2c923fe5745e6588c4247d7967744d09">hal::BasePin&lt; T &gt;</a>
+, <a class="el" href="classhal_1_1_gate.html#afc66cb905518bd5b03c1323caea00b81">hal::Gate</a>
+, <a class="el" href="classhal_1_1_gate_type.html#ad72821321f4c0394d735b4862a66ad9d">hal::GateType</a>
+, <a class="el" href="classhal_1_1_grouping.html#aa51b165c52b5548564948f870c8a1891">hal::Grouping</a>
+, <a class="el" href="classhal_1_1_module.html#af771e486709f93e4abab9f0fe092010b">hal::Module</a>
+, <a class="el" href="classhal_1_1_net.html#a086e0fa561405ac8b0beae95d8caa69d">hal::Net</a>
+, <a class="el" href="classhal_1_1_netlist.html#a7dc3f04d8b357b25fc129bf85b3b2dec">hal::Netlist</a>
+, <a class="el" href="classhal_1_1_pin_group.html#a6a4bef72226eb6232a603ebd17ac52f7">hal::PinGroup&lt; T &gt;</a>
 </li>
 <li>get_ids()
-: <a class="el" href="d8/d33/classhal_1_1CallbackHook_3_01R_07ArgTypes_8_8_8_08_4.html#a8eb9eb26c2d0274a2497495e48cbab45">hal::CallbackHook&lt; R(ArgTypes...)&gt;</a>
+: <a class="el" href="classhal_1_1_callback_hook_3_01_r_07_arg_types_8_8_8_08_4.html#a8eb9eb26c2d0274a2497495e48cbab45">hal::CallbackHook&lt; R(ArgTypes...)&gt;</a>
+</li>
+<li>get_igraph_directed()
+: <a class="el" href="classhal_1_1_graph_algorithm_plugin.html#a9116b9073591b53b54a95e134864fe36">hal::GraphAlgorithmPlugin</a>
 </li>
 <li>get_includes()
-: <a class="el" href="d7/daf/classhal_1_1GateLibrary.html#a955208e223376a19c808f83d486311d2">hal::GateLibrary</a>
+: <a class="el" href="classhal_1_1_gate_library.html#a955208e223376a19c808f83d486311d2">hal::GateLibrary</a>
 </li>
-<li>get_init_data_category()
-: <a class="el" href="dd/dd1/classhal_1_1GateTypeSequential.html#a6538342ddf68f91b7d551fa0fe6ac94e">hal::GateTypeSequential</a>
+<li>get_index()
+: <a class="el" href="classhal_1_1_pin_group.html#a6270fefeb4736c5ca613b3ad0c017b51">hal::PinGroup&lt; T &gt;</a>
 </li>
-<li>get_init_data_identifier()
-: <a class="el" href="dd/dd1/classhal_1_1GateTypeSequential.html#aafc72bee1605ac0168d055ca787f7054">hal::GateTypeSequential</a>
+<li>get_index_value()
+: <a class="el" href="classhal_1_1_boolean_function.html#ae82bd4f2ea64aebeffa83c22a1512ee9">hal::BooleanFunction</a>
+</li>
+<li>get_init_category()
+: <a class="el" href="classhal_1_1_init_component.html#a3a0498f6c6327b1c1c9eae921f983cba">hal::InitComponent</a>
+</li>
+<li>get_init_data()
+: <a class="el" href="classhal_1_1_gate.html#ae9d9398d978dbe5b9239370adcb769b5">hal::Gate</a>
+</li>
+<li>get_init_identifiers()
+: <a class="el" href="classhal_1_1_init_component.html#af200f3404d4e8c802652bd26f948c3d5">hal::InitComponent</a>
 </li>
 <li>get_input_filename()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#ad44a4aa90a3de7011003ec5d2d1c6a34">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#ad44a4aa90a3de7011003ec5d2d1c6a34">hal::Netlist</a>
 </li>
 <li>get_input_nets()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#ae9864b560cb63a6fbb2a336a4b71931a">hal::Module</a>
+: <a class="el" href="classhal_1_1_module.html#a8e83b6de125c04f00e5cdc18580bed8d">hal::Module</a>
 </li>
-<li>get_input_pin_groups()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#ac0f27dabdcd2abc0341f54a551892e2d">hal::GateType</a>
+<li>get_input_pin_names()
+: <a class="el" href="classhal_1_1_gate_type.html#a02c15ddfe108682453cbf87305d6fccb">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#a92322b292485d719d98f11fb1102b2b9">hal::Module</a>
 </li>
 <li>get_input_pins()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a0a6692d6ed8bff35f957d205fbaeeedb">hal::Gate</a>
-, <a class="el" href="d1/d05/classhal_1_1GateType.html#a8a90fb08834cb0074cdf5921f8b6fd0e">hal::GateType</a>
-</li>
-<li>get_input_port_name()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a5c6e10f6a0b7b21c6a7357ea0dcb9a17">hal::Module</a>
-</li>
-<li>get_input_port_names()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a1e025b8f99efd0689ebbcc2d80561ad8">hal::Module</a>
-</li>
-<li>get_input_port_net()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a3b4fb298e33c8287e95693d2119664fb">hal::Module</a>
+: <a class="el" href="classhal_1_1_gate_type.html#ac1f8907479a3cfb66dc512d5a12a9163">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#a25c835211e194461fbc9fd14fe23b1e6">hal::Module</a>
 </li>
 <li>get_instance()
-: <a class="el" href="d5/d2e/classhal_1_1LogManager.html#af9c7cb6730a13cab04151b95c5cfc492">hal::LogManager</a>
+: <a class="el" href="classhal_1_1_file_manager.html#a39922020ae71b765ce940170bd936038">hal::FileManager</a>
+, <a class="el" href="classhal_1_1_log_manager.html#af1c1ea487f46dea99bc09d5286b8be37">hal::LogManager</a>
 </li>
 <li>get_internal_nets()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a4370ca539b7d578415a07fd95ad65ec3">hal::Module</a>
+: <a class="el" href="classhal_1_1_module.html#a3a06e13de9d460a68eb4eecda0fa74fc">hal::Module</a>
 </li>
-<li>get_inverted_state_output_pins()
-: <a class="el" href="dd/dd1/classhal_1_1GateTypeSequential.html#ac9f5adcb9cd25924c2e95aa8879fb6d4">hal::GateTypeSequential</a>
+<li>get_label()
+: <a class="el" href="classhal_1_1_plugin_parameter.html#a32336a40d747c48ff1fc31eae7ccb3c6">hal::PluginParameter</a>
 </li>
 <li>get_level_of_channel()
-: <a class="el" href="d5/d2e/classhal_1_1LogManager.html#a6fa67a9cca35728d04ac03d974d56958">hal::LogManager</a>
+: <a class="el" href="classhal_1_1_log_manager.html#a6fa67a9cca35728d04ac03d974d56958">hal::LogManager</a>
 </li>
 <li>get_location()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#abaf49e05231c21206b67b349daf8fbde">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a2713a08abda05435d4172b2dba549df5">hal::Gate</a>
 </li>
 <li>get_location_x()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a6ba23c1238a9176ff969d10cd3b04a20">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a056960130aa9f9fe61daf9f0ee7df60c">hal::Gate</a>
 </li>
 <li>get_location_y()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#ab945f80ba76c33c3c0531d172743cd7f">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a24b3bfe5d03a6f61b4e8be79b69b256c">hal::Gate</a>
+</li>
+<li>get_memberships_for_hal()
+: <a class="el" href="classhal_1_1_graph_algorithm_plugin.html#a09fa3b108baeaf83a130bf9da1b3d0f8">hal::GraphAlgorithmPlugin</a>
 </li>
 <li>get_module()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a8ebbb9b79db2666beadc913467436a1f">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a8ebbb9b79db2666beadc913467436a1f">hal::Gate</a>
 </li>
 <li>get_module_by_id()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#aaa7dd33bb24403ae0f88dcd6a860ae04">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#aa963e38a4ce49c0e440be5e36f46369a">hal::Netlist</a>
+</li>
+<li>get_module_ids()
+: <a class="el" href="classhal_1_1_grouping.html#a2d48a58aeb79ff246093d6a41451b868">hal::Grouping</a>
 </li>
 <li>get_modules()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a98a8caba1e3934f37b9a1a3c6713ad48">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_grouping.html#abdcd083c4c0c1bc1244044efb5982a1f">hal::Grouping</a>
+, <a class="el" href="classhal_1_1_netlist.html#a7eb17e617d1b20d05fdd146ad63c138b">hal::Netlist</a>
 </li>
 <li>get_name()
-: <a class="el" href="d5/ddc/classhal_1_1BasePluginInterface.html#a3818f63c15ebe39ad595abddbb471e4a">hal::BasePluginInterface</a>
-, <a class="el" href="d8/d33/classhal_1_1CallbackHook_3_01R_07ArgTypes_8_8_8_08_4.html#aad16735f930b339f0515510a2d170741">hal::CallbackHook&lt; R(ArgTypes...)&gt;</a>
-, <a class="el" href="d5/d57/classhal_1_1Gate.html#ad9ee997b04fa42b1151cac1640930292">hal::Gate</a>
-, <a class="el" href="d7/daf/classhal_1_1GateLibrary.html#aef64b8371779e27c778227552deb3a6d">hal::GateLibrary</a>
-, <a class="el" href="d1/d05/classhal_1_1GateType.html#ada08ed06b774c41353d1d943f9eff203">hal::GateType</a>
-, <a class="el" href="d1/d10/classhal_1_1Module.html#a87cf9f30579e5e461f525ab78274e1df">hal::Module</a>
-, <a class="el" href="de/db0/classhal_1_1Net.html#a6d3751bef8641fc34323e5773ccb4ce4">hal::Net</a>
+: <a class="el" href="classhal_1_1_base_pin.html#a16eadf80d27bfe48d2d667f2180ae960">hal::BasePin&lt; T &gt;</a>
+, <a class="el" href="classhal_1_1_base_plugin_interface.html#a3818f63c15ebe39ad595abddbb471e4a">hal::BasePluginInterface</a>
+, <a class="el" href="classhal_1_1_boolean_influence_plugin.html#a7163b39b267151fe1c3e88af349f3663">hal::BooleanInfluencePlugin</a>
+, <a class="el" href="classhal_1_1_callback_hook_3_01_r_07_arg_types_8_8_8_08_4.html#aad16735f930b339f0515510a2d170741">hal::CallbackHook&lt; R(ArgTypes...)&gt;</a>
+, <a class="el" href="classhal_1_1_gate.html#a55ca16fc3905a6c0cb87a6427189de31">hal::Gate</a>
+, <a class="el" href="classhal_1_1_gate_library.html#aef64b8371779e27c778227552deb3a6d">hal::GateLibrary</a>
+, <a class="el" href="classhal_1_1_gate_type.html#a59bed23ba1e741d00b101660fb7aa2d3">hal::GateType</a>
+, <a class="el" href="classhal_1_1_graph_algorithm_plugin.html#af0c694efa2388d6f404ceaba245f0171">hal::GraphAlgorithmPlugin</a>
+, <a class="el" href="classhal_1_1_grouping.html#a8036479cd8276ae940d4ec370b1e53e3">hal::Grouping</a>
+, <a class="el" href="classhal_1_1_h_g_l_parser_plugin.html#afc61afb516c71527fb563958e607b73b">hal::HGLParserPlugin</a>
+, <a class="el" href="classhal_1_1_h_g_l_writer_plugin.html#a780ecc22304fcb84848b7f403d2fac90">hal::HGLWriterPlugin</a>
+, <a class="el" href="classhal_1_1_liberty_parser_plugin.html#a140e55c46db4d800536bc002c32d4424">hal::LibertyParserPlugin</a>
+, <a class="el" href="classhal_1_1_module.html#a87cf9f30579e5e461f525ab78274e1df">hal::Module</a>
+, <a class="el" href="classhal_1_1_net.html#a4627e0be693c99fece29559be12898bd">hal::Net</a>
+, <a class="el" href="classhal_1_1_pin_group.html#a8154ea02b2ba2a6b571a98a3b762b754">hal::PinGroup&lt; T &gt;</a>
+, <a class="el" href="classhal_1_1plugin__dataflow.html#a902155f58f90aa60c2813cb456333f39">hal::plugin_dataflow</a>
+, <a class="el" href="classhal_1_1_pyi__base.html#a78ed1bb3e292d29c266791fb48b585e4">hal::Pyi_base</a>
+, <a class="el" href="classhal_1_1_solve_fsm_plugin.html#a759508283f1debfa100863a6a2f74d5b">hal::SolveFsmPlugin</a>
+, <a class="el" href="classhal_1_1_verilog_parser_plugin.html#a12de0865e3bc8610c2f7baf6c4eed124">hal::VerilogParserPlugin</a>
+, <a class="el" href="classhal_1_1_verilog_writer_plugin.html#a41b3e8fed5c21333b87acc44ef3cd864">hal::VerilogWriterPlugin</a>
+, <a class="el" href="classhal_1_1_v_h_d_l_parser_plugin.html#a0c7eeff0f216b08f68a809143ae8258c">hal::VHDLParserPlugin</a>
+</li>
+<li>get_neg_state_identifier()
+: <a class="el" href="classhal_1_1_state_component.html#a795d40ea17d8d89425e1c1a0b2b7c0a3">hal::StateComponent</a>
 </li>
 <li>get_net()
-: <a class="el" href="d9/df8/classhal_1_1Endpoint.html#a4eb6a0c6fc8133fb74feebfdf0cd1589">hal::Endpoint</a>
+: <a class="el" href="classhal_1_1_endpoint.html#a4eb6a0c6fc8133fb74feebfdf0cd1589">hal::Endpoint</a>
+, <a class="el" href="classhal_1_1_module_pin.html#aa497fc4ebeadc473687a037e87deedd3">hal::ModulePin</a>
 </li>
 <li>get_net_by_id()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a6648a737ecbcfccdfbf038d5da0a15c8">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#ab5e29819702448bdd0315d3282e2eaae">hal::Netlist</a>
+</li>
+<li>get_net_from()
+: <a class="el" href="classhal_1_1_boolean_function_net_decorator.html#a184623934c0570c3c9443640bac90b12">hal::BooleanFunctionNetDecorator</a>
+</li>
+<li>get_net_id_from()
+: <a class="el" href="classhal_1_1_boolean_function_net_decorator.html#a1a09460ce6c2af3c0026033b07f3181b">hal::BooleanFunctionNetDecorator</a>
+</li>
+<li>get_net_ids()
+: <a class="el" href="classhal_1_1_grouping.html#a524384c5f0299a2bca63564d859f2f45">hal::Grouping</a>
 </li>
 <li>get_netlist()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#ae77f8b10587bddd7b80fe0ab008953e3">hal::Gate</a>
-, <a class="el" href="d1/d10/classhal_1_1Module.html#ab7ad37f7e5b0982c387ec6c33651a25f">hal::Module</a>
-, <a class="el" href="de/db0/classhal_1_1Net.html#a102810d0ac7d3950505b4361616ae243">hal::Net</a>
+: <a class="el" href="classhal_1_1_gate.html#ae77f8b10587bddd7b80fe0ab008953e3">hal::Gate</a>
+, <a class="el" href="classhal_1_1_grouping.html#a3f5d53b665b845c866b0b738804176b3">hal::Grouping</a>
+, <a class="el" href="classhal_1_1_module.html#ab7ad37f7e5b0982c387ec6c33651a25f">hal::Module</a>
+, <a class="el" href="classhal_1_1_net.html#a102810d0ac7d3950505b4361616ae243">hal::Net</a>
+, <a class="el" href="classhal_1_1_project_manager.html#a2f20511e4a9dd1ff2c5fda551db6265d">hal::ProjectManager</a>
+</li>
+<li>get_netlist_filename()
+: <a class="el" href="classhal_1_1_project_manager.html#a7e5824885fc2581ee4f7f13100cf03c3">hal::ProjectManager</a>
 </li>
 <li>get_nets()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a4d39a1ba86bb511dab74dfc6907b2553">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_grouping.html#a2ad367de162bec81f235cbe2d63c7b91">hal::Grouping</a>
+, <a class="el" href="classhal_1_1_module.html#a851b08161b3ec9b5cd24ff7ce42ec436">hal::Module</a>
+, <a class="el" href="classhal_1_1_netlist.html#ac787de6b52a38112735e3ff9bd2b6d17">hal::Netlist</a>
+</li>
+<li>get_next_gate_id()
+: <a class="el" href="classhal_1_1_netlist.html#ad4152742f2e30b4694ffb6b0632e6675">hal::Netlist</a>
+</li>
+<li>get_next_grouping_id()
+: <a class="el" href="classhal_1_1_netlist.html#ad0c4a5818446c1036802ef588bf18d4f">hal::Netlist</a>
+</li>
+<li>get_next_module_id()
+: <a class="el" href="classhal_1_1_netlist.html#a7e2dfd8c4fa7be87c0a307eb643bdd06">hal::Netlist</a>
+</li>
+<li>get_next_net_id()
+: <a class="el" href="classhal_1_1_netlist.html#a730c75bae75323000569ced56870e395">hal::Netlist</a>
+</li>
+<li>get_next_state_function()
+: <a class="el" href="classhal_1_1_f_f_component.html#aac1e7d26f508aaa2e849dc3513b218b3">hal::FFComponent</a>
+</li>
+<li>get_nodes()
+: <a class="el" href="classhal_1_1_boolean_function.html#a9ed2f3d3b5abf93dc89e66ddc796f635">hal::BooleanFunction</a>
 </li>
 <li>get_num_of_destinations()
-: <a class="el" href="de/db0/classhal_1_1Net.html#a64c732bd554df5a840aa5d4ec38eee0a">hal::Net</a>
+: <a class="el" href="classhal_1_1_net.html#a64c732bd554df5a840aa5d4ec38eee0a">hal::Net</a>
 </li>
 <li>get_num_of_sources()
-: <a class="el" href="de/db0/classhal_1_1Net.html#ae13cde7edde05bcd731a564d41e4d58e">hal::Net</a>
+: <a class="el" href="classhal_1_1_net.html#ae13cde7edde05bcd731a564d41e4d58e">hal::Net</a>
+</li>
+<li>get_number_float()
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#ac013af35a21e9387993b19da5b3e0ae2">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+</li>
+<li>get_number_integer()
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#afa338d17c0a7e834c73104258a2c8ced">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+</li>
+<li>get_number_unsigned()
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a56640fb92293e0c17742ca3c814d74d6">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
 <li>get_option_descriptions()
-: <a class="el" href="d5/d2e/classhal_1_1LogManager.html#a6a016672969496755f2f19148f9b30d4">hal::LogManager</a>
+: <a class="el" href="classhal_1_1_log_manager.html#a6a016672969496755f2f19148f9b30d4">hal::LogManager</a>
 </li>
 <li>get_options()
-: <a class="el" href="d3/dfa/classhal_1_1ProgramOptions.html#a90f4f3a1d46824e398c29044f47e6b6a">hal::ProgramOptions</a>
+: <a class="el" href="classhal_1_1_program_options.html#a90f4f3a1d46824e398c29044f47e6b6a">hal::ProgramOptions</a>
 </li>
 <li>get_options_string()
-: <a class="el" href="d3/dfa/classhal_1_1ProgramOptions.html#a34dc05683ea51eaa706c5b0d30c94820">hal::ProgramOptions</a>
+: <a class="el" href="classhal_1_1_program_options.html#a34dc05683ea51eaa706c5b0d30c94820">hal::ProgramOptions</a>
 </li>
 <li>get_original_arguments()
-: <a class="el" href="d8/d68/classhal_1_1ProgramArguments.html#ae22ec854b3e75bdcf330096c4e27f33c">hal::ProgramArguments</a>
-</li>
-<li>get_output_from_init_string_pins()
-: <a class="el" href="d1/d08/classhal_1_1GateTypeLut.html#ad45cc616fec582b1483d6377ac2efb60">hal::GateTypeLut</a>
+: <a class="el" href="classhal_1_1_program_arguments.html#ae22ec854b3e75bdcf330096c4e27f33c">hal::ProgramArguments</a>
 </li>
 <li>get_output_nets()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a627d71947ce21cf9347164eac9a8fe1d">hal::Module</a>
+: <a class="el" href="classhal_1_1_module.html#af5dd20e748f087e213fccedbf73352ff">hal::Module</a>
 </li>
-<li>get_output_pin_groups()
-: <a class="el" href="d1/d05/classhal_1_1GateType.html#a967e319f140b331dd5ef9f3a2e5665fb">hal::GateType</a>
+<li>get_output_pin_names()
+: <a class="el" href="classhal_1_1_gate_type.html#a810edef9bb7ca541d8f18bb61a590ec3">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#af1b6b879995d791edefeb4d73fa5c477">hal::Module</a>
 </li>
 <li>get_output_pins()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#adf0f213a84590849b95adba5756f4f8e">hal::Gate</a>
-, <a class="el" href="d1/d05/classhal_1_1GateType.html#a6187126b28eb574fca729c2418b628c5">hal::GateType</a>
-</li>
-<li>get_output_port_name()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a28bdb54aea5e9b7cd4981f9c187fbc96">hal::Module</a>
-</li>
-<li>get_output_port_names()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a10150aa54cd2364ffdd0b6bdaa40a8aa">hal::Module</a>
-</li>
-<li>get_output_port_net()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a34405b18525a074c4cf8214f359b6d71">hal::Module</a>
+: <a class="el" href="classhal_1_1_gate_type.html#a2ff8c787cda54ece95f10b399abb839a">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#a2076e8076209b704c23cfac1ac3c631f">hal::Module</a>
 </li>
 <li>get_parameter()
-: <a class="el" href="d8/d68/classhal_1_1ProgramArguments.html#adae86e00300f9752b2b4e49c78d574c1">hal::ProgramArguments</a>
+: <a class="el" href="classhal_1_1_base_plugin_interface.html#a54402a70dd64522d0aeaa9b25bdeb5a6">hal::BasePluginInterface</a>
+, <a class="el" href="classhal_1_1plugin__dataflow.html#ab7318a067be15ac671b3e767a16ff90d">hal::plugin_dataflow</a>
+, <a class="el" href="classhal_1_1_program_arguments.html#adae86e00300f9752b2b4e49c78d574c1">hal::ProgramArguments</a>
 </li>
 <li>get_parameters()
-: <a class="el" href="d8/d68/classhal_1_1ProgramArguments.html#adf42b5b38bb00c915850a93a572e8641">hal::ProgramArguments</a>
+: <a class="el" href="classhal_1_1_boolean_function.html#ae795e50021930340bf4ff507827200c5">hal::BooleanFunction</a>
+, <a class="el" href="classhal_1_1_program_arguments.html#adf42b5b38bb00c915850a93a572e8641">hal::ProgramArguments</a>
 </li>
 <li>get_parent_module()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#a1af5f0f3f5ea75b8762d65d5fcfab3e3">hal::Module</a>
+: <a class="el" href="classhal_1_1_module.html#a1af5f0f3f5ea75b8762d65d5fcfab3e3">hal::Module</a>
+</li>
+<li>get_parent_modules()
+: <a class="el" href="classhal_1_1_module.html#ab525a0fe012a8698e6efd36f14c486b8">hal::Module</a>
 </li>
 <li>get_path()
-: <a class="el" href="d7/daf/classhal_1_1GateLibrary.html#a203b238f213e1980b82f796763ea2ac7">hal::GateLibrary</a>
+: <a class="el" href="classhal_1_1_gate_library.html#a203b238f213e1980b82f796763ea2ac7">hal::GateLibrary</a>
 </li>
 <li>get_pin()
-: <a class="el" href="d9/df8/classhal_1_1Endpoint.html#abb701e971149c5bf2eea49c8a1dd9d4d">hal::Endpoint</a>
+: <a class="el" href="classhal_1_1_endpoint.html#a883e6db8e1984bfda94e673662bb4d8e">hal::Endpoint</a>
+</li>
+<li>get_pin_at_index()
+: <a class="el" href="classhal_1_1_pin_group.html#a8bc0a2aba2e179692b98a9527f036cc5">hal::PinGroup&lt; T &gt;</a>
+</li>
+<li>get_pin_by_id()
+: <a class="el" href="classhal_1_1_gate_type.html#a743d3cc769f908b7b3e512fe133079fe">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#a680f1941741b2fba5b8228584dde4ffd">hal::Module</a>
+</li>
+<li>get_pin_by_name()
+: <a class="el" href="classhal_1_1_gate_type.html#a621a17f4711a7e5ad9162332b8ba928a">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#a3b3ff86ad385edeb953255e88dcb68e2">hal::Module</a>
+</li>
+<li>get_pin_by_net()
+: <a class="el" href="classhal_1_1_module.html#ab8cd2075036048e2fb55b1e62828a865">hal::Module</a>
+</li>
+<li>get_pin_group_by_id()
+: <a class="el" href="classhal_1_1_gate_type.html#aa9ab60b81a005e7369da633bd900e2b1">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#ae3b92fb9a9cf888b0350f2fb287cb46a">hal::Module</a>
+</li>
+<li>get_pin_group_by_name()
+: <a class="el" href="classhal_1_1_gate_type.html#ac7b1db42a6c49646563797b75c33ccab">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#a0d7bbd7adac4f233d5f09555b61406b3">hal::Module</a>
+</li>
+<li>get_pin_groups()
+: <a class="el" href="classhal_1_1_gate_type.html#a39939511c6ca20236bba51dd0e5fc2fa">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#acf36f1449ccad8eadd31678f7edcb41a">hal::Module</a>
+</li>
+<li>get_pin_names()
+: <a class="el" href="classhal_1_1_gate_type.html#a307497a9e722f492a1f4f5975fa58017">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#a04c18e9ed3e10612c4e9c6f98b25cd00">hal::Module</a>
+</li>
+<li>get_pins()
+: <a class="el" href="classhal_1_1_gate_type.html#af6bff94f5a30c31508e5690ff647d705">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#a226c897a79cede1793d8a780417cff39">hal::Module</a>
+, <a class="el" href="classhal_1_1_pin_group.html#a3dc360efb49afc0a66597fc1f9845456">hal::PinGroup&lt; T &gt;</a>
+</li>
+<li>get_position()
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#abf5143501435f9f79898c1ff238c2622">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
 <li>get_predecessor()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#ac59ae4de6cdb8ef057245594fa03758e">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a629e2777724153ea0819e11b2a71d970">hal::Gate</a>
+</li>
+<li>get_predecessor_groups_of_group()
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#ad250f8726b429fe14297125e57fbf4aa">hal::dataflow::Grouping</a>
 </li>
 <li>get_predecessors()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#ae9a40e0c855882d3904c7251b2d48996">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a356c25e40e9121a35f479ef1a14d768d">hal::Gate</a>
+</li>
+<li>get_project_directory()
+: <a class="el" href="classhal_1_1_project_manager.html#aa0b4d568444acf0e8ede1bfc5b7175a5">hal::ProjectManager</a>
+</li>
+<li>get_project_status()
+: <a class="el" href="classhal_1_1_project_manager.html#a554f192f625ac931206386efb359989f">hal::ProjectManager</a>
+</li>
+<li>get_properties()
+: <a class="el" href="classhal_1_1_gate_type.html#aee787ccd8405d35e6b09ee56b3119002">hal::GateType</a>
+</li>
+<li>get_ptr()
+: <a class="el" href="classnlohmann_1_1basic__json.html#abefbb319df8ed4f8705b4fd4e4dc731c">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>get_ref()
+: <a class="el" href="classnlohmann_1_1basic__json.html#ac382f3d2bc6a5d52d936e4e40593f03b">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>get_register_stage_intersect_of_group()
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#a710c07f941e5e7084faf8b2926f163c1">hal::dataflow::Grouping</a>
+</li>
+<li>get_relative_file_path()
+: <a class="el" href="classhal_1_1_project_directory.html#a21fb3c3899dab62d526717562c13bd7d">hal::ProjectDirectory</a>
+</li>
+<li>get_reset_signals_of_group()
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#a9edc8f7a4f879e6547b2d0e4ae1387d1">hal::dataflow::Grouping</a>
+</li>
+<li>get_resolved_boolean_function()
+: <a class="el" href="classhal_1_1_gate.html#a204ad3ffdd015cfb74455ba97256c364">hal::Gate</a>
 </li>
 <li>get_set_options()
-: <a class="el" href="d8/d68/classhal_1_1ProgramArguments.html#a0bcc5a5bb672f2123bf36f8f83a92e87">hal::ProgramArguments</a>
+: <a class="el" href="classhal_1_1_program_arguments.html#a0bcc5a5bb672f2123bf36f8f83a92e87">hal::ProgramArguments</a>
 </li>
-<li>get_set_reset_behavior()
-: <a class="el" href="dd/dd1/classhal_1_1GateTypeSequential.html#abac001aae9f1e1b557d2063be9e8d8ae">hal::GateTypeSequential</a>
+<li>get_set_signals_of_group()
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#a727da27cac7a7469a45ff6247a2277c4">hal::dataflow::Grouping</a>
 </li>
-<li>get_source()
-: <a class="el" href="de/db0/classhal_1_1Net.html#a261285edd2702cf3bfcf47a646a55234">hal::Net</a>
+<li>get_shadow_dir()
+: <a class="el" href="classhal_1_1_project_directory.html#af3601b7a6040a9c94cf07fadacce232b">hal::ProjectDirectory</a>
+</li>
+<li>get_shadow_filename()
+: <a class="el" href="classhal_1_1_project_directory.html#ac9cbda73428844614b413450ba1685ff">hal::ProjectDirectory</a>
 </li>
 <li>get_sources()
-: <a class="el" href="de/db0/classhal_1_1Net.html#af62cd3da438ede28f00f3076fd949fac">hal::Net</a>
+: <a class="el" href="classhal_1_1_net.html#af62cd3da438ede28f00f3076fd949fac">hal::Net</a>
 </li>
-<li>get_state_output_pins()
-: <a class="el" href="dd/dd1/classhal_1_1GateTypeSequential.html#ae34e7ba54bb29c56022ea00341869b44">hal::GateTypeSequential</a>
+<li>get_start_index()
+: <a class="el" href="classhal_1_1_pin_group.html#a5bbb113359fab1c8daca42d4ae04f258">hal::PinGroup&lt; T &gt;</a>
+</li>
+<li>get_state_identifier()
+: <a class="el" href="classhal_1_1_state_component.html#a0d67c158fec2a49c54d9105307a721e6">hal::StateComponent</a>
+</li>
+<li>get_string()
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+</li>
+<li>get_strongly_connected_components()
+: <a class="el" href="classhal_1_1_graph_algorithm_plugin.html#a8f5e1e5548d6bcca304ae9943f582e61">hal::GraphAlgorithmPlugin</a>
+</li>
+<li>get_subgraph_function()
+: <a class="el" href="classhal_1_1_subgraph_netlist_decorator.html#a78d92aede2df7af96954115478046601">hal::SubgraphNetlistDecorator</a>
+</li>
+<li>get_submodule_depth()
+: <a class="el" href="classhal_1_1_module.html#a533cbe33380469fe81fcead287efc437">hal::Module</a>
 </li>
 <li>get_submodules()
-: <a class="el" href="d1/d10/classhal_1_1Module.html#af1256fe9a3080693b07d7e657d9a31ba">hal::Module</a>
+: <a class="el" href="classhal_1_1_module.html#af1256fe9a3080693b07d7e657d9a31ba">hal::Module</a>
 </li>
 <li>get_successor()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#aaa02ffdfe2818d4a45af3aae72e2bc63">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#aa5fb025fba52e715cdb47203d31b96c6">hal::Gate</a>
+</li>
+<li>get_successor_groups_of_group()
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#a45a6721004e248f4fceea806d9bd15e9">hal::dataflow::Grouping</a>
 </li>
 <li>get_successors()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a753a06f17fa224adea5887cdb3e7ee5b">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a515a1ba7f4f74ec80bf68856cfa8d2aa">hal::Gate</a>
+</li>
+<li>get_tagname()
+: <a class="el" href="classhal_1_1_plugin_parameter.html#a55b6250af6766a763acf8e390b02c09f">hal::PluginParameter</a>
+</li>
+<li>get_to()
+: <a class="el" href="classnlohmann_1_1basic__json.html#a65753c68f06639eda0d355f919564e01">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>get_token_string()
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+</li>
+<li>get_top_level_node()
+: <a class="el" href="classhal_1_1_boolean_function.html#a432fee6677b88a940fed0d2c83f64a94">hal::BooleanFunction</a>
 </li>
 <li>get_top_module()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a0b4333d865d8813103a495745a30c817">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#a0b4333d865d8813103a495745a30c817">hal::Netlist</a>
 </li>
-<li>get_truth_table()
-: <a class="el" href="d6/d9d/classhal_1_1BooleanFunction.html#a79f7213798c1927842874c8271fba751">hal::BooleanFunction</a>
+<li>get_truth_table_as_string()
+: <a class="el" href="classhal_1_1_boolean_function.html#aa7aa5d0d8b8e9224795db1545880becd">hal::BooleanFunction</a>
 </li>
 <li>get_type()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#aecef7c2206f4e6360a17299e368e08e9">hal::Gate</a>
-, <a class="el" href="d1/d10/classhal_1_1Module.html#af2e1a399775172613cc78fcb2d493e3e">hal::Module</a>
+: <a class="el" href="classhal_1_1_base_pin.html#a304f8de55fe4ace50d1e1593e6f482dc">hal::BasePin&lt; T &gt;</a>
+, <a class="el" href="classhal_1_1_f_f_component.html#af712ce4560686fc8abcb21e2f90feea4">hal::FFComponent</a>
+, <a class="el" href="classhal_1_1_gate.html#a24e1a29c3fc812588acb673c214af128">hal::Gate</a>
+, <a class="el" href="classhal_1_1_gate_type_component.html#a4104ed67b98abffcf8485a42cd49f248">hal::GateTypeComponent</a>
+, <a class="el" href="classhal_1_1_init_component.html#affd26afc5cf0e0108707787afdf2f605">hal::InitComponent</a>
+, <a class="el" href="classhal_1_1_latch_component.html#a43f80ef032c8417aa340d28b1835acd5">hal::LatchComponent</a>
+, <a class="el" href="classhal_1_1_l_u_t_component.html#a7d2a56cb79108b3c044066e1d058ff88">hal::LUTComponent</a>
+, <a class="el" href="classhal_1_1_m_a_c_component.html#ad045c3b171382cf947ab12e19a6f5803">hal::MACComponent</a>
+, <a class="el" href="classhal_1_1_module.html#af2e1a399775172613cc78fcb2d493e3e">hal::Module</a>
+, <a class="el" href="classhal_1_1_pin_group.html#afb124e6d966ea8729c92693af1486960">hal::PinGroup&lt; T &gt;</a>
+, <a class="el" href="classhal_1_1_plugin_parameter.html#a9a972067bce09f2db8d806e48a124f6f">hal::PluginParameter</a>
+, <a class="el" href="classhal_1_1_r_a_m_component.html#a2282d484dbf158076984091ea07226e1">hal::RAMComponent</a>
+, <a class="el" href="classhal_1_1_r_a_m_port_component.html#a509d54ca8c05e19cb59bfae72ee320dc">hal::RAMPortComponent</a>
+, <a class="el" href="classhal_1_1_state_component.html#a33ee505a63fcb2ab8eb8b489c3daa58e">hal::StateComponent</a>
 </li>
 <li>get_unique_gate_id()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a0e33d071f904e7538f927a6a92885057">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#a0e33d071f904e7538f927a6a92885057">hal::Netlist</a>
+</li>
+<li>get_unique_grouping_id()
+: <a class="el" href="classhal_1_1_netlist.html#a1a8945e5b0d05d28b0bb50f1e053e08c">hal::Netlist</a>
 </li>
 <li>get_unique_module_id()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a3b216ae67326e514b53bbb320e65b6ef">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#a3b216ae67326e514b53bbb320e65b6ef">hal::Netlist</a>
 </li>
 <li>get_unique_net_id()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a8ec76f035241fed1fff23fd695484d77">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#a8ec76f035241fed1fff23fd695484d77">hal::Netlist</a>
+</li>
+<li>get_unique_pin_group_id()
+: <a class="el" href="classhal_1_1_gate_type.html#acbbb7759baee7c417c9d57e41c612177">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#af837ceb879943a2d9fcba3a772ca34fa">hal::Module</a>
+</li>
+<li>get_unique_pin_id()
+: <a class="el" href="classhal_1_1_gate_type.html#a921c50d72bb2bcd2a53bc01c211daaef">hal::GateType</a>
+, <a class="el" href="classhal_1_1_module.html#aa38fd600013066b1875324ba0421b4da">hal::Module</a>
 </li>
 <li>get_unique_predecessors()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#a1e2f649da66be0adf8d01eb1fb7c25c7">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a4f68f7de2370c93c085ecc0c9a3cba26">hal::Gate</a>
 </li>
 <li>get_unique_successors()
-: <a class="el" href="d5/d57/classhal_1_1Gate.html#ad2c1ba83932f25cf5370937fd2b13158">hal::Gate</a>
+: <a class="el" href="classhal_1_1_gate.html#a1cc4bd8e5e6b50bcee142d503ce63b5a">hal::Gate</a>
 </li>
 <li>get_unknown_arguments()
-: <a class="el" href="d3/dfa/classhal_1_1ProgramOptions.html#ad7465c2d8b92d4ba7960b08c76fa0c5e">hal::ProgramOptions</a>
+: <a class="el" href="classhal_1_1_program_options.html#ad7465c2d8b92d4ba7960b08c76fa0c5e">hal::ProgramOptions</a>
 </li>
-<li>get_variables()
-: <a class="el" href="d6/d9d/classhal_1_1BooleanFunction.html#ae96a6d2c72af72e5969ced6fed3bccd7">hal::BooleanFunction</a>
+<li>get_used_gate_ids()
+: <a class="el" href="classhal_1_1_netlist.html#a88bc7f3434b6fd4e08a97bccc141e0e2">hal::Netlist</a>
+</li>
+<li>get_used_grouping_ids()
+: <a class="el" href="classhal_1_1_netlist.html#a6263f727eaa5a5c498025aa2abc11176">hal::Netlist</a>
+</li>
+<li>get_used_module_ids()
+: <a class="el" href="classhal_1_1_netlist.html#aa33a445d0c41a8087e36068cf7cf8544">hal::Netlist</a>
+</li>
+<li>get_used_net_ids()
+: <a class="el" href="classhal_1_1_netlist.html#a507df53724c277efd4aacfb512906d82">hal::Netlist</a>
+</li>
+<li>get_value()
+: <a class="el" href="classhal_1_1_plugin_parameter.html#a4899be73d3909de56285f9dd8886219c">hal::PluginParameter</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#ae952990886ca1756229f916661a8af81">nlohmann::detail::primitive_iterator_t</a>
+</li>
+<li>get_variable_name()
+: <a class="el" href="classhal_1_1_boolean_function.html#a3ba7994a1373d72e56be76bd2e8b4d3d">hal::BooleanFunction</a>
+</li>
+<li>get_variable_names()
+: <a class="el" href="classhal_1_1_boolean_function.html#a483a5528c57c0561ee9ec5dacecf41cd">hal::BooleanFunction</a>
 </li>
 <li>get_vcc_gate_types()
-: <a class="el" href="d7/daf/classhal_1_1GateLibrary.html#ab5186e691271b4d42cbd632fd02e3195">hal::GateLibrary</a>
+: <a class="el" href="classhal_1_1_gate_library.html#a4f3f32d464c6cc8bc93704d317e86428">hal::GateLibrary</a>
 </li>
 <li>get_vcc_gates()
-: <a class="el" href="dc/d06/classhal_1_1Netlist.html#a1cb3ca0ff11e42f596f6a4fda2e13a73">hal::Netlist</a>
+: <a class="el" href="classhal_1_1_netlist.html#a6b9524e351ab55d1b6cd6cb27dec707c">hal::Netlist</a>
 </li>
 <li>get_version()
-: <a class="el" href="d5/ddc/classhal_1_1BasePluginInterface.html#ab231f8112b0ed2264498d9c70c03c01a">hal::BasePluginInterface</a>
+: <a class="el" href="classhal_1_1_base_plugin_interface.html#ab231f8112b0ed2264498d9c70c03c01a">hal::BasePluginInterface</a>
+, <a class="el" href="classhal_1_1_boolean_influence_plugin.html#a78a598b6d687a4d8fb170e103d808aff">hal::BooleanInfluencePlugin</a>
+, <a class="el" href="classhal_1_1_graph_algorithm_plugin.html#a48de68f15009493b5ce4e99651a7468d">hal::GraphAlgorithmPlugin</a>
+, <a class="el" href="classhal_1_1_h_g_l_parser_plugin.html#ae3190bd25edfbec86a7a1175cf795a8b">hal::HGLParserPlugin</a>
+, <a class="el" href="classhal_1_1_h_g_l_writer_plugin.html#a632d1d3bbf583d4f1b0d6f1b26411573">hal::HGLWriterPlugin</a>
+, <a class="el" href="classhal_1_1_liberty_parser_plugin.html#af18e57f793c2845d97e1d16f1c3dce0d">hal::LibertyParserPlugin</a>
+, <a class="el" href="classhal_1_1plugin__dataflow.html#a10faf4cad2452bb9bb3562d9245f5283">hal::plugin_dataflow</a>
+, <a class="el" href="classhal_1_1_pyi__base.html#ab71228d46acd8658fdd07540dadce6fb">hal::Pyi_base</a>
+, <a class="el" href="classhal_1_1_solve_fsm_plugin.html#acf756bdee8d038b3d085b85fefd0bf5b">hal::SolveFsmPlugin</a>
+, <a class="el" href="classhal_1_1_verilog_parser_plugin.html#a6cfc976fa374ab2b48b3068d66c1162d">hal::VerilogParserPlugin</a>
+, <a class="el" href="classhal_1_1_verilog_writer_plugin.html#af90f92ec67fa79ed4810f89985a4840a">hal::VerilogWriterPlugin</a>
+, <a class="el" href="classhal_1_1_v_h_d_l_parser_plugin.html#a57cfb438770ef0926ed6c98fea771c72">hal::VHDLParserPlugin</a>
+</li>
+<li>getAbsFilename()
+: <a class="el" href="classhal_1_1_python_code_editor.html#a39a4b5589d3f585f87e874f735def3d8">hal::PythonCodeEditor</a>
+</li>
+<li>getAdditionalData()
+: <a class="el" href="classhal_1_1_tree_item.html#ae11e71000c9c4df105d1987466bcce0a">hal::TreeItem</a>
+</li>
+<li>getBooleanFunction()
+: <a class="el" href="classhal_1_1_boolean_function_entry.html#a8105c9a34884221d43bf9fd9791ee3f6">hal::BooleanFunctionEntry</a>
+</li>
+<li>getChild()
+: <a class="el" href="classhal_1_1_tree_item.html#ad62ea3937ffd1a65c2bba2a8047fef73">hal::TreeItem</a>
+</li>
+<li>getChildCount()
+: <a class="el" href="classhal_1_1_tree_item.html#a7b95172b6276f9ab447ece20854171e5">hal::TreeItem</a>
+</li>
+<li>getChildren()
+: <a class="el" href="classhal_1_1_tree_item.html#a4bb29bed318ae2f584567994b2d9c68d">hal::TreeItem</a>
+</li>
+<li>getCleanContext()
+: <a class="el" href="classhal_1_1_graph_context_manager.html#a6c751ee6b445bf6fbd85068e6623ad9d">hal::GraphContextManager</a>
+</li>
+<li>getColumnCount()
+: <a class="el" href="classhal_1_1_tree_item.html#a625be35ecaa8ed0f2e10f747aec4a0e7">hal::TreeItem</a>
+</li>
+<li>getContext()
+: <a class="el" href="classhal_1_1_context_table_model.html#a210489dfbfe9cbdd92291dd7e1d9f3ce">hal::ContextTableModel</a>
+, <a class="el" href="classhal_1_1_graph_widget.html#a5a6cbeadb67e9674001cd5302e339b56">hal::GraphWidget</a>
+</li>
+<li>getContextByExclusiveModuleId()
+: <a class="el" href="classhal_1_1_graph_context_manager.html#a498710b4eafdb473943a7c62f04d69b2">hal::GraphContextManager</a>
+</li>
+<li>getContextById()
+: <a class="el" href="classhal_1_1_graph_context_manager.html#a3640a87fa70d4cf511cbd5a5a94bede8">hal::GraphContextManager</a>
+</li>
+<li>getContextManagerWidget()
+: <a class="el" href="classhal_1_1_content_manager.html#ade3a4a020043844e16010e466b59a8cd">hal::ContentManager</a>
+</li>
+<li>getContexts()
+: <a class="el" href="classhal_1_1_graph_context_manager.html#aea8a44ab7f0ea8b246d5643ce8b566e3">hal::GraphContextManager</a>
+</li>
+<li>getContextTableModel()
+: <a class="el" href="classhal_1_1_graph_context_manager.html#ae3c067d3f1d75ba89f070df3ddca98dd">hal::GraphContextManager</a>
+</li>
+<li>getCPBehavior()
+: <a class="el" href="classhal_1_1_c_p_behavior_entry.html#a2a975ee0e174945da5934949bc99b528">hal::CPBehaviorEntry</a>
+</li>
+<li>getCurrentCommand()
+: <a class="el" href="classhal_1_1_python_console.html#a61fee6a9b36d7d121f6ca71b49b03f17">hal::PythonConsole</a>
+</li>
+<li>getCurrentContext()
+: <a class="el" href="classhal_1_1_context_manager_widget.html#a5c7c50af9450337f177db146a68a53fb">hal::ContextManagerWidget</a>
+</li>
+<li>getCurrentGateID()
+: <a class="el" href="classhal_1_1_gate_pins_tree_model.html#aa3ffdd002a6b8d7fb89842a2ea8bd7df">hal::GatePinsTreeModel</a>
+</li>
+<li>getCurrentNetID()
+: <a class="el" href="classhal_1_1_endpoint_table_model.html#a6d13ce6d67e967ad6e27b0b2843e97f9">hal::EndpointTableModel</a>
+, <a class="el" href="classhal_1_1_module_table_model.html#ae097de66f202f51463ec4bc9f2fda834">hal::ModuleTableModel</a>
+</li>
+<li>getCurrentText()
+: <a class="el" href="classhal_1_1_searchbar.html#adaee6f5c780da69a3f0cabeb7d9ca7d5">hal::Searchbar</a>
+</li>
+<li>getCurrentTextWithFlags()
+: <a class="el" href="classhal_1_1_searchbar.html#a14b43b9b49c96cecbe55b27756f003ce">hal::Searchbar</a>
+</li>
+<li>getData()
+: <a class="el" href="classhal_1_1_tree_item.html#a594f73a1224b90deb6b57a140a67108e">hal::TreeItem</a>
+</li>
+<li>getDefaultLayouter()
+: <a class="el" href="classhal_1_1_graph_context_manager.html#a8511382723c67d99b7b4d8a0466cd11c">hal::GraphContextManager</a>
+</li>
+<li>getDefaultShader()
+: <a class="el" href="classhal_1_1_graph_context_manager.html#ab8245b83392d4a201c7d727654a56696">hal::GraphContextManager</a>
+</li>
+<li>getDirectory()
+: <a class="el" href="classhal_1_1_python_serializer.html#a4661b2480a64e67fe68fce1749efe896">hal::PythonSerializer</a>
+</li>
+<li>getEmitTextWithFlags()
+: <a class="el" href="classhal_1_1_searchbar.html#ab01ebf92f7d0597e6db933c357892fc4">hal::Searchbar</a>
+</li>
+<li>getEntries()
+: <a class="el" href="classhal_1_1_channel_item.html#ac5ba4527154dd5110ae1362aa9b4d7d2">hal::ChannelItem</a>
+</li>
+<li>getEntryAtRow()
+: <a class="el" href="classhal_1_1_boolean_function_table_model.html#a39e878ab55caeeb3eacd5c628eef89b6">hal::BooleanFunctionTableModel</a>
+, <a class="el" href="classhal_1_1_data_table_model.html#a6a29fd9ff4b3f3332ead63224330667d">hal::DataTableModel</a>
+</li>
+<li>getEntryIdentifier()
+: <a class="el" href="classhal_1_1_boolean_function_table_entry.html#ac9687bd7ce9a4f5c07718b3d740d8720">hal::BooleanFunctionTableEntry</a>
+</li>
+<li>getEntryType()
+: <a class="el" href="classhal_1_1_boolean_function_table_entry.html#a62bf008a183c58d35a0577da635aefc2">hal::BooleanFunctionTableEntry</a>
+</li>
+<li>getEntryValueString()
+: <a class="el" href="classhal_1_1_boolean_function_table_entry.html#a9ba784182ae1ad89ebd6dbb99a32907a">hal::BooleanFunctionTableEntry</a>
+</li>
+<li>getExclusiveModuleId()
+: <a class="el" href="classhal_1_1_graph_context.html#a5836c66d0aeaff5bc88481189735c046">hal::GraphContext</a>
+</li>
+<li>getFilename()
+: <a class="el" href="classhal_1_1_plugin_parameter_file_dialog.html#aa227a0bf05efe3d5cf0045b0cf5352d8">hal::PluginParameterFileDialog</a>
+</li>
+<li>getFindFlags()
+: <a class="el" href="classhal_1_1_python_editor.html#a1b285dd29a7cc8a5def70105ee2f7ce5">hal::PythonEditor</a>
+</li>
+<li>getGatecountFromIndex()
+: <a class="el" href="classhal_1_1_gatelibrary_table_model.html#a2560c1b053e9a1161e4e52c38490dcd2">hal::GatelibraryTableModel</a>
+</li>
+<li>getGateId()
+: <a class="el" href="classhal_1_1_boolean_function_table_entry.html#a20b3a3093fcf9ee2dfea5cf9d02a475d">hal::BooleanFunctionTableEntry</a>
+</li>
+<li>getGateIDFromIndex()
+: <a class="el" href="classhal_1_1_endpoint_table_model.html#a538582fb05b528d5716427a26a1773f3">hal::EndpointTableModel</a>
+</li>
+<li>getGateItem()
+: <a class="el" href="classhal_1_1_graphics_scene.html#a0b402e8f4bd00ddac06c8e6297a99e3b">hal::GraphicsScene</a>
+</li>
+<li>getGraphTabWidget()
+: <a class="el" href="classhal_1_1_content_manager.html#a24cbd3d2dcc3bd6b63b5a71e584a845c">hal::ContentManager</a>
+</li>
+<li>getGroupingEntryAtRow()
+: <a class="el" href="classhal_1_1_groupings_of_item_model.html#a8bc05e62e9ac681f85c91f4562a91f9d">hal::GroupingsOfItemModel</a>
+</li>
+<li>getGroupingManagerWidget()
+: <a class="el" href="classhal_1_1_content_manager.html#a98450da2fb6963ca4c510f86280bb6b8">hal::ContentManager</a>
+</li>
+<li>getHistoryItem()
+: <a class="el" href="classhal_1_1_python_console_history.html#a720587a5ac6d094e2a74e078188bcde6">hal::PythonConsoleHistory</a>
+</li>
+<li>getId()
+: <a class="el" href="classhal_1_1_net_layout_metric.html#a49e5daa88dbd3a01829813edeec5c1bc">hal::NetLayoutMetric</a>
+, <a class="el" href="classhal_1_1_wait_to_be_seated_entry.html#aacc2f6258ee58ad223c001d0855e90fa">hal::WaitToBeSeatedEntry</a>
+</li>
+<li>getIdOfItem()
+: <a class="el" href="classhal_1_1_module_pins_tree_model.html#a539ac19b70990e39ca46695d63adad58">hal::ModulePinsTreeModel</a>
+</li>
+<li>getIndex()
+: <a class="el" href="classhal_1_1_context_table_model.html#aa50c41fbb2e8a3027c6c40a9c6b8b8f3">hal::ContextTableModel</a>
+, <a class="el" href="classhal_1_1_module_model.html#a8cfa0483c12efe5c220a93e126a86a6c">hal::ModuleModel</a>
+</li>
+<li>getIndexFromItem()
+: <a class="el" href="classhal_1_1_base_tree_model.html#aba03bbb5da24d1cbc23bbc34e07458e8">hal::BaseTreeModel</a>
+</li>
+<li>getInputScenePosition()
+: <a class="el" href="classhal_1_1_graphics_node.html#abff0f4f7a3f5ce78c49b666b6569295b">hal::GraphicsNode</a>
+, <a class="el" href="classhal_1_1_standard_graphics_gate.html#aa419f4d8f9788331b2477e759d9ce63e">hal::StandardGraphicsGate</a>
+, <a class="el" href="classhal_1_1_standard_graphics_module.html#ab25be3d0445b0f0e15e6d1e92ca75f7b">hal::StandardGraphicsModule</a>
+</li>
+<li>GetInTouchItem()
+: <a class="el" href="classhal_1_1_get_in_touch_item.html#a4069da2b43a09de51adb6b13ed81cf2e">hal::GetInTouchItem</a>
+</li>
+<li>GetInTouchWidget()
+: <a class="el" href="classhal_1_1_get_in_touch_widget.html#a25e6cbcd27c08366d3170718fde88158">hal::GetInTouchWidget</a>
+</li>
+<li>getItem()
+: <a class="el" href="classhal_1_1_module_model.html#a788da4c0a93921306f941a9a541a2c57">hal::ModuleModel</a>
+</li>
+<li>getItemFromIndex()
+: <a class="el" href="classhal_1_1_base_tree_model.html#a64847c202485e2983e7129a3e641dc76">hal::BaseTreeModel</a>
+</li>
+<li>getItems()
+: <a class="el" href="classhal_1_1_main_settings_list.html#abc7924b7ef507b3660ef0e0b734a8c0f">hal::MainSettingsList</a>
+</li>
+<li>getLayouter()
+: <a class="el" href="classhal_1_1_graph_context.html#ab4ff1193f5bdd31d5863e33832e28c13">hal::GraphContext</a>
+</li>
+<li>getLock()
+: <a class="el" href="classhal_1_1_channel_item.html#ad136a068d1914595ab5347f7df12f2b5">hal::ChannelItem</a>
+</li>
+<li>getModel()
+: <a class="el" href="classhal_1_1_boolean_function_table.html#a5f63b052e473b2a719a825c4aea4ef51">hal::BooleanFunctionTable</a>
+, <a class="el" href="classhal_1_1_data_table_widget.html#adf1a32a36653a6d2f0aaaac52bdc2004">hal::DataTableWidget</a>
+, <a class="el" href="classhal_1_1_grouping_manager_widget.html#a49dd1b299cfac83466bc42c2390a3a89">hal::GroupingManagerWidget</a>
+, <a class="el" href="classhal_1_1_groupings_of_item_widget.html#a5dedc9d4a6587913f07b813622d5b0ae">hal::GroupingsOfItemWidget</a>
+, <a class="el" href="classhal_1_1_l_u_t_table_widget.html#a4c712d7d62133a5e652292835e873b39">hal::LUTTableWidget</a>
+</li>
+<li>getModuleChildrenRecursively()
+: <a class="el" href="classhal_1_1_graph_context.html#afcb936b1fe9ec475adb15019e87a3a91">hal::GraphContext</a>
+</li>
+<li>getModuleColor()
+: <a class="el" href="classhal_1_1_netlist_relay.html#afe4ad79c97e3b5c42c9568e744f2b369">hal::NetlistRelay</a>
+</li>
+<li>getModuleIDFromIndex()
+: <a class="el" href="classhal_1_1_module_table_model.html#ad817538352f1f03293fb8b16b462915c">hal::ModuleTableModel</a>
+</li>
+<li>getModuleItem()
+: <a class="el" href="classhal_1_1_graphics_scene.html#a32b2ef84ef649ad257215ce16a1c36a4">hal::GraphicsScene</a>
+</li>
+<li>getModuleModel()
+: <a class="el" href="classhal_1_1_netlist_relay.html#a8b09fe6aff7f2af5ff9d3da3cd3cc42b">hal::NetlistRelay</a>
+</li>
+<li>getModuleNameFromIndex()
+: <a class="el" href="classhal_1_1_module_table_model.html#a9dfef6b58efa427b38535f9d56f0248e">hal::ModuleTableModel</a>
+</li>
+<li>getModuleWidget()
+: <a class="el" href="classhal_1_1_content_manager.html#aaa5cdc9d9952f66cbf4759a4b8a57026">hal::ContentManager</a>
+</li>
+<li>getNameFromIndex()
+: <a class="el" href="classhal_1_1_gatelibrary_table_model.html#ab09221183284e49de7efcbda1a173abc">hal::GatelibraryTableModel</a>
+</li>
+<li>getNameWithDirtyState()
+: <a class="el" href="classhal_1_1_graph_context.html#ade740c83f6b95b1fe4e6452a4605788e">hal::GraphContext</a>
+</li>
+<li>getNetDestination()
+: <a class="el" href="classhal_1_1_graph_context.html#a6c91ba6077f73370061bb6c8c47e1994">hal::GraphContext</a>
+</li>
+<li>getNetFromItem()
+: <a class="el" href="classhal_1_1_module_pins_tree_model.html#acd7f4eebe8d65247e9330336d845342e">hal::ModulePinsTreeModel</a>
+</li>
+<li>getNetIDsOfTreeItem()
+: <a class="el" href="classhal_1_1_gate_pins_tree_model.html#a25d42b01ef1a01815987c82a7edfb675">hal::GatePinsTreeModel</a>
+</li>
+<li>getNetItem()
+: <a class="el" href="classhal_1_1_graphics_scene.html#a9e234c63034c95b2f3aaf64be8fa1f5f">hal::GraphicsScene</a>
+</li>
+<li>getNetSource()
+: <a class="el" href="classhal_1_1_graph_context.html#a4c2adbdcefa3d2173e9026fdb081e6e6">hal::GraphContext</a>
+</li>
+<li>getNext()
+: <a class="el" href="classhal_1_1_common_successor_predecessor_gate_queue.html#af1ed873badfdb37afdfc50e57e857442">hal::CommonSuccessorPredecessorGateQueue</a>
+</li>
+<li>getNode()
+: <a class="el" href="classhal_1_1_node_box.html#ab41d97e469fda8d0b49340f04f86029c">hal::NodeBox</a>
+, <a class="el" href="classhal_1_1_wait_to_be_seated_entry.html#ae5b6c62e2594fdadf311054f1e49a8c7">hal::WaitToBeSeatedEntry</a>
+</li>
+<li>getNumberOfDisplayedPins()
+: <a class="el" href="classhal_1_1_gate_pins_tree_model.html#ab1d22417527cc80e14c2acbbed9ef6c1">hal::GatePinsTreeModel</a>
+</li>
+<li>getOutputScenePosition()
+: <a class="el" href="classhal_1_1_graphics_node.html#ae1b15135b8307f3afeb701f007ad6758">hal::GraphicsNode</a>
+, <a class="el" href="classhal_1_1_standard_graphics_gate.html#a4d576fc28bfc17b7cd9e871ed62bc935">hal::StandardGraphicsGate</a>
+, <a class="el" href="classhal_1_1_standard_graphics_module.html#a14225cf527302e5a70b644268b4f9075">hal::StandardGraphicsModule</a>
+</li>
+<li>getOwnRow()
+: <a class="el" href="classhal_1_1_tree_item.html#abc0beae8fa878529cc92eb10ae00ab4a">hal::TreeItem</a>
+</li>
+<li>getParent()
+: <a class="el" href="classhal_1_1_tree_item.html#ab0d556f009d08e7a197532e8b1968db8">hal::TreeItem</a>
+</li>
+<li>getParsedAction()
+: <a class="el" href="classhal_1_1_user_action_manager.html#af261864564f37f00c287c03a99d2e22f">hal::UserActionManager</a>
+</li>
+<li>getPinIDFromIndex()
+: <a class="el" href="classhal_1_1_module_table_model.html#a1309381aa2bc38de3014a64687e9c3e0">hal::ModuleTableModel</a>
+</li>
+<li>getPinNameFromIndex()
+: <a class="el" href="classhal_1_1_endpoint_table_model.html#a7318d1f50bcbaf710065a04a08c17aaa">hal::EndpointTableModel</a>
+</li>
+<li>getPlainTextEdit()
+: <a class="el" href="classhal_1_1_logger_widget.html#a9c58d57a85fb7ebe315229168671a934">hal::LoggerWidget</a>
+</li>
+<li>getPortNameFromIndex()
+: <a class="el" href="classhal_1_1_module_table_model.html#acf814276e87e581fa0e5d20a1f9c369f">hal::ModuleTableModel</a>
+</li>
+<li>getPropertyValueByPropType()
+: <a class="el" href="structhal_1_1_data_table_model_1_1_data_entry.html#adc6d69fd258d57b27f152db790feaf07">hal::DataTableModel::DataEntry</a>
+</li>
+<li>getProxyModel()
+: <a class="el" href="classhal_1_1_grouping_manager_widget.html#a85d39ec7dc82b0f3ce1beaa67f8919a5">hal::GroupingManagerWidget</a>
+</li>
+<li>getPythonCode()
+: <a class="el" href="classhal_1_1_boolean_function_entry.html#a2c860557931d5a17fbb00a4ac5318b85">hal::BooleanFunctionEntry</a>
+, <a class="el" href="classhal_1_1_boolean_function_table_entry.html#ac147acde54e284d2ce27a481aca68557">hal::BooleanFunctionTableEntry</a>
+, <a class="el" href="classhal_1_1_f_f_component_entry.html#a4d2ad9b8ef90bfd6144684e3299542b3">hal::FFComponentEntry</a>
+, <a class="el" href="classhal_1_1_latch_component_entry.html#a68bec8bc431cf41b1c95cb69af23d399">hal::LatchComponentEntry</a>
+, <a class="el" href="classhal_1_1_state_component_entry.html#a8f388ffe1615e3a9979d695b4b8b6635">hal::StateComponentEntry</a>
+</li>
+<li>getPythonEditor()
+: <a class="el" href="classhal_1_1_python_editor.html#a42a35c5d68cdef28a5e73cb4ab1d6c96">hal::PythonEditor</a>
+</li>
+<li>getPythonEditorWidget()
+: <a class="el" href="classhal_1_1_content_manager.html#a45ddb1fee415ac5ed73bc62fb112c259">hal::ContentManager</a>
+</li>
+<li>getRelFilename()
+: <a class="el" href="classhal_1_1_python_code_editor.html#afd95d63343cc5c9713a54f5643520cc1">hal::PythonCodeEditor</a>
+</li>
+<li>getRepresentedIdOfItem()
+: <a class="el" href="classhal_1_1_netlist_elements_tree_model.html#a0948a6ab993fcfaad40e0f1b1c61bbdd">hal::NetlistElementsTreeModel</a>
+</li>
+<li>getRepresentedModuleId()
+: <a class="el" href="classhal_1_1_module_pins_tree.html#ab7c6e64a0bf2f12ffc4eb878d434a088">hal::ModulePinsTree</a>
+, <a class="el" href="classhal_1_1_module_pins_tree_model.html#ad7da70a9f921133ff5929e74e124220b">hal::ModulePinsTreeModel</a>
+</li>
+<li>getRootItem()
+: <a class="el" href="classhal_1_1_base_tree_model.html#aea07846e0ffe591e3ce82608ec5c6975">hal::BaseTreeModel</a>
+</li>
+<li>getRowForChild()
+: <a class="el" href="classhal_1_1_tree_item.html#a2c17330c73d141cb82a6bce54a647819">hal::TreeItem</a>
+</li>
+<li>getSelectedGateIds()
+: <a class="el" href="classhal_1_1_gui_api.html#ac27e3a6c9aa66cc9389c6074915fd073">hal::GuiApi</a>
+</li>
+<li>getSelectedGates()
+: <a class="el" href="classhal_1_1_gui_api.html#a390b5c1d6ec24faa716248a175ca2d83">hal::GuiApi</a>
+</li>
+<li>getSelectedGroupId()
+: <a class="el" href="classhal_1_1_pingroup_selector_dialog.html#a5a330dbb04ffccb743eac3d10a741719">hal::PingroupSelectorDialog</a>
+</li>
+<li>getSelectedItemIds()
+: <a class="el" href="classhal_1_1_gui_api.html#ad8ec7690039f4f5ead062b236740e60e">hal::GuiApi</a>
+</li>
+<li>getSelectedItems()
+: <a class="el" href="classhal_1_1_gui_api.html#a1b5162a4ed66e2e30a7a9979db2adbfc">hal::GuiApi</a>
+</li>
+<li>getSelectedModuleIds()
+: <a class="el" href="classhal_1_1_gui_api.html#a32d6254be80fbc1267ab809af5c3425e">hal::GuiApi</a>
+</li>
+<li>getSelectedModules()
+: <a class="el" href="classhal_1_1_gui_api.html#ad2972d459e59dfdc8801d09f5d3ffb0f">hal::GuiApi</a>
+</li>
+<li>getSelectedNetIds()
+: <a class="el" href="classhal_1_1_gui_api.html#a0ad4b380bac2d2f83350a8683eeb4123">hal::GuiApi</a>
+</li>
+<li>getSelectedNets()
+: <a class="el" href="classhal_1_1_gui_api.html#a4d274e1caacf20b07b61d2e16b5cddaa">hal::GuiApi</a>
+</li>
+<li>getSelectionDetailsWidget()
+: <a class="el" href="classhal_1_1_content_manager.html#a28e77316a27e08b40d5f05fe87f67442">hal::ContentManager</a>
+</li>
+<li>getShading()
+: <a class="el" href="classhal_1_1_graph_shader.html#a8edc447a180d18bd35ed60ee170078f9">hal::GraphShader</a>
+</li>
+<li>getSpecialUpdate()
+: <a class="el" href="classhal_1_1_graph_context.html#a71f9ecdd50c82999a2d9d21ac5e78a73">hal::GraphContext</a>
+</li>
+<li>getStateCompType()
+: <a class="el" href="classhal_1_1_state_component_entry.html#a25b0bce41f8cd67e457946530a1e2424">hal::StateComponentEntry</a>
+</li>
+<li>getTabWidget()
+: <a class="el" href="classhal_1_1_python_editor.html#a52630bff23ea464091873b4955e4b3fc">hal::PythonEditor</a>
+</li>
+<li>getTimestamp()
+: <a class="el" href="classhal_1_1_graph_context.html#a8de86725cd7c23dcc355ece981833502">hal::GraphContext</a>
+</li>
+<li>getType()
+: <a class="el" href="classhal_1_1_endpoint_table_model.html#a30203cb5e19e09392b475b1f04d1c3b6">hal::EndpointTableModel</a>
+</li>
+<li>getTypeOfItem()
+: <a class="el" href="classhal_1_1_gate_pins_tree_model.html#aaa98fdf3062e318b8e5c298b3b0b5b6a">hal::GatePinsTreeModel</a>
+, <a class="el" href="classhal_1_1_module_pins_tree_model.html#acdc0e3ba86465a655ac223830b802212">hal::ModulePinsTreeModel</a>
+, <a class="el" href="classhal_1_1_module_tree_model.html#a3e67e475b7e6ad650704d184ad4d8943">hal::ModuleTreeModel</a>
+, <a class="el" href="classhal_1_1_netlist_elements_tree_model.html#a651c09301701fc1ea6b3b90ac10e133a">hal::NetlistElementsTreeModel</a>
+</li>
+<li>getUnsavedChangeDescriptors()
+: <a class="el" href="classhal_1_1_file_status_manager.html#a4060437518086a1d8ddcbfca3d734776">hal::FileStatusManager</a>
+</li>
+<li>getUuid()
+: <a class="el" href="classhal_1_1_python_code_editor.html#a9b96ad8d9bb656172ff8e29f542f709c">hal::PythonCodeEditor</a>
+</li>
+<li>Ghost
+: <a class="el" href="struct_hop___man__t__.html#a5de81756a360556c6b5898c9b6dd29a9">Hop_Man_t_</a>
+</li>
+<li>good()
+: <a class="el" href="classhal_1_1_coordinate_from_data_map.html#a405b728c56780ab3145bb2b45f5724ad">hal::CoordinateFromDataMap</a>
+</li>
+<li>GraphAlgorithmPlugin()
+: <a class="el" href="classhal_1_1_graph_algorithm_plugin.html#a1e3b049baf3b4653ac4e09c4ff823486">hal::GraphAlgorithmPlugin</a>
+</li>
+<li>GraphContext()
+: <a class="el" href="classhal_1_1_graph_context.html#ac5d06178660e25f24c3a5d5e3943ab2e">hal::GraphContext</a>
+</li>
+<li>GraphContextManager
+: <a class="el" href="classhal_1_1_graph_context.html#a86a0cb713ffa26636ccf96114f7566ec">hal::GraphContext</a>
+, <a class="el" href="classhal_1_1_graph_context_manager.html#a93e16d66ee9ac02e0df2ea888749aa9b">hal::GraphContextManager</a>
+</li>
+<li>GraphContextSerializer()
+: <a class="el" href="classhal_1_1_graph_context_serializer.html#a5e87d0d4267dcb1801a07ba1892adde5">hal::GraphContextSerializer</a>
+</li>
+<li>GraphCursor
+: <a class="el" href="classhal_1_1_graph_tab_widget.html#ad16b8bead63eca83f1744a4855b138c5">hal::GraphTabWidget</a>
+</li>
+<li>graphFirst()
+: <a class="el" href="classhal_1_1_net_layout_junction_range.html#ab9d8be52ec8ff57781ddbc2fe7118bf2">hal::NetLayoutJunctionRange</a>
+</li>
+<li>GraphGraphicsView()
+: <a class="el" href="classhal_1_1_graph_graphics_view.html#a6040705fd08416554f02ac93fbfabc3a">hal::GraphGraphicsView</a>
+</li>
+<li>GraphGraphicsViewNeighborSelector()
+: <a class="el" href="classhal_1_1_graph_graphics_view_neighbor_selector.html#a254d7e0f1a56b9842ea3eb7c263aec8f">hal::GraphGraphicsViewNeighborSelector</a>
+</li>
+<li>graphicsFactory()
+: <a class="el" href="classhal_1_1_net_layout_junction_wire_intersection.html#ad17185ac371bc0c92b8e676b7f604a37">hal::NetLayoutJunctionWireIntersection</a>
+, <a class="el" href="classhal_1_1_net_layout_point.html#ac2dbf5b3e524bd8177a3357ead0dc8d9">hal::NetLayoutPoint</a>
+, <a class="el" href="classhal_1_1_net_layout_wire.html#ad6efc8f5959f1edc5e61d9c50d5150ac">hal::NetLayoutWire</a>
+</li>
+<li>GraphicsGate()
+: <a class="el" href="classhal_1_1_graphics_gate.html#a8099a21ce8f6918c8989a35d2ea0df26">hal::GraphicsGate</a>
+</li>
+<li>GraphicsItem()
+: <a class="el" href="classhal_1_1_graphics_item.html#ab8965bbab77c3c96c6fa20a9fa58b7bd">hal::GraphicsItem</a>
+</li>
+<li>GraphicsModule()
+: <a class="el" href="classhal_1_1_graphics_module.html#af6260545f1310deb6d80ac976dd7c552">hal::GraphicsModule</a>
+</li>
+<li>GraphicsNet()
+: <a class="el" href="classhal_1_1_graphics_net.html#a4a277a42c6bdd527a66a8b9fce7b5246">hal::GraphicsNet</a>
+</li>
+<li>GraphicsNode()
+: <a class="el" href="classhal_1_1_graphics_node.html#a5c921c35742c3e920fba18743f7966e7">hal::GraphicsNode</a>
+</li>
+<li>GraphicsQssAdapter()
+: <a class="el" href="classhal_1_1_graphics_qss_adapter.html#a2c0b89cf00a0cbcdc21efac86f5b99ce">hal::GraphicsQssAdapter</a>
+</li>
+<li>GraphicsScene()
+: <a class="el" href="classhal_1_1_graphics_scene.html#af930d22770aeea55abb8fd80779eb4e6">hal::GraphicsScene</a>
+</li>
+<li>graphLast()
+: <a class="el" href="classhal_1_1_net_layout_junction_range.html#a60b9e0eb94f3268551cfee94f7ff291e">hal::NetLayoutJunctionRange</a>
+</li>
+<li>GraphLayouter()
+: <a class="el" href="classhal_1_1_graph_layouter.html#a957fa4c5303f49e601a7906ae653b65d">hal::GraphLayouter</a>
+</li>
+<li>GraphNavigationTableWidget()
+: <a class="el" href="classhal_1_1_graph_navigation_table_widget.html#a9fa157c552d8dd7202ff67e23ff55e49">hal::GraphNavigationTableWidget</a>
+, <a class="el" href="classhal_1_1_graph_navigation_widget.html#a2ab5f61391a00d866fcb6f9ac5183547">hal::GraphNavigationWidget</a>
+</li>
+<li>GraphNavigationTreeWidget()
+: <a class="el" href="classhal_1_1_graph_navigation_tree_widget.html#af7f676328fe0de8fbe8d8251bb5c0ea8">hal::GraphNavigationTreeWidget</a>
+, <a class="el" href="classhal_1_1_graph_navigation_widget.html#a19f4d90bc5f5452e22ff74d595742df9">hal::GraphNavigationWidget</a>
+</li>
+<li>GraphNavigationWidget()
+: <a class="el" href="classhal_1_1_graph_navigation_widget.html#ad3decdc833477ce2b3da627a74d4e0ca">hal::GraphNavigationWidget</a>
+</li>
+<li>GraphShader()
+: <a class="el" href="classhal_1_1_graph_shader.html#a391cabe11542312e52ef1f5fe0752903">hal::GraphShader</a>
+</li>
+<li>GraphTabWidget()
+: <a class="el" href="classhal_1_1_graph_tab_widget.html#ab61c72ede6b9979846078af7f60434d2">hal::GraphTabWidget</a>
+</li>
+<li>GraphWidget
+: <a class="el" href="classhal_1_1_graph_graphics_view.html#a883185841d7deb422d7400dafea4e113">hal::GraphGraphicsView</a>
+, <a class="el" href="classhal_1_1_graph_widget.html#a0421e8059b062ba06f1bb84ea141fdc8">hal::GraphWidget</a>
+</li>
+<li>gridBaseDotColor()
+: <a class="el" href="classhal_1_1_graphics_qss_adapter.html#a34f564cd583502946e37e851e1f25862">hal::GraphicsQssAdapter</a>
+</li>
+<li>gridBaseLineColor
+: <a class="el" href="classhal_1_1_graphics_qss_adapter.html#afff6b69c76ff8bae52a0cc09252c1925">hal::GraphicsQssAdapter</a>
+</li>
+<li>gridClusterDotColor()
+: <a class="el" href="classhal_1_1_graphics_qss_adapter.html#af9aef20d9706f52511bb341144bb4800">hal::GraphicsQssAdapter</a>
+</li>
+<li>gridClusterLineColor
+: <a class="el" href="classhal_1_1_graphics_qss_adapter.html#a93a3f1267b9ea82cf117bf5f9b493b54">hal::GraphicsQssAdapter</a>
+</li>
+<li>gridPoint()
+: <a class="el" href="classhal_1_1_net_layout_point.html#a2ab7b2f0f56f9b57b30cb763ff6437d0">hal::NetLayoutPoint</a>
+</li>
+<li>gridPointByItem()
+: <a class="el" href="classhal_1_1_graph_layouter.html#ac0a09a36d86d794d397d33bc3f2f52cc">hal::GraphLayouter</a>
+</li>
+<li>gridPosition()
+: <a class="el" href="classhal_1_1_node_box.html#ac6c6fde7e4fe21bec776050f6debd747">hal::NodeBox</a>
+</li>
+<li>GridPosition
+: <a class="el" href="classhal_1_1_placement_hint.html#ad09aba494db43e08dc70e4c26b83b8e0a30472caec088342be6e3c336a35fcfbc">hal::PlacementHint</a>
+</li>
+<li>gridPosition()
+: <a class="el" href="classhal_1_1_placement_hint.html#addeee89e239e71feffce0f710595207d">hal::PlacementHint</a>
+</li>
+<li>gridType()
+: <a class="el" href="classhal_1_1_graph_graphics_view.html#a97baf9d89b508f4168006103e2b1c0ba">hal::GraphGraphicsView</a>
+</li>
+<li>GridType
+: <a class="el" href="classhal_1_1_graphics_scene.html#a389c6d75b6d7acbb83523ba1a62637fd">hal::GraphicsScene</a>
+</li>
+<li>gridXposition()
+: <a class="el" href="classhal_1_1_graph_layouter.html#a11adc9ad17bd5cdbcdf7adc8159ed2a9">hal::GraphLayouter</a>
+</li>
+<li>gridYposition()
+: <a class="el" href="classhal_1_1_graph_layouter.html#a6f506de906e016925051225bce07d667">hal::GraphLayouter</a>
+</li>
+<li>group_control_fingerprint_map
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#a0ff5fec8f6a2fcad52be7b847e255d48">hal::dataflow::Grouping</a>
+</li>
+<li>groupId()
+: <a class="el" href="classhal_1_1_grouping_dialog.html#a31b2b5118bf361433c6b0566258d2d39">hal::GroupingDialog</a>
+</li>
+<li>Grouping()
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#a9a7e5b1cd6762b9699e58fa660e4d68e">hal::dataflow::Grouping</a>
+</li>
+<li>grouping()
+: <a class="el" href="classhal_1_1_grouping_table_entry.html#a1eddd594c0671c4b62a71119cd547402">hal::GroupingTableEntry</a>
+</li>
+<li>Grouping
+: <a class="el" href="classhal_1_1_netlist_internal_manager.html#ab61c4d8e4b1799e5578ebdd78701c76c">hal::NetlistInternalManager</a>
+, <a class="el" href="classhal_1_1_user_action_object_type.html#a2de00e63df4cf86816f688fad6754d79a27ddb6799ad5d95abaead6018bd2e1cb">hal::UserActionObjectType</a>
+</li>
+<li>groupingAt()
+: <a class="el" href="classhal_1_1_grouping_table_model.html#aa50b2c643776064e12bf9f97558d63e8">hal::GroupingTableModel</a>
+</li>
+<li>groupingByName()
+: <a class="el" href="classhal_1_1_grouping_table_model.html#a927b652dd8b1a655a4c4df640de9c7e4">hal::GroupingTableModel</a>
+</li>
+<li>groupingColor()
+: <a class="el" href="classhal_1_1_graphics_item.html#ad49d5fe9729b4dee28abf56b0586441e">hal::GraphicsItem</a>
+</li>
+<li>groupingColorChanged()
+: <a class="el" href="classhal_1_1_grouping_table_model.html#a879da62666d443facf2859a323ddba7e">hal::GroupingTableModel</a>
+, <a class="el" href="classhal_1_1_netlist_relay.html#a1386c8a55dee80d82f38269186dfb14a">hal::NetlistRelay</a>
+</li>
+<li>groupingColorChangedEvent()
+: <a class="el" href="classhal_1_1_grouping_table_model.html#a7601827e6ae19b5e088fe5bdce568c36">hal::GroupingTableModel</a>
+</li>
+<li>GroupingColorDelegate()
+: <a class="el" href="classhal_1_1_grouping_color_delegate.html#a2d08686e780e4c5ab121d92147cfade9">hal::GroupingColorDelegate</a>
+</li>
+<li>GroupingColorSerializer()
+: <a class="el" href="classhal_1_1_grouping_color_serializer.html#a5e473115200d62f9971b8cfea59c9995">hal::GroupingColorSerializer</a>
+</li>
+<li>groupingCreated()
+: <a class="el" href="classhal_1_1_netlist_relay.html#a29ada1855be416514d0fa3a4a4cb9e01">hal::NetlistRelay</a>
+</li>
+<li>GroupingDialog()
+: <a class="el" href="classhal_1_1_grouping_dialog.html#a9f48d1fbf9224e3cf024583d73461cfb">hal::GroupingDialog</a>
+</li>
+<li>groupingGateAssigned()
+: <a class="el" href="classhal_1_1_netlist_relay.html#a467d0345f9225e4e7378bdb89122e11e">hal::NetlistRelay</a>
+</li>
+<li>groupingGateRemoved()
+: <a class="el" href="classhal_1_1_netlist_relay.html#af78c105c5f9968ca72b075403a5096e2">hal::NetlistRelay</a>
+</li>
+<li>GroupingManagerWidget()
+: <a class="el" href="classhal_1_1_grouping_manager_widget.html#a21ed1eb13fdf38669b6e9e69ca65acf0">hal::GroupingManagerWidget</a>
+</li>
+<li>groupingModuleAssigned()
+: <a class="el" href="classhal_1_1_netlist_relay.html#a528ce60be4476595ea9c1ae14ced3f4e">hal::NetlistRelay</a>
+</li>
+<li>groupingModuleRemoved()
+: <a class="el" href="classhal_1_1_netlist_relay.html#a5f5cf98606d549502d25620ebf1d501b">hal::NetlistRelay</a>
+</li>
+<li>groupingNameChanged()
+: <a class="el" href="classhal_1_1_netlist_relay.html#aa578cda62756be2eac0bef7e453ddea9">hal::NetlistRelay</a>
+</li>
+<li>groupingNameChangedEvent()
+: <a class="el" href="classhal_1_1_grouping_table_model.html#a92f3a6a6f78ad6b490bfcf435cb8cae1">hal::GroupingTableModel</a>
+</li>
+<li>groupingNames()
+: <a class="el" href="classhal_1_1_grouping_table_model.html#aa9b4e81d1e21622f7373ad73d02be826">hal::GroupingTableModel</a>
+</li>
+<li>groupingNetAssigned()
+: <a class="el" href="classhal_1_1_netlist_relay.html#a9b0774ad6b37baf5a55a2251d94c9758">hal::NetlistRelay</a>
+</li>
+<li>groupingNetRemoved()
+: <a class="el" href="classhal_1_1_netlist_relay.html#ac741f5a71cae24be21934c40b0ec257c">hal::NetlistRelay</a>
+</li>
+<li>GroupingProxyModel()
+: <a class="el" href="classhal_1_1_grouping_proxy_model.html#a4872feac8ad19b87781baff9b2167bef">hal::GroupingProxyModel</a>
+</li>
+<li>groupingRemoved()
+: <a class="el" href="classhal_1_1_netlist_relay.html#a84b5e364e0100c725f32b298cdc85e11">hal::NetlistRelay</a>
+</li>
+<li>groupings
+: <a class="el" href="structhal_1_1dataflow_1_1processing_1_1_result.html#a78ca0e49a8e9209a51123ff789f657fc">hal::dataflow::processing::Result</a>
+</li>
+<li>groupingSelected()
+: <a class="el" href="classhal_1_1_grouping_table_view.html#afa819c0b4723bd0451e4a2ab2541ccba">hal::GroupingTableView</a>
+</li>
+<li>GroupingSerializer()
+: <a class="el" href="classhal_1_1_grouping_serializer.html#ae38a650bce70e44b179d5fc3f9b2800b">hal::GroupingSerializer</a>
+</li>
+<li>GroupingsOfItemModel()
+: <a class="el" href="classhal_1_1_groupings_of_item_model.html#ac4d49d7a65ff019de9757693038bebbd">hal::GroupingsOfItemModel</a>
+</li>
+<li>GroupingsOfItemWidget()
+: <a class="el" href="classhal_1_1_groupings_of_item_widget.html#a11b92486b219ac0edf4a9bfb30daa9ea">hal::GroupingsOfItemWidget</a>
+</li>
+<li>GroupingTableEntry()
+: <a class="el" href="classhal_1_1_grouping_table_entry.html#a37d49df1d50dc47ef28cc039bd29a18a">hal::GroupingTableEntry</a>
+</li>
+<li>GroupingTableModel()
+: <a class="el" href="classhal_1_1_grouping_table_model.html#a361bc539eceb5a6712460cf0522b7897">hal::GroupingTableModel</a>
+</li>
+<li>GroupingTableView()
+: <a class="el" href="classhal_1_1_grouping_table_view.html#a808607d113a3e2633953f4adb6497883">hal::GroupingTableView</a>
+</li>
+<li>groupingUnassignActionFactory()
+: <a class="el" href="classhal_1_1_selection_details_widget.html#ab3e209462aed3084f6482d2c23d9251b">hal::SelectionDetailsWidget</a>
+</li>
+<li>GuiApi()
+: <a class="el" href="classhal_1_1_gui_api.html#a3fff1aea43da474f2b8c62d0e5b8117d">hal::GuiApi</a>
+</li>
+<li>GuiLayoutLocker()
+: <a class="el" href="classhal_1_1dataflow_1_1_gui_layout_locker.html#a52e1b48a294df2d55fafbb43680a1dba">hal::dataflow::GuiLayoutLocker</a>
 </li>
 <li>GUIPluginInterface()
-: <a class="el" href="d6/d19/classhal_1_1GUIPluginInterface.html#a2f70ba1043c75e34c90c0c05b7c52ca9">hal::GUIPluginInterface</a>
+: <a class="el" href="classhal_1_1_g_u_i_plugin_interface.html#a2f70ba1043c75e34c90c0c05b7c52ca9">hal::GUIPluginInterface</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 10 2020 09:52:35 for hal by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sun Dec 4 2022 22:38:04 for HAL by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>
