@@ -48,7 +48,7 @@ var NAVTREE =
         [ "Termination", "md__home_runner_work_hal-fpga-netlist-analyser_hal-fpga-netlist-analyser_plugins_gui_resources_fonts__l_i_c_e_n_s_e.html#autotoc_md17", null ]
       ] ]
     ] ],
-    [ "Dataflow Analysis (DANA)", "md__home_runner_work_hal-fpga-netlist-analyser_hal-fpga-netlist-analyser_plugins_dataflow_analysis__r_e_a_d_m_e.html", [
+    [ "Dataflow Analysis (DANA)(OUTDATED)", "md__home_runner_work_hal-fpga-netlist-analyser_hal-fpga-netlist-analyser_plugins_dataflow_analysis__r_e_a_d_m_e.html", [
       [ "Running the plugin", "md__home_runner_work_hal-fpga-netlist-analyser_hal-fpga-netlist-analyser_plugins_dataflow_analysis__r_e_a_d_m_e.html#autotoc_md44", null ],
       [ "Recreating the paper results", "md__home_runner_work_hal-fpga-netlist-analyser_hal-fpga-netlist-analyser_plugins_dataflow_analysis__r_e_a_d_m_e.html#autotoc_md45", null ],
       [ "Want to create your own pass?", "md__home_runner_work_hal-fpga-netlist-analyser_hal-fpga-netlist-analyser_plugins_dataflow_analysis__r_e_a_d_m_e.html#autotoc_md46", null ],
@@ -118,25 +118,24 @@ var NAVTREEINDEX =
 "classhal_1_1_python_editor.html#a541ea352e19da48118b5efb725445e85",
 "classhal_1_1_searchbar.html#a4df72cab4fd163079e81251f18acb0f1",
 "classhal_1_1_settings_item.html#abad9417ae32535b975f115091ecfcc50",
-"classhal_1_1_svg_icon_engine.html#a37b5d648025d96b9062c0111d314d3ca",
-"classhal_1_1log__gui__sink.html#a3452384d9bbfec21011da245e7c7045e",
-"classnlohmann_1_1detail_1_1input__buffer__adapter.html#ad9b912fabdcb53de255e8c444d625ac3",
-"classnlohmann_1_1detail_1_1serializer.html#ac010525281d97867ee842da37294fe83",
-"details__tab__widget_8cpp.html",
-"dir_edbe19d74f1c19c163f5b6f470c8005d.html",
-"gate__library__writer__manager_8cpp.html#aeb38a092387325d68c65c35876b3ecdf",
-"group__by__successors__predecessors__iteratively_8h.html",
-"json_8hpp.html#a1f0395aad0fe853a4539288749d3a603",
-"liberty__parser_8h.html",
-"namespacemembers_t.html",
-"new__project__dialog_8cpp.html#a691d8699a6b31a63463c65c7daf8a2bd",
-"plugins_2gui_2include_2gui_2doxy__groups_8h_source.html",
-"ram__component_8h_source.html",
-"sort_8h.html#a6b35891fb34a786fd160ec0db4833c12",
-"struct_abc___obj__t__.html#a74bdb0a27577d80b8f0e54002ede540b",
-"structhal_1_1dataflow_1_1_grouping.html#ad250f8726b429fe14297125e57fbf4aa",
-"structsubprocess_1_1environment.html#ab0312deb6952151cece3f4a38d347683",
-"utils_8cpp.html#aa84f04771420e5c67784826253d48901"
+"classhal_1_1_subgraph_netlist_decorator.html#ad134abad3516c0baac414651ff1d24ee",
+"classhal_1_1gui__utility_1_1_numerated_string.html#a73f7b2c67414d878cd4dbdab26d57c60",
+"classnlohmann_1_1detail_1_1input__buffer__adapter.html#a19bb3ff68048a2fc8ecc41a013af37ae",
+"classnlohmann_1_1detail_1_1serializer.html#a5f14c33012477b9f9876dc54d97009a0",
+"dir_48aa5910fdaf6ebf7e0f2983fa64fd1f.html",
+"event__log_8h.html#a6a6b73c923956b16b893065851018de5",
+"geometry_8cpp.html",
+"group__utilities.html#ga522d6d0c8a408128993be37c86656280",
+"json_8hpp.html#a6c274f6db2e65c1b66c7d41b06ad690f",
+"minimap__scrollbar_8h.html",
+"netlist_2gate__library_2gate__library__manager_8cpp.html#a4fa2e4277540de2a0dcd6e9db517ed9b",
+"pin__direction_8h_source.html",
+"python__bindings_2bindings_2boolean__function__net__decorator_8cpp.html",
+"settings__widget__checkbox_8h_source.html",
+"struct_abc___frame__t__.html#a1f424b1cccd4512cb7fd5cff1e487888",
+"structhal_1_1_enum_strings.html#a44cbc4bfbd928916eea91a0a5a0b3225",
+"structnlohmann_1_1detail_1_1internal__iterator.html#a2b3bb45f968210e42c282017eeeb63a8",
+"toolbar_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
