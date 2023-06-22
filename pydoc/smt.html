@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>SMT &mdash; hal_py v2.0.0-3146-g78a9ceb60 documentation</title>
+  <title>SMT &mdash; hal_py v2.0.0-3398-gfdbea579c documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                v2.0.0-3146-g78a9ceb60
+                v2.0.0-3398-gfdbea579c
               </div>
             
           
@@ -102,17 +102,16 @@
 <li class="toctree-l2"><a class="reference internal" href="gate_type_component.html">Gate Type Component</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gate_type_property.html">Gate Type Property</a></li>
 <li class="toctree-l2"><a class="reference internal" href="grouping.html">Grouping</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gui_plugin_interface.html">GUI Plugin Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="module.html">Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="module_pin.html">Module Pin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="module_pin_group.html">Module Pin Group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="net.html">Net</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist.html">Netlist</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_factory.html">Netlist Factory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="netlist_modification_decorator.html">Netlist Modification Decorator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_utils.html">Netlist Utils</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_serializer.html">Netlist Serializer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_writer_manager.html">Netlist Writer Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="path.html">HAL Path</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pin_direction.html">Pin Direction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pin_type.html">Pin Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plugin_manager.html">Plugin Manager</a></li>
@@ -324,6 +323,11 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 </table>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="hal_py.SMT.Model.__hash__">
+<code class="descname">__hash__</code><em class="property"> = None</em><a class="headerlink" href="#hal_py.SMT.Model.__hash__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="method">
 <dt id="hal_py.SMT.Model.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: hal_py.SMT.Model</em>, <em>model: Dict[str</em>, <em>Tuple[int</em>, <em>int]] = {}</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#hal_py.SMT.Model.__init__" title="Permalink to this definition">¶</a></dt>
@@ -489,6 +493,24 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 </dd></dl>
 
 <dl class="method">
+<dt id="hal_py.SMT.QueryConfig.with_call">
+<code class="descname">with_call</code><span class="sig-paren">(</span><em>self: hal_py.SMT.QueryConfig</em>, <em>call: hal::SMT::SolverCall</em><span class="sig-paren">)</span> &#x2192; hal_py.SMT.QueryConfig<a class="headerlink" href="#hal_py.SMT.QueryConfig.with_call" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the call type to the desired target.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>call</strong> (<em>hal_py.SMT.CallTyepe</em>) – The solver type identifier.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The updated SMT query configuration.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#hal_py.SMT.QueryConfig" title="hal_py.SMT.QueryConfig">hal_py.SMT.QueryConfig</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="hal_py.SMT.QueryConfig.with_local_solver">
 <code class="descname">with_local_solver</code><span class="sig-paren">(</span><em>self: hal_py.SMT.QueryConfig</em><span class="sig-paren">)</span> &#x2192; hal_py.SMT.QueryConfig<a class="headerlink" href="#hal_py.SMT.QueryConfig.with_local_solver" title="Permalink to this definition">¶</a></dt>
 <dd><p>Activates local SMT solver execution.</p>
@@ -645,17 +667,23 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 
 <dl class="staticmethod">
 <dt id="hal_py.SMT.Solver.has_local_solver_for">
-<em class="property">static </em><code class="descname">has_local_solver_for</code><span class="sig-paren">(</span><em>type: hal_py.SMT.SolverType</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#hal_py.SMT.Solver.has_local_solver_for" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">has_local_solver_for</code><span class="sig-paren">(</span><em>type: hal_py.SMT.SolverType</em>, <em>call: hal::SMT::SolverCall</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#hal_py.SMT.Solver.has_local_solver_for" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checks whether a SMT solver of the given type is available on the local machine.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type</strong> (<a class="reference internal" href="#hal_py.SMT.SolverType" title="hal_py.SMT.SolverType"><em>hal_py.SMT.SolverType</em></a>) – The SMT solver type.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type</strong> (<a class="reference internal" href="#hal_py.SMT.SolverType" title="hal_py.SMT.SolverType"><em>hal_py.SMT.SolverType</em></a>) – The SMT solver type.</li>
+<li><strong>call</strong> (<em>hal_py.SMT.SolverCall</em>) – The call to the SMT solver.</li>
+</ul>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if an SMT solver of the requested type is available, False otherwise.</td>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">True if an SMT solver of the requested type is available, False otherwise.</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -663,7 +691,7 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 
 <dl class="method">
 <dt id="hal_py.SMT.Solver.query">
-<code class="descname">query</code><span class="sig-paren">(</span><em>self: hal_py.SMT.Solver</em>, <em>config: hal_py.SMT.QueryConfig</em><span class="sig-paren">)</span> &#x2192; Optional[hal_py.SMT.SolverResult]<a class="headerlink" href="#hal_py.SMT.Solver.query" title="Permalink to this definition">¶</a></dt>
+<code class="descname">query</code><span class="sig-paren">(</span><em>self: hal_py.SMT.Solver</em>, <em>config: hal_py.SMT.QueryConfig = &lt;hal_py.SMT.QueryConfig object at 0x7f696116f670&gt;</em><span class="sig-paren">)</span> &#x2192; Optional[hal_py.SMT.SolverResult]<a class="headerlink" href="#hal_py.SMT.Solver.query" title="Permalink to this definition">¶</a></dt>
 <dd><p>Queries an SMT solver with the specified query configuration.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -928,36 +956,33 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 </div></blockquote>
 <dl class="attribute">
 <dt id="hal_py.SMT.SolverResultType.Sat">
-<code class="descname">Sat</code><em class="property"> = SolverResultType.Sat</em><a class="headerlink" href="#hal_py.SMT.SolverResultType.Sat" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Sat</code><em class="property"> = &lt;SolverResultType.Sat: 0&gt;</em><a class="headerlink" href="#hal_py.SMT.SolverResultType.Sat" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
 <dt id="hal_py.SMT.SolverResultType.UnSat">
-<code class="descname">UnSat</code><em class="property"> = SolverResultType.UnSat</em><a class="headerlink" href="#hal_py.SMT.SolverResultType.UnSat" title="Permalink to this definition">¶</a></dt>
+<code class="descname">UnSat</code><em class="property"> = &lt;SolverResultType.UnSat: 1&gt;</em><a class="headerlink" href="#hal_py.SMT.SolverResultType.UnSat" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
 <dt id="hal_py.SMT.SolverResultType.Unknown">
-<code class="descname">Unknown</code><em class="property"> = SolverResultType.Unknown</em><a class="headerlink" href="#hal_py.SMT.SolverResultType.Unknown" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Unknown</code><em class="property"> = &lt;SolverResultType.Unknown: 2&gt;</em><a class="headerlink" href="#hal_py.SMT.SolverResultType.Unknown" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverResultType.__eq__">
-<code class="descname">__eq__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverResultType.__eq__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: object, arg0: object) -&gt; bool</p>
-</dd></dl>
+<code class="descname">__eq__</code><span class="sig-paren">(</span><em>self: object</em>, <em>other: object</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#hal_py.SMT.SolverResultType.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverResultType.__getstate__">
-<code class="descname">__getstate__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverResultType.__getstate__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: object) -&gt; <a href="#id1"><span class="problematic" id="id2">int_</span></a></p>
-</dd></dl>
+<code class="descname">__getstate__</code><span class="sig-paren">(</span><em>self: object</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#hal_py.SMT.SolverResultType.__getstate__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverResultType.__hash__">
-<code class="descname">__hash__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverResultType.__hash__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: object) -&gt; <a href="#id3"><span class="problematic" id="id4">int_</span></a></p>
-</dd></dl>
+<code class="descname">__hash__</code><span class="sig-paren">(</span><em>self: object</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#hal_py.SMT.SolverResultType.__hash__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverResultType.__index__">
@@ -966,7 +991,7 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverResultType.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: hal_py.SMT.SolverResultType</em>, <em>arg0: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#hal_py.SMT.SolverResultType.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: hal_py.SMT.SolverResultType</em>, <em>value: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#hal_py.SMT.SolverResultType.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -976,7 +1001,7 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 
 <dl class="attribute">
 <dt id="hal_py.SMT.SolverResultType.__members__">
-<code class="descname">__members__</code><em class="property"> = {'Sat': SolverResultType.Sat, 'UnSat': SolverResultType.UnSat, 'Unknown': SolverResultType.Unknown}</em><a class="headerlink" href="#hal_py.SMT.SolverResultType.__members__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__members__</code><em class="property"> = {'Sat': &lt;SolverResultType.Sat: 0&gt;, 'UnSat': &lt;SolverResultType.UnSat: 1&gt;, 'Unknown': &lt;SolverResultType.Unknown: 2&gt;}</em><a class="headerlink" href="#hal_py.SMT.SolverResultType.__members__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -986,27 +1011,34 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverResultType.__ne__">
-<code class="descname">__ne__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverResultType.__ne__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: object, arg0: object) -&gt; bool</p>
-</dd></dl>
+<code class="descname">__ne__</code><span class="sig-paren">(</span><em>self: object</em>, <em>other: object</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#hal_py.SMT.SolverResultType.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverResultType.__repr__">
-<code class="descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverResultType.__repr__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: handle) -&gt; str</p>
-</dd></dl>
+<code class="descname">__repr__</code><span class="sig-paren">(</span><em>self: object</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#hal_py.SMT.SolverResultType.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverResultType.__setstate__">
-<code class="descname">__setstate__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverResultType.__setstate__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: hal_py.SMT.SolverResultType, arg0: int) -&gt; None</p>
+<code class="descname">__setstate__</code><span class="sig-paren">(</span><em>self: hal_py.SMT.SolverResultType</em>, <em>state: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#hal_py.SMT.SolverResultType.__setstate__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="hal_py.SMT.SolverResultType.__str__">
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverResultType.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>name(self: handle) -&gt; str</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="hal_py.SMT.SolverResultType.name">
 <code class="descname">name</code><a class="headerlink" href="#hal_py.SMT.SolverResultType.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: handle) -&gt; str</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hal_py.SMT.SolverResultType.value">
+<code class="descname">value</code><a class="headerlink" href="#hal_py.SMT.SolverResultType.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
@@ -1023,36 +1055,33 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 </div></blockquote>
 <dl class="attribute">
 <dt id="hal_py.SMT.SolverType.Boolector">
-<code class="descname">Boolector</code><em class="property"> = SolverType.Boolector</em><a class="headerlink" href="#hal_py.SMT.SolverType.Boolector" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Boolector</code><em class="property"> = &lt;SolverType.Boolector: 1&gt;</em><a class="headerlink" href="#hal_py.SMT.SolverType.Boolector" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
 <dt id="hal_py.SMT.SolverType.Unknown">
-<code class="descname">Unknown</code><em class="property"> = SolverType.Unknown</em><a class="headerlink" href="#hal_py.SMT.SolverType.Unknown" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Unknown</code><em class="property"> = &lt;SolverType.Unknown: 3&gt;</em><a class="headerlink" href="#hal_py.SMT.SolverType.Unknown" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
 <dt id="hal_py.SMT.SolverType.Z3">
-<code class="descname">Z3</code><em class="property"> = SolverType.Z3</em><a class="headerlink" href="#hal_py.SMT.SolverType.Z3" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Z3</code><em class="property"> = &lt;SolverType.Z3: 0&gt;</em><a class="headerlink" href="#hal_py.SMT.SolverType.Z3" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverType.__eq__">
-<code class="descname">__eq__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverType.__eq__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: object, arg0: object) -&gt; bool</p>
-</dd></dl>
+<code class="descname">__eq__</code><span class="sig-paren">(</span><em>self: object</em>, <em>other: object</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#hal_py.SMT.SolverType.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverType.__getstate__">
-<code class="descname">__getstate__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverType.__getstate__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: object) -&gt; <a href="#id5"><span class="problematic" id="id6">int_</span></a></p>
-</dd></dl>
+<code class="descname">__getstate__</code><span class="sig-paren">(</span><em>self: object</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#hal_py.SMT.SolverType.__getstate__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverType.__hash__">
-<code class="descname">__hash__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverType.__hash__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: object) -&gt; <a href="#id7"><span class="problematic" id="id8">int_</span></a></p>
-</dd></dl>
+<code class="descname">__hash__</code><span class="sig-paren">(</span><em>self: object</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#hal_py.SMT.SolverType.__hash__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverType.__index__">
@@ -1061,7 +1090,7 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverType.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: hal_py.SMT.SolverType</em>, <em>arg0: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#hal_py.SMT.SolverType.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: hal_py.SMT.SolverType</em>, <em>value: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#hal_py.SMT.SolverType.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1071,7 +1100,7 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 
 <dl class="attribute">
 <dt id="hal_py.SMT.SolverType.__members__">
-<code class="descname">__members__</code><em class="property"> = {'Boolector': SolverType.Boolector, 'Unknown': SolverType.Unknown, 'Z3': SolverType.Z3}</em><a class="headerlink" href="#hal_py.SMT.SolverType.__members__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__members__</code><em class="property"> = {'Boolector': &lt;SolverType.Boolector: 1&gt;, 'Unknown': &lt;SolverType.Unknown: 3&gt;, 'Z3': &lt;SolverType.Z3: 0&gt;}</em><a class="headerlink" href="#hal_py.SMT.SolverType.__members__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -1081,27 +1110,34 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverType.__ne__">
-<code class="descname">__ne__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverType.__ne__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: object, arg0: object) -&gt; bool</p>
-</dd></dl>
+<code class="descname">__ne__</code><span class="sig-paren">(</span><em>self: object</em>, <em>other: object</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#hal_py.SMT.SolverType.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverType.__repr__">
-<code class="descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverType.__repr__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: handle) -&gt; str</p>
-</dd></dl>
+<code class="descname">__repr__</code><span class="sig-paren">(</span><em>self: object</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#hal_py.SMT.SolverType.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="hal_py.SMT.SolverType.__setstate__">
-<code class="descname">__setstate__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverType.__setstate__" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: hal_py.SMT.SolverType, arg0: int) -&gt; None</p>
+<code class="descname">__setstate__</code><span class="sig-paren">(</span><em>self: hal_py.SMT.SolverType</em>, <em>state: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#hal_py.SMT.SolverType.__setstate__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="hal_py.SMT.SolverType.__str__">
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SMT.SolverType.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>name(self: handle) -&gt; str</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="hal_py.SMT.SolverType.name">
 <code class="descname">name</code><a class="headerlink" href="#hal_py.SMT.SolverType.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>(self: handle) -&gt; str</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hal_py.SMT.SolverType.value">
+<code class="descname">value</code><a class="headerlink" href="#hal_py.SMT.SolverType.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
@@ -1271,7 +1307,7 @@ A constraint is either an assignment of two Boolean functions or a single Boolea
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Marc Fyrbiak, Sebastian Wallat, Max Hoffmann
+        &copy; Copyright 2023, Marc Fyrbiak, Sebastian Wallat, Max Hoffmann
 
     </p>
   </div>

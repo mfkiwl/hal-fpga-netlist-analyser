@@ -11,7 +11,8 @@ var classhal_1_1_boolean_function =
     [ "compute_truth_table", "classhal_1_1_boolean_function.html#a82b25ca0db0c82125812f6c93ce50586", null ],
     [ "evaluate", "classhal_1_1_boolean_function.html#a9c6fc7fe1f2b26af605eedad74dd06f0", null ],
     [ "evaluate", "classhal_1_1_boolean_function.html#a8780c328ce092a458df30d3fb4ceb76c", null ],
-    [ "get_constant_value", "classhal_1_1_boolean_function.html#ab5dcf3d2880965e2b490e65e928e7d76", null ],
+    [ "get_constant_value", "classhal_1_1_boolean_function.html#a4ee676327286829f09fe28b80d4fcf53", null ],
+    [ "get_constant_value_u64", "classhal_1_1_boolean_function.html#aedca6490a5318ecc24b64e9d0753568d", null ],
     [ "get_index_value", "classhal_1_1_boolean_function.html#ae82bd4f2ea64aebeffa83c22a1512ee9", null ],
     [ "get_nodes", "classhal_1_1_boolean_function.html#a9ed2f3d3b5abf93dc89e66ddc796f635", null ],
     [ "get_parameters", "classhal_1_1_boolean_function.html#ae795e50021930340bf4ff507827200c5", null ],
@@ -19,6 +20,7 @@ var classhal_1_1_boolean_function =
     [ "get_truth_table_as_string", "classhal_1_1_boolean_function.html#aa7aa5d0d8b8e9224795db1545880becd", null ],
     [ "get_variable_name", "classhal_1_1_boolean_function.html#a3ba7994a1373d72e56be76bd2e8b4d3d", null ],
     [ "get_variable_names", "classhal_1_1_boolean_function.html#a483a5528c57c0561ee9ec5dacecf41cd", null ],
+    [ "has_constant_value", "classhal_1_1_boolean_function.html#a4e4fcd20a4cf6c5bf096d8eb26bc6e22", null ],
     [ "has_constant_value", "classhal_1_1_boolean_function.html#a61f8794b299f01d101d07bc3dee80990", null ],
     [ "has_index_value", "classhal_1_1_boolean_function.html#a0a9cb3f9d4ab694df2ee1a3fd3a997b5", null ],
     [ "has_variable_name", "classhal_1_1_boolean_function.html#a5602e429bdcfaf2e1edd906c905b9491", null ],
@@ -48,10 +50,11 @@ var classhal_1_1_boolean_function =
     [ "simplify_local", "classhal_1_1_boolean_function.html#acce561ac2183c0f586284e7580b410a4", null ],
     [ "size", "classhal_1_1_boolean_function.html#af98903ba34ce51e73df303318996d4ea", null ],
     [ "substitute", "classhal_1_1_boolean_function.html#a4074a3313f582aa925e783d633b86d90", null ],
+    [ "substitute", "classhal_1_1_boolean_function.html#a710893df5a2372be84ea4576de9e3e6b", null ],
     [ "substitute", "classhal_1_1_boolean_function.html#ae9242e7d969fc9b6eb402fc5c2386153", null ],
     [ "substitute", "classhal_1_1_boolean_function.html#a535e68b32ac7bfd72cd9c166699e5138", null ],
     [ "to_string", "classhal_1_1_boolean_function.html#a4d7c7ffa15944b4caf6e33571875a204", null ],
     [ "to_z3", "classhal_1_1_boolean_function.html#a7fc879a01fcd059435970f03e683043f", null ],
     [ "operator<<", "classhal_1_1_boolean_function.html#ac651e5f78d6e546f8784837138d907f2", null ],
-    [ "operator<<", "classhal_1_1_boolean_function.html#af5813a174ba173de1cbb683a7c7d27a9", null ]
+    [ "operator<<", "classhal_1_1_boolean_function.html#a4a6cae5fe393faf096cc8e4293efacd8", null ]
 ];

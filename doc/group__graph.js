@@ -36,7 +36,8 @@ var group__graph =
       [ "Q_ENUM", "classhal_1_1_graph_tab_widget.html#aa23e76064fd2fd357952898d557bea58", null ],
       [ "setSelectCursor", "classhal_1_1_graph_tab_widget.html#a7bcecd90f97068b9db647d4adc51ea92", null ],
       [ "showContext", "classhal_1_1_graph_tab_widget.html#aa18b4eee005357a3cf24788fb67c094e", null ],
-      [ "triggerTerminatePicker", "classhal_1_1_graph_tab_widget.html#ad1cf168615f1f0daba9e1372c18d358a", null ]
+      [ "triggerTerminatePicker", "classhal_1_1_graph_tab_widget.html#ad1cf168615f1f0daba9e1372c18d358a", null ],
+      [ "visibleStatus", "classhal_1_1_graph_tab_widget.html#a634930b6af92ef9cefe60c7c3cae55f0", null ]
     ] ],
     [ "GraphNavigationTableWidget", "classhal_1_1_graph_navigation_table_widget.html", [
       [ "GraphNavigationTableWidget", "classhal_1_1_graph_navigation_table_widget.html#a9fa157c552d8dd7202ff67e23ff55e49", null ],
@@ -56,12 +57,12 @@ var group__graph =
       [ "handleSceneUnavailable", "classhal_1_1_graph_widget.html#a260b8bb8b05a3920fd4784f58a59eb56", null ],
       [ "keyPressEvent", "classhal_1_1_graph_widget.html#a2423cbb2324d143cccd840382a88559e", null ],
       [ "showBusy", "classhal_1_1_graph_widget.html#a4c5b9b75b65cc63dafc031a4bf0222bb", null ],
+      [ "showComments", "classhal_1_1_graph_widget.html#ad063e02b7663021628287fd56f39e662", null ],
       [ "showProgress", "classhal_1_1_graph_widget.html#a782b0dd809b860e2563b88f4a8c021db", null ],
       [ "storeViewport", "classhal_1_1_graph_widget.html#aa095d87d96b9269e98e8e38006cbb670", null ],
       [ "view", "classhal_1_1_graph_widget.html#ac922c09975a0de4105b344addd4eff2b", null ]
     ] ],
     [ "GraphicsQssAdapter", "classhal_1_1_graphics_qss_adapter.html", [
-      [ "GraphicsQssAdapter", "classhal_1_1_graphics_qss_adapter.html#a2c0b89cf00a0cbcdc21efac86f5b99ce", null ],
       [ "gateBaseColor", "classhal_1_1_graphics_qss_adapter.html#af23f242182033964e9a2f76a9674cc39", null ],
       [ "gateNameFont", "classhal_1_1_graphics_qss_adapter.html#ae1f9e1156f2df96141eb02690279fa2e", null ],
       [ "gatePinFont", "classhal_1_1_graphics_qss_adapter.html#a7da6ae5f136c602258eec37192eabaae", null ],
@@ -74,12 +75,16 @@ var group__graph =
       [ "netBaseColor", "classhal_1_1_graphics_qss_adapter.html#ac46967ceb5a3e7f089b988f54d3de7f1", null ],
       [ "netFont", "classhal_1_1_graphics_qss_adapter.html#a840696762827a0bd6289cd19f74aea38", null ],
       [ "netSelectionColor", "classhal_1_1_graphics_qss_adapter.html#a0b6c95c14edf4cb2b20ddb5d010f15b7", null ],
+      [ "nodeBackgroundColor", "classhal_1_1_graphics_qss_adapter.html#a4a9278e87a484f9776df19a922c0c170", null ],
+      [ "nodeTextColor", "classhal_1_1_graphics_qss_adapter.html#a968a977d147bc5732156d59c31a699bb", null ],
       [ "repolish", "classhal_1_1_graphics_qss_adapter.html#a9fc79f709722e2ecf79aea2eaf79b3a5", null ],
       [ "setGateBaseColor", "classhal_1_1_graphics_qss_adapter.html#a63698dd9ed2d26b3b03d576a9f822484", null ],
       [ "setGateNameFont", "classhal_1_1_graphics_qss_adapter.html#a30ddabcd745ff7427df012e054088fe9", null ],
       [ "setGatePinFont", "classhal_1_1_graphics_qss_adapter.html#aff64bb5551e9b5e87d0ba8a07a7dd6b0", null ],
       [ "setGateSelectionColor", "classhal_1_1_graphics_qss_adapter.html#a34502eab889f353ec6fd0239c513d6a7", null ],
       [ "setGateTypeFont", "classhal_1_1_graphics_qss_adapter.html#af30957ee9b344006c35ac5cbe5962d5e", null ],
+      [ "setGridAlpha", "classhal_1_1_graphics_qss_adapter.html#a5f2746a0f1eb696ce328d5e99174fe9f", null ],
+      [ "setGridAlphaF", "classhal_1_1_graphics_qss_adapter.html#afd9ed0f08f1459ee30ff826ccecf7d2b", null ],
       [ "setGridBaseDotColor", "classhal_1_1_graphics_qss_adapter.html#afdb3bdfd4069eec4f89edbbcdb173d9c", null ],
       [ "setGridBaseLineColor", "classhal_1_1_graphics_qss_adapter.html#af282b7a56ebce29e981d608e2fd4015e", null ],
       [ "setGridClusterDotColor", "classhal_1_1_graphics_qss_adapter.html#a985d8b975fa2f7ffe211fb20a79491c7", null ],
@@ -87,6 +92,8 @@ var group__graph =
       [ "setNetBaseColor", "classhal_1_1_graphics_qss_adapter.html#a1734bffac18cf28db5bbfc55b632fbfb", null ],
       [ "setNetFont", "classhal_1_1_graphics_qss_adapter.html#a389ae6a8b275e8c38502fcd8324f455a", null ],
       [ "setNetSelectionColor", "classhal_1_1_graphics_qss_adapter.html#a3f99f5c0357302eccc361324447c8fb7", null ],
+      [ "setNodeBackgroundColor", "classhal_1_1_graphics_qss_adapter.html#a254724494d4a8805b6a2c100c4fcb751", null ],
+      [ "setNodeTextColor", "classhal_1_1_graphics_qss_adapter.html#ad5aa7aca391858ecb84ec57ee1d4e6ef", null ],
       [ "gateBaseColor", "classhal_1_1_graphics_qss_adapter.html#a06ae39054b47c0a44a7e69e0245d5265", null ],
       [ "gateNameFont", "classhal_1_1_graphics_qss_adapter.html#aa0870b481502c8f744944b0f848d36e4", null ],
       [ "gatePinFont", "classhal_1_1_graphics_qss_adapter.html#ade8e16418e0c0cb14366b7f6c7040511", null ],
@@ -98,7 +105,9 @@ var group__graph =
       [ "gridClusterLineColor", "classhal_1_1_graphics_qss_adapter.html#a93a3f1267b9ea82cf117bf5f9b493b54", null ],
       [ "netBaseColor", "classhal_1_1_graphics_qss_adapter.html#a0f7dd9ccd5b2c42ed368dc08ed9df62d", null ],
       [ "netFont", "classhal_1_1_graphics_qss_adapter.html#a4f6fbcf00413fa5a65bab7d382e5570d", null ],
-      [ "netSelectionColor", "classhal_1_1_graphics_qss_adapter.html#ad6915173753e91896d2e3a09036faba1", null ]
+      [ "netSelectionColor", "classhal_1_1_graphics_qss_adapter.html#ad6915173753e91896d2e3a09036faba1", null ],
+      [ "nodeBackgroundColor", "classhal_1_1_graphics_qss_adapter.html#a0e6fc9980c06fd6a728fe85c3b04e66e", null ],
+      [ "nodeTextColor", "classhal_1_1_graphics_qss_adapter.html#a72a5de94bdbe01b7560b6b3f4760ea28", null ]
     ] ],
     [ "GraphicsScene", "classhal_1_1_graphics_scene.html", [
       [ "GridType", "classhal_1_1_graphics_scene.html#a389c6d75b6d7acbb83523ba1a62637fd", [
@@ -127,8 +136,9 @@ var group__graph =
       [ "mousePressEvent", "classhal_1_1_graphics_scene.html#a058a592f0c567866e683fdf8589d21de", null ],
       [ "moveDragShadow", "classhal_1_1_graphics_scene.html#a04cdbbdaa8326691ee44e4ccc4fd6b31", null ],
       [ "moveNetsToBackground", "classhal_1_1_graphics_scene.html#af1b953794af7656ee478baa25e4e4896", null ],
-      [ "Q_ENUM", "classhal_1_1_graphics_scene.html#ab7af236447623273e52e79be5c8b4af3", null ],
+      [ "Q_ENUM", "classhal_1_1_graphics_scene.html#a57b158b86bf8ede19567c8be7116d75d", null ],
       [ "removeGraphItem", "classhal_1_1_graphics_scene.html#a0366a0f81bab584cfc078c39658bba76", null ],
+      [ "setMousePressed", "classhal_1_1_graphics_scene.html#a24e241c8c1cb88963a01fd4d60a86cb0", null ],
       [ "startDragShadow", "classhal_1_1_graphics_scene.html#a0026dfd9d3d4be7b031f10bf0f111482", null ],
       [ "stopDragShadow", "classhal_1_1_graphics_scene.html#ad3ed269a30d6af98604003dfddebc574", null ],
       [ "updateAllItems", "classhal_1_1_graphics_scene.html#a67b93e8efb90c600b222f438f040e066", null ],

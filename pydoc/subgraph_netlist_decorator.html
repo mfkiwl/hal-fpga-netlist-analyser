@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Subgraph Netlist Decorator &mdash; hal_py v2.0.0-3146-g78a9ceb60 documentation</title>
+  <title>Subgraph Netlist Decorator &mdash; hal_py v2.0.0-3398-gfdbea579c documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                v2.0.0-3146-g78a9ceb60
+                v2.0.0-3398-gfdbea579c
               </div>
             
           
@@ -102,17 +102,16 @@
 <li class="toctree-l2"><a class="reference internal" href="gate_type_component.html">Gate Type Component</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gate_type_property.html">Gate Type Property</a></li>
 <li class="toctree-l2"><a class="reference internal" href="grouping.html">Grouping</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gui_plugin_interface.html">GUI Plugin Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="module.html">Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="module_pin.html">Module Pin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="module_pin_group.html">Module Pin Group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="net.html">Net</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist.html">Netlist</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_factory.html">Netlist Factory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="netlist_modification_decorator.html">Netlist Modification Decorator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_utils.html">Netlist Utils</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_serializer.html">Netlist Serializer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_writer_manager.html">Netlist Writer Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="path.html">HAL Path</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pin_direction.html">Pin Direction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pin_type.html">Pin Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plugin_manager.html">Plugin Manager</a></li>
@@ -194,6 +193,20 @@
 <dt id="hal_py.SubgraphNetlistDecorator">
 <em class="property">class </em><code class="descclassname">hal_py.</code><code class="descname">SubgraphNetlistDecorator</code><a class="headerlink" href="#hal_py.SubgraphNetlistDecorator" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="method">
+<dt id="hal_py.SubgraphNetlistDecorator.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: hal_py.SubgraphNetlistDecorator</em>, <em>netlist: hal_py.Netlist</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#hal_py.SubgraphNetlistDecorator.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct new SubgraphNetlistDecorator object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>netlist</strong> (<a class="reference internal" href="netlist.html#hal_py.Netlist" title="hal_py.Netlist"><em>hal_py.Netlist</em></a>) – The netlist to operate on.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="hal_py.SubgraphNetlistDecorator.copy_subgraph_netlist">
 <code class="descname">copy_subgraph_netlist</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SubgraphNetlistDecorator.copy_subgraph_netlist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
@@ -329,6 +342,46 @@ The variables of the resulting Boolean function are created from the subgraph in
 </ol>
 </dd></dl>
 
+<dl class="method">
+<dt id="hal_py.SubgraphNetlistDecorator.get_subgraph_function_inputs">
+<code class="descname">get_subgraph_function_inputs</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#hal_py.SubgraphNetlistDecorator.get_subgraph_function_inputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p class="first">get_subgraph_function_inputs(self: hal_py.SubgraphNetlistDecorator, subgraph_gates: List[hal_py.Gate], subgraph_output: hal_py.Net) -&gt; Optional[Set[hal_py.Net]]</p>
+<blockquote>
+<div><p>Get the inputs of the combined Boolean function of a subgraph of combinational gates starting at the source of the provided subgraph output net.
+This does not actually build the boolean function but only determines the inputs the subgraph function would have, which is a lot faster.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">param list[hal_py.Gate] subgraph_gates:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">The subgraph_gates making up the subgraph to consider.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">param hal_py.Net subgraph_output:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">The subgraph oputput net from which to start the back propagation from.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">returns:</th><td class="field-body">The input nets that would be the input for the subgraph function</td>
+</tr>
+<tr class="field-even field"><th class="field-name">rtype:</th><td class="field-body">set(hal_py.Net) or None</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+<li><p class="first">get_subgraph_function_inputs(self: hal_py.SubgraphNetlistDecorator, subgraph_module: hal_py.Module, subgraph_output: hal_py.Net) -&gt; Optional[Set[hal_py.Net]]</p>
+<blockquote>
+<div><p>Get the inputs of the combined Boolean function of a subgraph of combinational gates starting at the source of the provided subgraph output net.
+This does not actually build the boolean function but only determines the inputs the subgraph function would have, which is a lot faster.</p>
+<p>:param hal_py.Module subgraph_module:The module making up the subgraph to consider.
+:param hal_py.Net subgraph_output: The subgraph oputput net from which to start the back propagation from.
+:returns: The input nets that would be the input for the subgraph function
+:rtype: set(hal_py.Net) or None</p>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -353,7 +406,7 @@ The variables of the resulting Boolean function are created from the subgraph in
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Marc Fyrbiak, Sebastian Wallat, Max Hoffmann
+        &copy; Copyright 2023, Marc Fyrbiak, Sebastian Wallat, Max Hoffmann
 
     </p>
   </div>

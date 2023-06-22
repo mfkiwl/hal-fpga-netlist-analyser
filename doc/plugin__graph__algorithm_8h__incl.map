@@ -1,11 +1,10 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/graph_algorithm/include/graph_algorithm/plugin_graph_algorithm.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/graph_algorithm/include/graph_algorithm/plugin_graph_algorithm.h">
-<area shape="rect" id="node1" title=" " alt="" coords="313,5,548,105"/>
-<area shape="rect" id="node2" href="$plugin__interface__base_8h.html" title=" " alt="" coords="253,153,435,195"/>
-<area shape="rect" id="node9" title=" " alt="" coords="459,161,579,187"/>
-<area shape="rect" id="node3" href="$defines_8h.html" title=" " alt="" coords="45,332,185,359"/>
-<area shape="rect" id="node4" href="$include_2hal__core_2netlist_2netlist_8h.html" title=" " alt="" coords="25,250,204,277"/>
-<area shape="rect" id="node5" title=" " alt="" coords="315,332,373,359"/>
-<area shape="rect" id="node6" href="$plugin__parameter_8h.html" title=" " alt="" coords="433,243,609,284"/>
-<area shape="rect" id="node7" href="$log_8h.html" title=" " alt="" coords="228,243,359,284"/>
-<area shape="rect" id="node8" title=" " alt="" coords="536,332,579,359"/>
+<area shape="rect" id="node1" title=" " alt="" coords="179,5,414,105"/>
+<area shape="rect" id="node2" href="$plugin__interface__base_8h.html" title=" " alt="" coords="119,153,301,195"/>
+<area shape="rect" id="node8" title=" " alt="" coords="325,161,445,187"/>
+<area shape="rect" id="node3" href="$defines_8h.html" title=" " alt="" coords="5,332,145,359"/>
+<area shape="rect" id="node4" href="$log_8h.html" title=" " alt="" coords="145,243,275,284"/>
+<area shape="rect" id="node5" title=" " alt="" coords="179,332,222,359"/>
+<area shape="rect" id="node6" title=" " alt="" coords="265,332,323,359"/>
+<area shape="rect" id="node7" title=" " alt="" coords="351,250,413,277"/>
 </map>

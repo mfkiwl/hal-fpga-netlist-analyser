@@ -1,11 +1,10 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/selection_details_widget/module_details_widget/module_ports_tree.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/selection_details_widget/module_details_widget/module_ports_tree.h">
-<area shape="rect" id="node1" title=" " alt="" coords="198,5,433,105"/>
-<area shape="rect" id="node2" href="$size__adjustable__tree__view_8h.html" title=" " alt="" coords="5,153,204,209"/>
-<area shape="rect" id="node4" href="$defines_8h.html" title=" " alt="" coords="245,168,385,195"/>
-<area shape="rect" id="node9" title=" " alt="" coords="409,168,464,195"/>
-<area shape="rect" id="node3" title=" " alt="" coords="42,257,133,284"/>
-<area shape="rect" id="node5" title=" " alt="" coords="157,257,247,284"/>
-<area shape="rect" id="node6" title=" " alt="" coords="272,257,359,284"/>
-<area shape="rect" id="node7" title=" " alt="" coords="383,257,469,284"/>
-<area shape="rect" id="node8" title=" " alt="" coords="493,257,564,284"/>
+<area shape="rect" id="node1" title=" " alt="" coords="223,5,457,105"/>
+<area shape="rect" id="node2" href="$defines_8h.html" title=" " alt="" coords="149,153,289,180"/>
+<area shape="rect" id="node7" title=" " alt="" coords="313,153,367,180"/>
+<area shape="rect" id="node8" title=" " alt="" coords="392,153,483,180"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,228,96,255"/>
+<area shape="rect" id="node4" title=" " alt="" coords="121,228,207,255"/>
+<area shape="rect" id="node5" title=" " alt="" coords="231,228,318,255"/>
+<area shape="rect" id="node6" title=" " alt="" coords="342,228,413,255"/>
 </map>

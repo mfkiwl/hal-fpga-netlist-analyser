@@ -92,8 +92,8 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 : <a class="el" href="classhal_1_1_main_window.html#ae1d428b2ced06325e7854e8e47ba3027">hal::MainWindow</a>
 </li>
 <li>handle_cli_call()
-: <a class="el" href="classhal_1_1_c_l_i_plugin_interface.html#afeab0c3dcc15c62e7e7ac3a8197625d7">hal::CLIPluginInterface</a>
-, <a class="el" href="classhal_1_1plugin__dataflow.html#a539575b9223919f7ad8eba5ffb5934c6">hal::plugin_dataflow</a>
+: <a class="el" href="classhal_1_1_cli_extension_dataflow.html#a0b4f2dac46ce9a475a4076d8b67e77ca">hal::CliExtensionDataflow</a>
+, <a class="el" href="classhal_1_1_cli_extension_interface.html#a33dde9468b843e0e4872f874420e5730">hal::CliExtensionInterface</a>
 </li>
 <li>handle_options()
 : <a class="el" href="classhal_1_1_log_manager.html#ad3e0a37bb3366fc8b538251694a23b8c">hal::LogManager</a>
@@ -131,8 +131,8 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>handleActionGatelibraryManager()
 : <a class="el" href="classhal_1_1_main_window.html#a258818c82a1734f56135ec7e7f230f97">hal::MainWindow</a>
 </li>
-<li>handleActionImport()
-: <a class="el" href="classhal_1_1_main_window.html#a3f1953656070fd4f12106747fdbb946f">hal::MainWindow</a>
+<li>handleActionImportNetlist()
+: <a class="el" href="classhal_1_1_main_window.html#a06aeb9c26143818f1dcdca9475d7676a">hal::MainWindow</a>
 </li>
 <li>handleActionNew()
 : <a class="el" href="classhal_1_1_main_window.html#a62352d9e02b54e67a9393a501caf5904">hal::MainWindow</a>
@@ -187,6 +187,9 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 </li>
 <li>handleButtonClicked()
 : <a class="el" href="classhal_1_1_details_frame_widget.html#adce88cc8cb8bce11a0e85d98a9741468">hal::DetailsFrameWidget</a>
+</li>
+<li>handleButtonPressed()
+: <a class="el" href="classhal_1_1_gui_plugin_table.html#a7fed22bf323aedeb414d8309b27dc14d">hal::GuiPluginTable</a>
 </li>
 <li>handleButtonSelected()
 : <a class="el" href="classhal_1_1_main_settings_widget.html#a4c83fa68228c0ffbc4146b8208575a33">hal::MainSettingsWidget</a>
@@ -319,6 +322,9 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>handleFirstUserInteraction()
 : <a class="el" href="classhal_1_1_logger_widget.html#aaa5fdc8d77116eb9e852ca961beb1b1f">hal::LoggerWidget</a>
 </li>
+<li>handleFoldModuleShortcut()
+: <a class="el" href="classhal_1_1_graph_graphics_view.html#a8fdc66bd671a088de2314b69fcb77c2f">hal::GraphGraphicsView</a>
+</li>
 <li>handleGateFocus()
 : <a class="el" href="classhal_1_1_graph_tab_widget.html#a030e27ff45c4904d8345652a51cd008c">hal::GraphTabWidget</a>
 </li>
@@ -339,9 +345,6 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 : <a class="el" href="classhal_1_1_gate_select_receiver.html#a0451f0ad6b2230da6ccffe61711797fc">hal::GateSelectReceiver</a>
 , <a class="el" href="classhal_1_1_graph_graphics_view_neighbor_selector.html#a4dac085098436663c7db95d750475956">hal::GraphGraphicsViewNeighborSelector</a>
 , <a class="el" href="classhal_1_1_python_gate_selection_receiver.html#a5b2971d2cef1b5f5a7010ccbc4a1bafe">hal::PythonGateSelectionReceiver</a>
-</li>
-<li>handleGraphSelectionChanged()
-: <a class="el" href="classhal_1_1_grouping_manager_widget.html#a4d60c2d0600edff342fb17abb6ffe38e">hal::GroupingManagerWidget</a>
 </li>
 <li>handleGroupingAssignGate()
 : <a class="el" href="classhal_1_1_graphics_scene.html#a6424025adc7cc00522480db77d0d2ff5">hal::GraphicsScene</a>
@@ -485,6 +488,12 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>handleOpenDocument()
 : <a class="el" href="classhal_1_1_content_manager.html#a8ff143980197218dd6834a06165f0a5d">hal::ContentManager</a>
 </li>
+<li>handlePluginLoaded()
+: <a class="el" href="classhal_1_1_gui_plugin_table.html#a8c78a8fff39a5ed0d45c0f44da1eab03">hal::GuiPluginTable</a>
+</li>
+<li>handlePluginUnloaded()
+: <a class="el" href="classhal_1_1_gui_plugin_table.html#a8f14a3a5d29843839d0d0cb7bfc3d016">hal::GuiPluginTable</a>
+</li>
 <li>handleProjectOpened()
 : <a class="el" href="classhal_1_1_main_window.html#a7c360e2b5e3c13872311b205fd1d2d7d">hal::MainWindow</a>
 </li>
@@ -493,6 +502,12 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 </li>
 <li>handlePyDocumentationItemClicked()
 : <a class="el" href="classhal_1_1_get_in_touch_widget.html#a4c981b3a347b7438d77f0564fb60f7e6">hal::GetInTouchWidget</a>
+</li>
+<li>handleRefresh()
+: <a class="el" href="classhal_1_1_gui_plugin_table.html#aa493cfe5bd2c62bda3fad98ba2b07e2a">hal::GuiPluginTable</a>
+</li>
+<li>handleRemoveFromView()
+: <a class="el" href="classhal_1_1_graph_graphics_view.html#a081af4cd62a86d6cc4e172a7155b8c36">hal::GraphGraphicsView</a>
 </li>
 <li>handleRemoveRequested()
 : <a class="el" href="classhal_1_1_recent_files_widget.html#adc85b1875e68a7aa2226f4f519d56aee">hal::RecentFilesWidget</a>
@@ -616,6 +631,9 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>handleTreeViewContextMenuRequested()
 : <a class="el" href="classhal_1_1_module_widget.html#a6f77bd7d4014d13234e94bb7291e27be">hal::ModuleWidget</a>
 </li>
+<li>handleUnfoldModuleShortcut()
+: <a class="el" href="classhal_1_1_graph_graphics_view.html#ae1cdfb11eaa448ccd5f8b5e77cb446f6">hal::GraphGraphicsView</a>
+</li>
 <li>handleUnmarkedGlobalInput()
 : <a class="el" href="classhal_1_1_graph_context_manager.html#a86baed5ae448d4d126dc9594b228d312">hal::GraphContextManager</a>
 </li>
@@ -635,8 +653,8 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 : <a class="el" href="classhal_1_1_gate_type.html#a8d82155a77dd05bcef90cb791a95d84f">hal::GateType</a>
 </li>
 <li>has_constant_value()
-: <a class="el" href="classhal_1_1_boolean_function.html#a61f8794b299f01d101d07bc3dee80990">hal::BooleanFunction</a>
-, <a class="el" href="structhal_1_1_boolean_function_1_1_node.html#a2864ba0bac7f292a2202f538b86c3cbe">hal::BooleanFunction::Node</a>
+: <a class="el" href="classhal_1_1_boolean_function.html#a4e4fcd20a4cf6c5bf096d8eb26bc6e22">hal::BooleanFunction</a>
+, <a class="el" href="structhal_1_1_boolean_function_1_1_node.html#a97b6ae858cdf17345e4c667b1fe41791">hal::BooleanFunction::Node</a>
 </li>
 <li>has_data()
 : <a class="el" href="classhal_1_1_data_container.html#acd955fb78b54c430d54666c3883220da">hal::DataContainer</a>
@@ -646,16 +664,13 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 , <a class="el" href="structhal_1_1_boolean_function_1_1_node.html#a864612168420ece94949dbc8c5b74d5d">hal::BooleanFunction::Node</a>
 </li>
 <li>has_local_solver_for()
-: <a class="el" href="classhal_1_1_s_m_t_1_1_solver.html#af65f2cf75a023d67de2ef51125ee13fd">hal::SMT::Solver</a>
+: <a class="el" href="classhal_1_1_s_m_t_1_1_solver.html#a57ae56afb290b41fa360779c268d379e">hal::SMT::Solver</a>
 </li>
 <li>has_location()
 : <a class="el" href="classhal_1_1_gate.html#a773848569c5f30d2a21b73ae23d60650">hal::Gate</a>
 </li>
 <li>has_property()
 : <a class="el" href="classhal_1_1_gate_type.html#ab480841ed9b5429943496d26e1a782ae">hal::GateType</a>
-</li>
-<li>has_type()
-: <a class="el" href="classhal_1_1_base_plugin_interface.html#ab0a32bab81edf3a6d6db644bc459ddb7">hal::BasePluginInterface</a>
 </li>
 <li>has_variable_name()
 : <a class="el" href="classhal_1_1_boolean_function.html#a5602e429bdcfaf2e1edd906c905b9491">hal::BooleanFunction</a>
@@ -664,11 +679,17 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>hasBothWidgets()
 : <a class="el" href="classhal_1_1_graph_navigation_widget.html#aa650953a381959560322deb9db4e61f0">hal::GraphNavigationWidget</a>
 </li>
+<li>hasCliExtension()
+: <a class="el" href="classhal_1_1_gui_plugin_table.html#ad45ebb24772622a87082888b245c0063">hal::GuiPluginTable</a>
+</li>
 <li>hasGrab()
 : <a class="el" href="classhal_1_1_keybind_edit.html#a1638b4e428a1d12f975b31cef77b90ca">hal::KeybindEdit</a>
 </li>
 <li>hasGroup()
 : <a class="el" href="classhal_1_1_expanding_list_widget.html#ab6016e7b350ba219267132208d75c25d">hal::ExpandingListWidget</a>
+</li>
+<li>hasGuiExtension()
+: <a class="el" href="classhal_1_1_gui_plugin_table.html#a0df097db6eca03881417ac897c441f95">hal::GuiPluginTable</a>
 </li>
 <li>hasModifications()
 : <a class="el" href="classhal_1_1_action_set_selection_focus.html#a8e70a5d7c3903914f9c4bd06f55c8b76">hal::ActionSetSelectionFocus</a>
@@ -693,6 +714,7 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 , <a class="el" href="classhal_1_1_gate_select_model.html#aead44088a18e4d3b5d85f4624d1d3556">hal::GateSelectModel</a>
 , <a class="el" href="classhal_1_1_groupings_of_item_model.html#a0f6eda2d2670b78fc57150d48dd57ccd">hal::GroupingsOfItemModel</a>
 , <a class="el" href="classhal_1_1_grouping_table_model.html#a2fd3d2d951b665d5a4531ccc752c25a3">hal::GroupingTableModel</a>
+, <a class="el" href="classhal_1_1_gui_plugin_table.html#a7c3bd292448bb9a8b9c35fc8efdc519b">hal::GuiPluginTable</a>
 , <a class="el" href="classhal_1_1_l_u_t_table_model.html#a31b482efe29467001651549e1f09c2ea">hal::LUTTableModel</a>
 , <a class="el" href="classhal_1_1_module_model.html#a3315c1c54603fef342744ee23cbd4d8f">hal::ModuleModel</a>
 , <a class="el" href="classhal_1_1_module_select_model.html#a92770b10bbcf66a8deeaed9b77717303">hal::ModuleSelectModel</a>
@@ -709,8 +731,20 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>HGLParser()
 : <a class="el" href="classhal_1_1_h_g_l_parser.html#a392638eac4e33667403a50d84e1d4f29">hal::HGLParser</a>
 </li>
+<li>HGLParserExtension()
+: <a class="el" href="classhal_1_1_h_g_l_parser_extension.html#a7e92d928e1f27f724d3efa1d65ada521">hal::HGLParserExtension</a>
+</li>
+<li>HGLParserPlugin()
+: <a class="el" href="classhal_1_1_h_g_l_parser_plugin.html#a93c73e88c5481ddb6ceee576e4823b75">hal::HGLParserPlugin</a>
+</li>
 <li>HGLWriter()
 : <a class="el" href="classhal_1_1_h_g_l_writer.html#af971e3ff7221a533e14885c329e2f4d1">hal::HGLWriter</a>
+</li>
+<li>HGLWriterExtension()
+: <a class="el" href="classhal_1_1_h_g_l_writer_extension.html#a21dc60a6721050e53e76bff3debd2bac">hal::HGLWriterExtension</a>
+</li>
+<li>HGLWriterPlugin()
+: <a class="el" href="classhal_1_1_h_g_l_writer_plugin.html#a7b7eefdda116db14e88a4d40c5fcc707">hal::HGLWriterPlugin</a>
 </li>
 <li>hidden()
 : <a class="el" href="classhal_1_1_dock_button.html#ae7f8fdf919a95d09968dc475262196eb">hal::DockButton</a>
@@ -729,6 +763,12 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>highlighted()
 : <a class="el" href="classhal_1_1_module_item.html#ac56874de778f62c292e41bf4400d0a5a">hal::ModuleItem</a>
 </li>
+<li>hilightBackgroundColor()
+: <a class="el" href="classhal_1_1_gui_plugin_manager.html#a5c4d833932cb060780d5312e96c9dee1">hal::GuiPluginManager</a>
+</li>
+<li>hilightTextColor()
+: <a class="el" href="classhal_1_1_gui_plugin_manager.html#a2f41f5d4063cfbb1b9ed8b034c5b468e">hal::GuiPluginManager</a>
+</li>
 <li>hover()
 : <a class="el" href="classhal_1_1_expanding_list_button.html#a62fb01130a3156c5eafc382639016072">hal::ExpandingListButton</a>
 , <a class="el" href="classhal_1_1_get_in_touch_item.html#a33767cf0d434c82dcceced8533679801">hal::GetInTouchItem</a>
@@ -737,13 +777,19 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>hoverColor()
 : <a class="el" href="classhal_1_1_dock_button.html#a797d6718839ba71592f3938dc43abc0a">hal::DockButton</a>
 </li>
+<li>hoverEnterEvent()
+: <a class="el" href="classhal_1_1_comment_speech_bubble.html#abfc9589d3e042245f6e2695eaf85e07c">hal::CommentSpeechBubble</a>
+</li>
+<li>hoverLeaveEvent()
+: <a class="el" href="classhal_1_1_comment_speech_bubble.html#ac3053c3060206a2b6df806e50c643b30">hal::CommentSpeechBubble</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Dec 19 2022 19:48:35 for HAL by
+    <li class="footer">Generated on Thu Jun 22 2023 07:25:49 for HAL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

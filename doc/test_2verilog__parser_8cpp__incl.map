@@ -1,20 +1,20 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/verilog_parser/test/verilog_parser.cpp" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/verilog_parser/test/verilog_parser.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="1114,5,1312,91"/>
-<area shape="rect" id="node2" href="$verilog__parser_8h.html" title=" " alt="" coords="768,139,932,180"/>
-<area shape="rect" id="node15" title=" " alt="" coords="956,146,1099,173"/>
-<area shape="rect" id="node16" title=" " alt="" coords="1124,146,1302,173"/>
-<area shape="rect" id="node17" title=" " alt="" coords="1326,146,1385,173"/>
-<area shape="rect" id="node18" title=" " alt="" coords="1409,146,1590,173"/>
-<area shape="rect" id="node3" href="$defines_8h.html" title=" " alt="" coords="232,317,372,344"/>
-<area shape="rect" id="node4" href="$gate__type_8h.html" title=" " alt="" coords="830,228,985,269"/>
-<area shape="rect" id="node5" title=" " alt="" coords="716,317,840,344"/>
-<area shape="rect" id="node6" title=" " alt="" coords="865,317,980,344"/>
-<area shape="rect" id="node7" href="$module_8h.html" title=" " alt="" coords="569,235,756,262"/>
-<area shape="rect" id="node8" href="$net_8h.html" title=" " alt="" coords="32,235,191,262"/>
-<area shape="rect" id="node9" href="$netlist__parser_8h.html" title=" " alt="" coords="215,228,390,269"/>
-<area shape="rect" id="node10" href="$special__strings_8h.html" title=" " alt="" coords="1060,228,1195,269"/>
-<area shape="rect" id="node11" href="$token__stream_8h.html" title=" " alt="" coords="414,228,545,269"/>
-<area shape="rect" id="node12" title=" " alt="" coords="1220,235,1294,262"/>
-<area shape="rect" id="node13" title=" " alt="" coords="1318,235,1393,262"/>
-<area shape="rect" id="node14" title=" " alt="" coords="1418,235,1478,262"/>
+<area shape="rect" id="node1" title=" " alt="" coords="804,5,1003,91"/>
+<area shape="rect" id="node2" href="$verilog__parser_8h.html" title=" " alt="" coords="644,139,808,180"/>
+<area shape="rect" id="node4" title=" " alt="" coords="786,392,877,419"/>
+<area shape="rect" id="node16" title=" " alt="" coords="832,146,975,173"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1000,146,1178,173"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1202,146,1261,173"/>
+<area shape="rect" id="node3" href="$defines_8h.html" title=" " alt="" coords="762,317,902,344"/>
+<area shape="rect" id="node5" href="$gate__type_8h.html" title=" " alt="" coords="36,228,190,269"/>
+<area shape="rect" id="node6" title=" " alt="" coords="180,317,304,344"/>
+<area shape="rect" id="node7" title=" " alt="" coords="41,317,156,344"/>
+<area shape="rect" id="node8" href="$module_8h.html" title=" " alt="" coords="265,235,452,262"/>
+<area shape="rect" id="node9" href="$net_8h.html" title=" " alt="" coords="476,235,635,262"/>
+<area shape="rect" id="node10" href="$netlist__parser_8h.html" title=" " alt="" coords="1307,228,1482,269"/>
+<area shape="rect" id="node11" href="$special__strings_8h.html" title=" " alt="" coords="659,228,794,269"/>
+<area shape="rect" id="node12" href="$token__stream_8h.html" title=" " alt="" coords="1152,228,1282,269"/>
+<area shape="rect" id="node13" title=" " alt="" coords="869,235,944,262"/>
+<area shape="rect" id="node14" title=" " alt="" coords="968,235,1042,262"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1067,235,1127,262"/>
 </map>

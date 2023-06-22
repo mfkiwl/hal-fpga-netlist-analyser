@@ -1,10 +1,10 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/graph_widget/items/graphics_item.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/graph_widget/items/graphics_item.h">
-<area shape="rect" id="node1" title=" " alt="" coords="345,5,567,91"/>
+<area shape="rect" id="node1" title=" " alt="" coords="389,5,611,91"/>
 <area shape="rect" id="node2" href="$defines_8h.html" title=" " alt="" coords="149,213,289,240"/>
-<area shape="rect" id="node7" href="$gui__def_8h.html" title=" " alt="" coords="293,139,398,165"/>
-<area shape="rect" id="node11" title=" " alt="" coords="423,139,489,165"/>
-<area shape="rect" id="node12" title=" " alt="" coords="514,139,579,165"/>
-<area shape="rect" id="node13" title=" " alt="" coords="603,139,722,165"/>
+<area shape="rect" id="node7" href="$gui__def_8h.html" title=" " alt="" coords="337,139,442,165"/>
+<area shape="rect" id="node12" title=" " alt="" coords="467,139,533,165"/>
+<area shape="rect" id="node13" title=" " alt="" coords="558,139,623,165"/>
+<area shape="rect" id="node14" title=" " alt="" coords="647,139,766,165"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,288,96,315"/>
 <area shape="rect" id="node4" title=" " alt="" coords="121,288,207,315"/>
 <area shape="rect" id="node5" title=" " alt="" coords="231,288,318,315"/>
@@ -12,4 +12,5 @@
 <area shape="rect" id="node8" title=" " alt="" coords="313,213,378,240"/>
 <area shape="rect" id="node9" title=" " alt="" coords="402,213,467,240"/>
 <area shape="rect" id="node10" title=" " alt="" coords="492,213,545,240"/>
+<area shape="rect" id="node11" title=" " alt="" coords="570,213,665,240"/>
 </map>
