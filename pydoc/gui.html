@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>GUI API &mdash; hal_py v2.0.0-3398-gfdbea579c documentation</title>
+  <title>GUI API &mdash; hal_py v2.0.0-3835-gbde4d1cde documentation</title>
   
 
   
@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Netlist Preprocessing" href="netlist_preprocessing.html" />
+    <link rel="next" title="HAWKEYE" href="hawkeye.html" />
     <link rel="prev" title="Graph Algorithms" href="graph_algorithm.html" /> 
 </head>
 
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                v2.0.0-3398-gfdbea579c
+                v2.0.0-3835-gbde4d1cde
               </div>
             
           
@@ -92,11 +92,13 @@
 <li class="toctree-l2"><a class="reference internal" href="dataflow.html">Dataflow Analysis (DANA)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="graph_algorithm.html">Graph Algorithms</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">GUI API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hawkeye.html">HAWKEYE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_preprocessing.html">Netlist Preprocessing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_simulator.html">Netlist Simulator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netlist_simulator_controller.html">Netlist Simulator Controller</a></li>
 <li class="toctree-l2"><a class="reference internal" href="verilator.html">Verilator Simulator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="solve_fsm.html">Solve FSM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xilinx_toolbox.html">Xilinx Toolbox</a></li>
 </ul>
 </li>
 </ul>
@@ -171,6 +173,86 @@
 <dt id="hal_gui.GuiApi">
 <em class="property">class </em><code class="descclassname">hal_gui.</code><code class="descname">GuiApi</code><a class="headerlink" href="#hal_gui.GuiApi" title="Permalink to this definition">¶</a></dt>
 <dd><p>GUI API</p>
+<dl class="class">
+<dt id="hal_gui.GuiApi.GridPlacement">
+<em class="property">class </em><code class="descname">GridPlacement</code><a class="headerlink" href="#hal_gui.GuiApi.GridPlacement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper class to determine placement of nodes on gui grid.</p>
+<dl class="method">
+<dt id="hal_gui.GuiApi.GridPlacement.gatePosition">
+<code class="descname">gatePosition</code><span class="sig-paren">(</span><em>self: hal_gui.GuiApi.GridPlacement</em>, <em>gateId: int</em><span class="sig-paren">)</span> &#x2192; Tuple[int, int]<a class="headerlink" href="#hal_gui.GuiApi.GridPlacement.gatePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query position for gate identified by ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>gateId</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Gate ID.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Position of gate or None if gate not found in hash.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)">tuple</a>(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>,<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>) or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)">None</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hal_gui.GuiApi.GridPlacement.modulePosition">
+<code class="descname">modulePosition</code><span class="sig-paren">(</span><em>self: hal_gui.GuiApi.GridPlacement</em>, <em>moduleId: int</em><span class="sig-paren">)</span> &#x2192; Tuple[int, int]<a class="headerlink" href="#hal_gui.GuiApi.GridPlacement.modulePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query position for module identified by ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>moduleId</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Module ID.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Position of module or None if module not found in hash.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)">tuple</a>(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>,<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>) or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)">None</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hal_gui.GuiApi.GridPlacement.setGatePosition">
+<code class="descname">setGatePosition</code><span class="sig-paren">(</span><em>self: hal_gui.GuiApi.GridPlacement, gateId: int, point: Tuple[int, int], swap: bool = False</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#hal_gui.GuiApi.GridPlacement.setGatePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set position for gate identified by ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>gateId</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Gate ID.</li>
+<li><strong>pos</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)"><em>tuple</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em>,</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em>)</em>) – New position.</li>
+<li><strong>swap</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a>) – set the swap of positions of the nodes</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hal_gui.GuiApi.GridPlacement.setModulePosition">
+<code class="descname">setModulePosition</code><span class="sig-paren">(</span><em>self: hal_gui.GuiApi.GridPlacement, moduleId: int, point: Tuple[int, int], swap: bool = False</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#hal_gui.GuiApi.GridPlacement.setModulePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set position for module identified by ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>moduleId</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Module ID.</li>
+<li><strong>pos</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)"><em>tuple</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em>,</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em>)</em>) – New position.</li>
+<li><strong>swap</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a>) – set the swap of positions of the nodes</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
 <dl class="method">
 <dt id="hal_gui.GuiApi.deselect">
 <code class="descname">deselect</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#hal_gui.GuiApi.deselect" title="Permalink to this definition">¶</a></dt>
@@ -511,7 +593,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of the ids of the currently selected gates.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a>]</td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>]</td>
 </tr>
 </tbody>
 </table>
@@ -527,7 +609,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of currently selected gates.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference internal" href="gate.html#hal_py.Gate" title="hal_py.Gate">hal_py.Gate</a>]</td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)">list</a>[<a class="reference internal" href="gate.html#hal_py.Gate" title="hal_py.Gate">hal_py.Gate</a>]</td>
 </tr>
 </tbody>
 </table>
@@ -543,7 +625,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Tuple of lists of the currently selected items.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)">tuple</a>(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a>)</td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)">tuple</a>(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -559,7 +641,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Tuple of currently selected items.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)">tuple</a>(<a class="reference internal" href="gate.html#hal_py.Gate" title="hal_py.Gate">hal_py.Gate</a>, <a class="reference internal" href="net.html#hal_py.Net" title="hal_py.Net">hal_py.Net</a>, hal_py.module)</td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)">tuple</a>(<a class="reference internal" href="gate.html#hal_py.Gate" title="hal_py.Gate">hal_py.Gate</a>, <a class="reference internal" href="net.html#hal_py.Net" title="hal_py.Net">hal_py.Net</a>, hal_py.module)</td>
 </tr>
 </tbody>
 </table>
@@ -575,7 +657,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of the ids of the currently selected modules.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a>]</td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>]</td>
 </tr>
 </tbody>
 </table>
@@ -591,7 +673,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of currently selected modules.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[hal_py.module]</td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)">list</a>[hal_py.module]</td>
 </tr>
 </tbody>
 </table>
@@ -607,7 +689,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of the ids of the currently selected nets.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a>]</td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>]</td>
 </tr>
 </tbody>
 </table>
@@ -623,7 +705,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of currently selected nets.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference internal" href="net.html#hal_py.Net" title="hal_py.Net">hal_py.Net</a>]</td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)">list</a>[<a class="reference internal" href="net.html#hal_py.Net" title="hal_py.Net">hal_py.Net</a>]</td>
 </tr>
 </tbody>
 </table>
@@ -1125,7 +1207,7 @@ If ‘navigate_to_selection’ is false, the graph view will not modify the grap
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="netlist_preprocessing.html" class="btn btn-neutral float-right" title="Netlist Preprocessing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="hawkeye.html" class="btn btn-neutral float-right" title="HAWKEYE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="graph_algorithm.html" class="btn btn-neutral float-left" title="Graph Algorithms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -1137,7 +1219,7 @@ If ‘navigate_to_selection’ is false, the graph view will not modify the grap
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2023, Marc Fyrbiak, Sebastian Wallat, Max Hoffmann
+        &copy; Copyright 2024, Marc Fyrbiak, Sebastian Wallat, Max Hoffmann
 
     </p>
   </div>

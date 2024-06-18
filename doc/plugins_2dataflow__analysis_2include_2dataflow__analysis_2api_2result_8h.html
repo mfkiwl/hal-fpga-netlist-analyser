@@ -89,7 +89,12 @@ $(document).ready(function(){initNavTree('plugins_2dataflow__analysis_2include_2
 <div class="title">result.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This file contains the struct that holds all information on the result of a dataflow analysis run.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="plugins_2dataflow__analysis_2include_2dataflow__analysis_2common_2grouping_8h_source.html">dataflow_analysis/common/grouping.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gate__type__property_8h_source.html">hal_core/netlist/gate_library/enums/gate_type_property.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pin__direction_8h_source.html">hal_core/netlist/gate_library/enums/pin_direction.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pin__type_8h_source.html">hal_core/netlist/gate_library/enums/pin_type.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="include_2hal__core_2utilities_2result_8h_source.html">hal_core/utilities/result.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -97,23 +102,25 @@ Include dependency graph for result.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="plugins_2dataflow__analysis_2include_2dataflow__analysis_2api_2result_8h__incl.png" border="0" usemap="#_2home_2runner_2work_2hal-fpga-netlist-analyser_2hal-fpga-netlist-analyser_2plugins_2dataflow__analysis_2include_2dataflow__analysis_2api_2result_8h" alt=""/></div>
 <map name="_2home_2runner_2work_2hal-fpga-netlist-analyser_2hal-fpga-netlist-analyser_2plugins_2dataflow__analysis_2include_2dataflow__analysis_2api_2result_8h" id="_2home_2runner_2work_2hal-fpga-netlist-analyser_2hal-fpga-netlist-analyser_2plugins_2dataflow__analysis_2include_2dataflow__analysis_2api_2result_8h">
-<area shape="rect" title=" " alt="" coords="472,5,667,105"/>
-<area shape="rect" href="plugins_2dataflow__analysis_2include_2dataflow__analysis_2common_2grouping_8h.html" title=" " alt="" coords="724,153,924,195"/>
-<area shape="rect" href="pin__type_8h.html" title=" " alt="" coords="474,153,665,195"/>
-<area shape="rect" href="include_2hal__core_2utilities_2result_8h.html" title=" " alt="" coords="165,153,296,195"/>
-<area shape="rect" href="netlist__abstraction_8h.html" title=" " alt="" coords="861,243,1061,284"/>
-<area shape="rect" href="defines_8h.html" title=" " alt="" coords="499,332,639,359"/>
-<area shape="rect" title=" " alt="" coords="876,332,919,359"/>
-<area shape="rect" title=" " alt="" coords="945,332,1069,359"/>
-<area shape="rect" title=" " alt="" coords="1184,332,1299,359"/>
-<area shape="rect" title=" " alt="" coords="742,332,805,359"/>
-<area shape="rect" title=" " alt="" coords="665,332,716,359"/>
-<area shape="rect" title=" " alt="" coords="1136,250,1251,277"/>
-<area shape="rect" href="enums_8h.html" title=" " alt="" coords="504,243,635,284"/>
-<area shape="rect" href="error_8h.html" title=" " alt="" coords="349,243,480,284"/>
-<area shape="rect" title=" " alt="" coords="238,250,325,277"/>
-<area shape="rect" title=" " alt="" coords="30,250,122,277"/>
-<area shape="rect" title=" " alt="" coords="146,250,214,277"/>
+<area shape="rect" title="This file contains the struct that holds all information on the result of a dataflow analysis run." alt="" coords="593,5,788,105"/>
+<area shape="rect" href="plugins_2dataflow__analysis_2include_2dataflow__analysis_2common_2grouping_8h.html" title="This file contains the class that holds all information of a dataflow analysis grouping." alt="" coords="141,153,341,195"/>
+<area shape="rect" href="pin__type_8h.html" title=" " alt="" coords="579,347,770,388"/>
+<area shape="rect" href="gate__type__property_8h.html" title=" " alt="" coords="655,243,843,299"/>
+<area shape="rect" href="pin__direction_8h.html" title=" " alt="" coords="728,153,946,195"/>
+<area shape="rect" href="include_2hal__core_2utilities_2result_8h.html" title=" " alt="" coords="918,347,1049,388"/>
+<area shape="rect" href="netlist__abstraction_8h.html" title="This file contains the struct that holds all information on the netlist abstraction used for dataflow..." alt="" coords="329,250,529,291"/>
+<area shape="rect" href="defines_8h.html" title=" " alt="" coords="604,525,744,552"/>
+<area shape="rect" title=" " alt="" coords="258,525,309,552"/>
+<area shape="rect" title=" " alt="" coords="173,354,216,381"/>
+<area shape="rect" title=" " alt="" coords="240,354,364,381"/>
+<area shape="rect" title=" " alt="" coords="440,354,554,381"/>
+<area shape="rect" title=" " alt="" coords="63,354,126,381"/>
+<area shape="rect" title=" " alt="" coords="89,257,204,284"/>
+<area shape="rect" href="enums_8h.html" title=" " alt="" coords="609,436,740,477"/>
+<area shape="rect" href="error_8h.html" title=" " alt="" coords="908,436,1038,477"/>
+<area shape="rect" title=" " alt="" coords="1063,443,1150,470"/>
+<area shape="rect" title=" " alt="" coords="1174,443,1266,470"/>
+<area shape="rect" title=" " alt="" coords="764,443,832,470"/>
 </map>
 </div>
 </div>
@@ -121,7 +128,8 @@ Include dependency graph for result.h:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1dataflow_1_1_result.html">hal::dataflow::Result</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1dataflow_1_1_result.html">hal::dataflow::Result</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classhal_1_1dataflow_1_1_result.html" title="Result of a dataflow analysis run.">Result</a> of a dataflow analysis run.  <a href="classhal_1_1dataflow_1_1_result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -131,13 +139,17 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacehal_1_1dataflow"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal_1_1dataflow.html">hal::dataflow</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file contains the struct that holds all information on the result of a dataflow analysis run. </p>
+
+<p class="definition">Definition in file <a class="el" href="plugins_2dataflow__analysis_2include_2dataflow__analysis_2api_2result_8h_source.html">result.h</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_38c8d24aef3972a7f87b834274e76e31.html">plugins</a></li><li class="navelem"><a class="el" href="dir_161c827992f16c517fae38e8eb03f5dd.html">dataflow_analysis</a></li><li class="navelem"><a class="el" href="dir_b01ccb8cd28d03239d93b53568c12834.html">include</a></li><li class="navelem"><a class="el" href="dir_a4d2a34eb48283e8d6db65abafeda3a7.html">dataflow_analysis</a></li><li class="navelem"><a class="el" href="dir_302078487076c66625632028faf7c059.html">api</a></li><li class="navelem"><a class="el" href="plugins_2dataflow__analysis_2include_2dataflow__analysis_2api_2result_8h.html">result.h</a></li>
-    <li class="footer">Generated on Thu Jun 22 2023 07:28:45 for HAL by
+    <li class="footer">Generated on Tue Jun 18 2024 21:58:43 for HAL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

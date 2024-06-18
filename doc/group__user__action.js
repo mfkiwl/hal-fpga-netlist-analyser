@@ -48,8 +48,8 @@ var group__user__action =
       [ "newAction", "classhal_1_1_action_fold_module_factory.html#ac79f4fed6f9734e54d1f19a26da0d6b2", null ]
     ] ],
     [ "ActionMoveNode", "classhal_1_1_action_move_node.html", [
-      [ "ActionMoveNode", "classhal_1_1_action_move_node.html#a173e2c3d43479b59aa293aa2bd4e0c46", null ],
-      [ "ActionMoveNode", "classhal_1_1_action_move_node.html#aa5cab56db2fb167b5be39e58f1df15fb", null ],
+      [ "ActionMoveNode", "classhal_1_1_action_move_node.html#ad17917d6bde9fca4255099adcb214c45", null ],
+      [ "ActionMoveNode", "classhal_1_1_action_move_node.html#af568020e20979acdb871bd115dce3520", null ],
       [ "addToHash", "classhal_1_1_action_move_node.html#a109774c6bcea5d7e52a377a736944ce8", null ],
       [ "exec", "classhal_1_1_action_move_node.html#a4a142d83ad6c3f4b25070d1f305bf5cb", null ],
       [ "readFromXml", "classhal_1_1_action_move_node.html#a94d156e1c414fdf738ab0cb552d49030", null ],
@@ -77,6 +77,19 @@ var group__user__action =
     [ "ActionOpenNetlistFileFactory", "classhal_1_1_action_open_netlist_file_factory.html", [
       [ "ActionOpenNetlistFileFactory", "classhal_1_1_action_open_netlist_file_factory.html#afa4b83298bdfbd53994936638a13111e", null ],
       [ "newAction", "classhal_1_1_action_open_netlist_file_factory.html#a25530402d4cf04518a65ef1081bc913f", null ]
+    ] ],
+    [ "ActionPingroup", "classhal_1_1_action_pingroup.html", [
+      [ "ActionPingroup", "classhal_1_1_action_pingroup.html#a6f830d5d8f5e7a1dbe91c8a9619f7a41", null ],
+      [ "ActionPingroup", "classhal_1_1_action_pingroup.html#a3eccb312956a18ba689367c3b92db79a", null ],
+      [ "addToHash", "classhal_1_1_action_pingroup.html#aa86dbe3565fddd2c558ffeac76fac27d", null ],
+      [ "exec", "classhal_1_1_action_pingroup.html#af0412505d21b3a1448ee7b31ff37a269", null ],
+      [ "readFromXml", "classhal_1_1_action_pingroup.html#a59f267d5317415dfeeba0c2fc497eecb", null ],
+      [ "tagname", "classhal_1_1_action_pingroup.html#af874e0ba192c54838a4695be3ea5d8ff", null ],
+      [ "writeToXml", "classhal_1_1_action_pingroup.html#a69132868063b1e7b7e1d693f6ad5bb51", null ]
+    ] ],
+    [ "ActionPingroupFactory", "classhal_1_1_action_pingroup_factory.html", [
+      [ "ActionPingroupFactory", "classhal_1_1_action_pingroup_factory.html#aae5a77a1c5cc139726f65f50f1b6779a", null ],
+      [ "newAction", "classhal_1_1_action_pingroup_factory.html#a5ab1e41400a17bd0d1245e36090fca2b", null ]
     ] ],
     [ "ActionRemoveItemsFromObject", "classhal_1_1_action_remove_items_from_object.html", [
       [ "ActionRemoveItemsFromObject", "classhal_1_1_action_remove_items_from_object.html#a1305a0005056e805911980cd4a11e3a2", null ],
@@ -222,6 +235,7 @@ var group__user__action =
       [ "addExecutedAction", "classhal_1_1_user_action_manager.html#a0688dc0fa9585f5b75eed11e536ed6b3", null ],
       [ "canUndoLastAction", "classhal_1_1_user_action_manager.html#a474db8c46babe0e14afcbd14f2236f63", null ],
       [ "crashDump", "classhal_1_1_user_action_manager.html#af5d614246698ac63b34009aa17274438", null ],
+      [ "executeActionBlockThread", "classhal_1_1_user_action_manager.html#a4dafc6a034e9f1b0e0047bbd5b8ab0f4", null ],
       [ "getParsedAction", "classhal_1_1_user_action_manager.html#af261864564f37f00c287c03a99d2e22f", null ],
       [ "handleSettingDumpActionChanged", "classhal_1_1_user_action_manager.html#a354ed15e02b30e7db56f52e698cd5216", null ],
       [ "hasRecorded", "classhal_1_1_user_action_manager.html#ae4318c5e95504afe8f6973068d519c8f", null ],
@@ -231,6 +245,7 @@ var group__user__action =
       [ "setStartRecording", "classhal_1_1_user_action_manager.html#a020a96ea58892acabbe350cd28b7c712", null ],
       [ "setStopRecording", "classhal_1_1_user_action_manager.html#abafecd55ef7291cce1570df93623dc9e", null ],
       [ "timeStamp", "classhal_1_1_user_action_manager.html#ae810fa314e08add41373a4e1db7c516d", null ],
+      [ "triggerExecute", "classhal_1_1_user_action_manager.html#acfd77eb251e31e00735ffa62c5603f5e", null ],
       [ "undoLastAction", "classhal_1_1_user_action_manager.html#a1806f69156c7a564fcdba056fda7db5d", null ]
     ] ],
     [ "UserActionObjectType", "classhal_1_1_user_action_object_type.html", [
@@ -242,8 +257,6 @@ var group__user__action =
         [ "Grouping", "classhal_1_1_user_action_object_type.html#a2de00e63df4cf86816f688fad6754d79a27ddb6799ad5d95abaead6018bd2e1cb", null ],
         [ "Netlist", "classhal_1_1_user_action_object_type.html#a2de00e63df4cf86816f688fad6754d79a426b6abb3378b291a0acb72226364926", null ],
         [ "Context", "classhal_1_1_user_action_object_type.html#a2de00e63df4cf86816f688fad6754d79ad1400bac44832ef79eafb8ac4d59dee2", null ],
-        [ "Pin", "classhal_1_1_user_action_object_type.html#a2de00e63df4cf86816f688fad6754d79a1d3e6202818dad4ea4ccc9d63b9805cf", null ],
-        [ "PinGroup", "classhal_1_1_user_action_object_type.html#a2de00e63df4cf86816f688fad6754d79a50c3269bce53b14015d72460dd2a97f0", null ],
         [ "MaxObjectType", "classhal_1_1_user_action_object_type.html#a2de00e63df4cf86816f688fad6754d79a1f454bf3fc9403944e7d3d7462f98318", null ]
       ] ],
       [ "Q_ENUM", "classhal_1_1_user_action_object_type.html#a5ce96df086b155ae9d71c38ee9b2940a", null ]

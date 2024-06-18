@@ -1,4 +1,6 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/graph_widget/items/utility_items/node_drag_shadow.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/graph_widget/items/utility_items/node_drag_shadow.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,241,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="58,153,189,180"/>
+<area shape="rect" id="node1" title=" " alt="" coords="65,5,301,105"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,153,124,180"/>
+<area shape="rect" id="node3" title=" " alt="" coords="149,153,218,180"/>
+<area shape="rect" id="node4" title=" " alt="" coords="243,153,297,180"/>
 </map>

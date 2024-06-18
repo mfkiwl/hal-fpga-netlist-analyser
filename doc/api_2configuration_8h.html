@@ -89,20 +89,39 @@ $(document).ready(function(){initNavTree('api_2configuration_8h.html',''); initR
 <div class="title">configuration.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This file contains the struct that holds all information on a dataflow analysis configuration.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="defines_8h_source.html">hal_core/defines.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gate__type__property_8h_source.html">hal_core/netlist/gate_library/enums/gate_type_property.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pin__type_8h_source.html">hal_core/netlist/gate_library/enums/pin_type.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="module__pin_8h_source.html">hal_core/netlist/pins/module_pin.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pin__group_8h_source.html">hal_core/netlist/pins/pin_group.h</a>&quot;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;unordered_set&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for configuration.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="api_2configuration_8h__incl.png" border="0" usemap="#_2home_2runner_2work_2hal-fpga-netlist-analyser_2hal-fpga-netlist-analyser_2plugins_2dataflow__analysis_2include_2dataflow__analysis_2api_2configuration_8h" alt=""/></div>
 <map name="_2home_2runner_2work_2hal-fpga-netlist-analyser_2hal-fpga-netlist-analyser_2plugins_2dataflow__analysis_2include_2dataflow__analysis_2api_2configuration_8h" id="_2home_2runner_2work_2hal-fpga-netlist-analyser_2hal-fpga-netlist-analyser_2plugins_2dataflow__analysis_2include_2dataflow__analysis_2api_2configuration_8h">
-<area shape="rect" title=" " alt="" coords="184,5,379,105"/>
-<area shape="rect" href="defines_8h.html" title=" " alt="" coords="149,153,289,180"/>
-<area shape="rect" title=" " alt="" coords="313,153,375,180"/>
-<area shape="rect" title=" " alt="" coords="5,228,96,255"/>
-<area shape="rect" title=" " alt="" coords="121,228,207,255"/>
-<area shape="rect" title=" " alt="" coords="231,228,318,255"/>
-<area shape="rect" title=" " alt="" coords="342,228,413,255"/>
+<area shape="rect" title="This file contains the struct that holds all information on a dataflow analysis configuration." alt="" coords="475,5,670,105"/>
+<area shape="rect" href="defines_8h.html" title=" " alt="" coords="489,525,629,552"/>
+<area shape="rect" href="gate__type__property_8h.html" title=" " alt="" coords="693,243,881,299"/>
+<area shape="rect" href="pin__type_8h.html" title=" " alt="" coords="622,347,813,388"/>
+<area shape="rect" href="module__pin_8h.html" title=" " alt="" coords="362,153,516,195"/>
+<area shape="rect" href="pin__group_8h.html" title=" " alt="" coords="241,347,394,388"/>
+<area shape="rect" title=" " alt="" coords="52,443,114,470"/>
+<area shape="rect" title=" " alt="" coords="22,354,64,381"/>
+<area shape="rect" title=" " alt="" coords="956,161,1071,187"/>
+<area shape="rect" title=" " alt="" coords="346,600,436,627"/>
+<area shape="rect" title=" " alt="" coords="461,600,548,627"/>
+<area shape="rect" title=" " alt="" coords="572,600,658,627"/>
+<area shape="rect" title=" " alt="" coords="682,600,753,627"/>
+<area shape="rect" href="enums_8h.html" title=" " alt="" coords="652,436,783,477"/>
+<area shape="rect" href="net_8h.html" title=" " alt="" coords="77,257,236,284"/>
+<area shape="rect" title=" " alt="" coords="379,443,438,470"/>
+<area shape="rect" href="base__pin_8h.html" title=" " alt="" coords="413,250,566,291"/>
 </map>
 </div>
 </div>
@@ -111,6 +130,7 @@ Include dependency graph for configuration.h:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1dataflow_1_1_configuration.html">hal::dataflow::Configuration</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structhal_1_1dataflow_1_1_configuration.html" title="Configuration of a dataflow analysis run.">Configuration</a> of a dataflow analysis run.  <a href="structhal_1_1dataflow_1_1_configuration.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -120,13 +140,17 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacehal_1_1dataflow"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal_1_1dataflow.html">hal::dataflow</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file contains the struct that holds all information on a dataflow analysis configuration. </p>
+
+<p class="definition">Definition in file <a class="el" href="api_2configuration_8h_source.html">configuration.h</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_38c8d24aef3972a7f87b834274e76e31.html">plugins</a></li><li class="navelem"><a class="el" href="dir_161c827992f16c517fae38e8eb03f5dd.html">dataflow_analysis</a></li><li class="navelem"><a class="el" href="dir_b01ccb8cd28d03239d93b53568c12834.html">include</a></li><li class="navelem"><a class="el" href="dir_a4d2a34eb48283e8d6db65abafeda3a7.html">dataflow_analysis</a></li><li class="navelem"><a class="el" href="dir_302078487076c66625632028faf7c059.html">api</a></li><li class="navelem"><a class="el" href="api_2configuration_8h.html">configuration.h</a></li>
-    <li class="footer">Generated on Thu Jun 22 2023 07:28:45 for HAL by
+    <li class="footer">Generated on Tue Jun 18 2024 21:58:43 for HAL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,11 +1,12 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/dataflow_analysis/include/dataflow_analysis/common/grouping.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/dataflow_analysis/include/dataflow_analysis/common/grouping.h">
-<area shape="rect" id="node1" title=" " alt="" coords="355,5,550,105"/>
-<area shape="rect" id="node2" href="$netlist__abstraction_8h.html" title=" " alt="" coords="190,153,390,195"/>
-<area shape="rect" id="node3" href="$defines_8h.html" title=" " alt="" coords="5,243,145,269"/>
-<area shape="rect" id="node4" title=" " alt="" coords="170,243,213,269"/>
-<area shape="rect" id="node5" title=" " alt="" coords="237,243,361,269"/>
-<area shape="rect" id="node6" title=" " alt="" coords="386,243,501,269"/>
-<area shape="rect" id="node7" title=" " alt="" coords="525,243,588,269"/>
-<area shape="rect" id="node8" title=" " alt="" coords="566,161,617,187"/>
-<area shape="rect" id="node9" title=" " alt="" coords="641,161,755,187"/>
+<area shape="rect" id="node1" title="This file contains the class that holds all information of a dataflow analysis grouping." alt="" coords="442,5,637,105"/>
+<area shape="rect" id="node2" href="$netlist__abstraction_8h.html" title="This file contains the struct that holds all information on the netlist abstraction used for dataflow..." alt="" coords="277,153,477,195"/>
+<area shape="rect" id="node3" href="$defines_8h.html" title=" " alt="" coords="5,250,145,277"/>
+<area shape="rect" id="node5" title=" " alt="" coords="170,250,213,277"/>
+<area shape="rect" id="node6" title=" " alt="" coords="452,250,576,277"/>
+<area shape="rect" id="node7" title=" " alt="" coords="601,250,715,277"/>
+<area shape="rect" id="node8" title=" " alt="" coords="740,250,803,277"/>
+<area shape="rect" id="node9" title=" " alt="" coords="653,161,703,187"/>
+<area shape="rect" id="node10" title=" " alt="" coords="727,161,842,187"/>
+<area shape="rect" id="node4" href="$pin__type_8h.html" title=" " alt="" coords="237,243,428,284"/>
 </map>

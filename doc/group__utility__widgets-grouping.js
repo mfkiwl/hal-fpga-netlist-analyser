@@ -5,7 +5,8 @@ var group__utility__widgets_grouping =
       [ "filterAcceptsRow", "classhal_1_1_gatelibrary_proxy_model.html#a3517246fff132ca383e92eb4e027fb77", null ],
       [ "lessThan", "classhal_1_1_gatelibrary_proxy_model.html#a710344c376b1d13175a520c1c018300b", null ],
       [ "setSortMechanism", "classhal_1_1_gatelibrary_proxy_model.html#a5783d31c0a8dc6b2b2a191d83144bbd9", null ],
-      [ "sortMechanism", "classhal_1_1_gatelibrary_proxy_model.html#ade522b2738f50288644a62f7c617fd27", null ]
+      [ "sortMechanism", "classhal_1_1_gatelibrary_proxy_model.html#ade522b2738f50288644a62f7c617fd27", null ],
+      [ "startSearch", "classhal_1_1_gatelibrary_proxy_model.html#ae234a442f64f722ca8b4b3dd24d9eae4", null ]
     ] ],
     [ "GroupingColorDelegate", "classhal_1_1_grouping_color_delegate.html", [
       [ "GroupingColorDelegate", "classhal_1_1_grouping_color_delegate.html#a2d08686e780e4c5ab121d92147cfade9", null ],
@@ -51,12 +52,16 @@ var group__utility__widgets_grouping =
       [ "setSearchActiveIconStyle", "classhal_1_1_grouping_manager_widget.html#aa9ed2ca35ee8afb1d0e41cb8a0720e4d", null ],
       [ "setSearchIconPath", "classhal_1_1_grouping_manager_widget.html#a7be436575e2463f169284eaf6f0e2a2e", null ],
       [ "setSearchIconStyle", "classhal_1_1_grouping_manager_widget.html#a940234c14e7b03c3910c9662eed3c7ef", null ],
+      [ "setTableIconPath", "classhal_1_1_grouping_manager_widget.html#a2978949d7bf6da2c491a4375b9bcc69c", null ],
+      [ "setTableIconStyle", "classhal_1_1_grouping_manager_widget.html#ab925e6c87c337bb07390cc41a9f72dc1", null ],
       [ "setToolbarButtonsEnabled", "classhal_1_1_grouping_manager_widget.html#ae846eb5762d856112f36c4a4fdf4591d", null ],
       [ "setToolboxIconPath", "classhal_1_1_grouping_manager_widget.html#a339ad52687a7349586048db5a52a12d6", null ],
       [ "setToolboxIconStyle", "classhal_1_1_grouping_manager_widget.html#a91acae872c36705e92bba293b77ff822", null ],
       [ "setToSelectionIconPath", "classhal_1_1_grouping_manager_widget.html#ae42fe7b136c08c79566b0ce59b1a3b79", null ],
       [ "setToSelectionIconStyle", "classhal_1_1_grouping_manager_widget.html#a3a50c1b7d00816353ccb519b2b86d6b3", null ],
       [ "setupToolbar", "classhal_1_1_grouping_manager_widget.html#a2246dddd6c1526899bc5701555b2ccad", null ],
+      [ "tableIconPath", "classhal_1_1_grouping_manager_widget.html#a77e04769c6c9f41a1b2516d54b8e8b8f", null ],
+      [ "tableIconStyle", "classhal_1_1_grouping_manager_widget.html#ade75c06f3f7e2a3c01282376c6fc4a38", null ],
       [ "toolboxIconPath", "classhal_1_1_grouping_manager_widget.html#a0a559b52e1c62e3a35d6750a77ed132e", null ],
       [ "toolboxIconStyle", "classhal_1_1_grouping_manager_widget.html#a25ba84d405be9ba8267d0dc14396b2f7", null ],
       [ "toSelectionIconPath", "classhal_1_1_grouping_manager_widget.html#a81da06a84c8795942541bfa3bc5e14f5", null ],
@@ -73,6 +78,8 @@ var group__utility__widgets_grouping =
       [ "searchActiveIconStyle", "classhal_1_1_grouping_manager_widget.html#a5350d46c2bea1997039e0c0b72af7777", null ],
       [ "searchIconPath", "classhal_1_1_grouping_manager_widget.html#a220ed4c2c7db1f65f5af327cd4609d6c", null ],
       [ "searchIconStyle", "classhal_1_1_grouping_manager_widget.html#ab82b0180b54fe9ef46cbaa91fdbac87c", null ],
+      [ "tableIconPath", "classhal_1_1_grouping_manager_widget.html#af3ffbdb29dd45b9186b04520bdf3dc07", null ],
+      [ "tableIconStyle", "classhal_1_1_grouping_manager_widget.html#ad8e81acbef2d4be7bb06540c5ded97d2", null ],
       [ "toolboxIconPath", "classhal_1_1_grouping_manager_widget.html#a929cb7492a09bb9279bddc1dceab9e0a", null ],
       [ "toolboxIconStyle", "classhal_1_1_grouping_manager_widget.html#a0e20df5aac159e54eaabc20fd102e404", null ],
       [ "toSelectionIconPath", "classhal_1_1_grouping_manager_widget.html#a2d89c143086af069fe731fd5756daf48", null ],
@@ -83,7 +90,8 @@ var group__utility__widgets_grouping =
       [ "filterAcceptsRow", "classhal_1_1_grouping_proxy_model.html#ab26c05f78495eff017b32164f3d5864b", null ],
       [ "lessThan", "classhal_1_1_grouping_proxy_model.html#acb1ca2fee26366f8a3efb8b4fbe9188c", null ],
       [ "setSortMechanism", "classhal_1_1_grouping_proxy_model.html#a02f249a9a29572677947bba5e856c408", null ],
-      [ "sortMechanism", "classhal_1_1_grouping_proxy_model.html#a25f9b98de8183d012f12a38351c74a74", null ]
+      [ "sortMechanism", "classhal_1_1_grouping_proxy_model.html#a25f9b98de8183d012f12a38351c74a74", null ],
+      [ "startSearch", "classhal_1_1_grouping_proxy_model.html#a0ecb66be8c2aede564726ab74e29b451", null ]
     ] ],
     [ "GroupingTableEntry", "classhal_1_1_grouping_table_entry.html", [
       [ "GroupingTableEntry", "classhal_1_1_grouping_table_entry.html#ae620437a3a81bef2b83bba661054135e", null ],

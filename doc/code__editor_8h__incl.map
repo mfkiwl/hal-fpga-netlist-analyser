@@ -1,6 +1,8 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/code_editor/code_editor.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/code_editor/code_editor.h">
-<area shape="rect" id="node1" title=" " alt="" coords="61,5,267,91"/>
+<area shape="rect" id="node1" title=" " alt="" coords="193,5,399,91"/>
 <area shape="rect" id="node2" href="$code__editor__minimap_8h.html" title=" " alt="" coords="5,139,163,180"/>
-<area shape="rect" id="node4" title=" " alt="" coords="187,146,303,173"/>
+<area shape="rect" id="node4" href="$searchoptions_8h.html" title=" " alt="" coords="187,146,405,173"/>
+<area shape="rect" id="node6" title=" " alt="" coords="429,146,545,173"/>
 <area shape="rect" id="node3" title=" " alt="" coords="45,228,123,255"/>
+<area shape="rect" id="node5" title=" " alt="" coords="269,228,323,255"/>
 </map>

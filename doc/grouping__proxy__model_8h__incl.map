@@ -1,8 +1,11 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/grouping/grouping_proxy_model.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/grouping/grouping_proxy_model.h">
-<area shape="rect" id="node1" title=" " alt="" coords="92,5,325,91"/>
-<area shape="rect" id="node2" href="$sort_8h.html" title=" " alt="" coords="48,139,191,165"/>
-<area shape="rect" id="node6" title=" " alt="" coords="215,139,383,165"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,213,60,240"/>
-<area shape="rect" id="node4" title=" " alt="" coords="84,213,155,240"/>
-<area shape="rect" id="node5" title=" " alt="" coords="179,213,337,240"/>
+<area shape="rect" id="node1" title=" " alt="" coords="140,5,373,91"/>
+<area shape="rect" id="node2" href="$sort_8h.html" title=" " alt="" coords="5,146,148,173"/>
+<area shape="rect" id="node6" title=" " alt="" coords="173,146,341,173"/>
+<area shape="rect" id="node7" href="$search__proxy__model_8h.html" title=" " alt="" coords="365,139,522,180"/>
+<area shape="rect" id="node3" title=" " alt="" coords="287,303,341,329"/>
+<area shape="rect" id="node4" title=" " alt="" coords="41,228,112,255"/>
+<area shape="rect" id="node5" title=" " alt="" coords="136,228,295,255"/>
+<area shape="rect" id="node8" title=" " alt="" coords="319,228,493,255"/>
+<area shape="rect" id="node9" href="$searchoptions_8h.html" title=" " alt="" coords="517,228,735,255"/>
 </map>

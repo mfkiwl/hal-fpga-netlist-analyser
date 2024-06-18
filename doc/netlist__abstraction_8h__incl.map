@@ -1,12 +1,14 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/dataflow_analysis/include/dataflow_analysis/common/netlist_abstraction.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/dataflow_analysis/include/dataflow_analysis/common/netlist_abstraction.h">
-<area shape="rect" id="node1" title=" " alt="" coords="333,5,553,105"/>
-<area shape="rect" id="node2" href="$defines_8h.html" title=" " alt="" coords="149,153,289,180"/>
-<area shape="rect" id="node7" title=" " alt="" coords="313,153,356,180"/>
-<area shape="rect" id="node8" title=" " alt="" coords="381,153,505,180"/>
-<area shape="rect" id="node9" title=" " alt="" coords="529,153,644,180"/>
-<area shape="rect" id="node10" title=" " alt="" coords="669,153,731,180"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,228,96,255"/>
-<area shape="rect" id="node4" title=" " alt="" coords="121,228,207,255"/>
-<area shape="rect" id="node5" title=" " alt="" coords="231,228,318,255"/>
-<area shape="rect" id="node6" title=" " alt="" coords="342,228,413,255"/>
+<area shape="rect" id="node1" title="This file contains the struct that holds all information on the netlist abstraction used for dataflow..." alt="" coords="386,5,606,105"/>
+<area shape="rect" id="node2" href="$defines_8h.html" title=" " alt="" coords="149,332,289,359"/>
+<area shape="rect" id="node7" href="$pin__type_8h.html" title=" " alt="" coords="206,153,397,195"/>
+<area shape="rect" id="node9" title=" " alt="" coords="421,161,464,187"/>
+<area shape="rect" id="node10" title=" " alt="" coords="489,161,613,187"/>
+<area shape="rect" id="node11" title=" " alt="" coords="637,161,752,187"/>
+<area shape="rect" id="node12" title=" " alt="" coords="777,161,839,187"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,407,96,433"/>
+<area shape="rect" id="node4" title=" " alt="" coords="121,407,207,433"/>
+<area shape="rect" id="node5" title=" " alt="" coords="231,407,318,433"/>
+<area shape="rect" id="node6" title=" " alt="" coords="342,407,413,433"/>
+<area shape="rect" id="node8" href="$enums_8h.html" title=" " alt="" coords="220,243,351,284"/>
 </map>

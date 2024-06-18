@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('comment__item_8cpp.html',''); initResi
 <div class="textblock"><code>#include &quot;<a class="el" href="comment__item_8h_source.html">gui/comment_system/widgets/comment_item.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="comment__entry_8h_source.html">gui/comment_system/comment_entry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="comment__dialog_8h_source.html">gui/comment_system/widgets/comment_dialog.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="searchable__label_8h_source.html">gui/searchbar/searchable_label.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gui__globals_8h_source.html">gui/gui_globals.h</a>&quot;</code><br />
 <code>#include &lt;QToolBar&gt;</code><br />
 <code>#include &lt;QVBoxLayout&gt;</code><br />
@@ -100,31 +101,32 @@ $(document).ready(function(){initNavTree('comment__item_8cpp.html',''); initResi
 <code>#include &lt;QToolButton&gt;</code><br />
 <code>#include &lt;QDebug&gt;</code><br />
 <code>#include &quot;<a class="el" href="graphics_8h_source.html">gui/gui_utils/graphics.h</a>&quot;</code><br />
+<code>#include &lt;QRegularExpression&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for comment_item.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="comment__item_8cpp__incl.png" border="0" usemap="#_2home_2runner_2work_2hal-fpga-netlist-analyser_2hal-fpga-netlist-analyser_2plugins_2gui_2src_2comment__system_2widgets_2comment__item_8cpp" alt=""/></div>
 <map name="_2home_2runner_2work_2hal-fpga-netlist-analyser_2hal-fpga-netlist-analyser_2plugins_2gui_2src_2comment__system_2widgets_2comment__item_8cpp" id="_2home_2runner_2work_2hal-fpga-netlist-analyser_2hal-fpga-netlist-analyser_2plugins_2gui_2src_2comment__system_2widgets_2comment__item_8cpp">
-<area shape="rect" title=" " alt="" coords="1013,5,1255,91"/>
-<area shape="rect" href="comment__item_8h.html" title=" " alt="" coords="54,139,246,180"/>
-<area shape="rect" href="comment__entry_8h.html" title=" " alt="" coords="341,139,503,180"/>
-<area shape="rect" href="comment__dialog_8h.html" title=" " alt="" coords="775,139,978,180"/>
-<area shape="rect" title=" " alt="" coords="696,228,807,255"/>
-<area shape="rect" title=" " alt="" coords="1287,228,1397,255"/>
-<area shape="rect" href="gui__globals_8h.html" title=" " alt="" coords="1003,146,1135,173"/>
-<area shape="rect" title=" " alt="" coords="1159,146,1239,173"/>
-<area shape="rect" title=" " alt="" coords="1263,146,1330,173"/>
-<area shape="rect" title=" " alt="" coords="1355,146,1428,173"/>
-<area shape="rect" title=" " alt="" coords="1453,146,1554,173"/>
-<area shape="rect" title=" " alt="" coords="1578,146,1653,173"/>
-<area shape="rect" href="graphics_8h.html" title=" " alt="" coords="528,146,700,173"/>
-<area shape="rect" title=" " alt="" coords="113,228,187,255"/>
-<area shape="rect" title=" " alt="" coords="5,228,89,255"/>
-<area shape="rect" href="gui__def_8h.html" title=" " alt="" coords="211,228,316,255"/>
-<area shape="rect" title=" " alt="" coords="587,228,657,255"/>
-<area shape="rect" title=" " alt="" coords="341,228,437,255"/>
-<area shape="rect" title=" " alt="" coords="461,228,562,255"/>
-<area shape="rect" title=" " alt="" coords="839,228,914,255"/>
+<area shape="rect" title=" " alt="" coords="993,5,1235,91"/>
+<area shape="rect" href="comment__item_8h.html" title=" " alt="" coords="137,139,329,180"/>
+<area shape="rect" href="comment__entry_8h.html" title=" " alt="" coords="1093,139,1255,180"/>
+<area shape="rect" title=" " alt="" coords="782,303,857,329"/>
+<area shape="rect" href="comment__dialog_8h.html" title=" " alt="" coords="554,139,757,180"/>
+<area shape="rect" title=" " alt="" coords="552,228,663,255"/>
+<area shape="rect" title=" " alt="" coords="713,228,824,255"/>
+<area shape="rect" href="searchable__label_8h.html" title=" " alt="" coords="832,139,1017,180"/>
+<area shape="rect" title=" " alt="" coords="957,228,1023,255"/>
+<area shape="rect" href="gui__globals_8h.html" title=" " alt="" coords="1280,146,1412,173"/>
+<area shape="rect" title=" " alt="" coords="1437,146,1517,173"/>
+<area shape="rect" title=" " alt="" coords="1541,146,1615,173"/>
+<area shape="rect" title=" " alt="" coords="1639,146,1741,173"/>
+<area shape="rect" href="graphics_8h.html" title=" " alt="" coords="1765,146,1937,173"/>
+<area shape="rect" title=" " alt="" coords="1961,146,2115,173"/>
+<area shape="rect" title=" " alt="" coords="5,228,79,255"/>
+<area shape="rect" title=" " alt="" coords="103,228,187,255"/>
+<area shape="rect" href="searchoptions_8h.html" title=" " alt="" coords="211,228,428,255"/>
+<area shape="rect" href="gui__def_8h.html" title=" " alt="" coords="1085,228,1191,255"/>
+<area shape="rect" title=" " alt="" coords="1497,228,1568,255"/>
 </map>
 </div>
 </div>
@@ -141,7 +143,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_38c8d24aef3972a7f87b834274e76e31.html">plugins</a></li><li class="navelem"><a class="el" href="dir_6bd2b93008728295189e380cf3731a95.html">gui</a></li><li class="navelem"><a class="el" href="dir_8f3a6e7567706389d7af07afaa901854.html">src</a></li><li class="navelem"><a class="el" href="dir_7ba3acdd1ecebd43dd3c77911577a6fa.html">comment_system</a></li><li class="navelem"><a class="el" href="dir_9fa01db61041cbb7122157ccf41caa9b.html">widgets</a></li><li class="navelem"><a class="el" href="comment__item_8cpp.html">comment_item.cpp</a></li>
-    <li class="footer">Generated on Thu Jun 22 2023 07:28:45 for HAL by
+    <li class="footer">Generated on Tue Jun 18 2024 21:58:43 for HAL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,5 +1,5 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/graph_algorithm/include/graph_algorithm/plugin_graph_algorithm.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/graph_algorithm/include/graph_algorithm/plugin_graph_algorithm.h">
-<area shape="rect" id="node1" title=" " alt="" coords="179,5,414,105"/>
+<area shape="rect" id="node1" title="This file contains all functions related to the HAL plugin API." alt="" coords="179,5,414,105"/>
 <area shape="rect" id="node2" href="$plugin__interface__base_8h.html" title=" " alt="" coords="119,153,301,195"/>
 <area shape="rect" id="node8" title=" " alt="" coords="325,161,445,187"/>
 <area shape="rect" id="node3" href="$defines_8h.html" title=" " alt="" coords="5,332,145,359"/>

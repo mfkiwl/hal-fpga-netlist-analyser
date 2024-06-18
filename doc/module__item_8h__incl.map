@@ -1,12 +1,15 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/module_model/module_item.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/module_model/module_item.h">
-<area shape="rect" id="node1" title=" " alt="" coords="319,5,545,91"/>
-<area shape="rect" id="node2" href="$defines_8h.html" title=" " alt="" coords="149,139,289,165"/>
-<area shape="rect" id="node7" title=" " alt="" coords="313,139,380,165"/>
-<area shape="rect" id="node8" title=" " alt="" coords="405,139,459,165"/>
-<area shape="rect" id="node9" title=" " alt="" coords="483,139,554,165"/>
-<area shape="rect" id="node10" title=" " alt="" coords="578,139,657,165"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,213,96,240"/>
-<area shape="rect" id="node4" title=" " alt="" coords="121,213,207,240"/>
-<area shape="rect" id="node5" title=" " alt="" coords="231,213,318,240"/>
-<area shape="rect" id="node6" title=" " alt="" coords="342,213,413,240"/>
+<area shape="rect" id="node1" title=" " alt="" coords="669,5,894,91"/>
+<area shape="rect" id="node2" href="$defines_8h.html" title=" " alt="" coords="205,146,345,173"/>
+<area shape="rect" id="node7" href="$base__tree__model_8h.html" title=" " alt="" coords="642,139,803,180"/>
+<area shape="rect" id="node10" title=" " alt="" coords="573,303,627,329"/>
+<area shape="rect" id="node11" title=" " alt="" coords="749,303,827,329"/>
+<area shape="rect" id="node12" title=" " alt="" coords="879,146,945,173"/>
+<area shape="rect" id="node13" title=" " alt="" coords="970,146,1041,173"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,228,96,255"/>
+<area shape="rect" id="node4" title=" " alt="" coords="121,228,207,255"/>
+<area shape="rect" id="node5" title=" " alt="" coords="231,228,318,255"/>
+<area shape="rect" id="node6" title=" " alt="" coords="342,228,413,255"/>
+<area shape="rect" id="node8" title=" " alt="" coords="489,228,645,255"/>
+<area shape="rect" id="node9" href="$base__tree__item_8h.html" title=" " alt="" coords="669,228,803,255"/>
 </map>

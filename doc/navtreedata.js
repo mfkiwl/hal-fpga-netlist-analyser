@@ -28,18 +28,17 @@ var NAVTREE =
       [ "Introduction", "index.html#autotoc_md28", [
         [ "What the hell is HAL?", "index.html#autotoc_md29", null ],
         [ "Shipped Plugins", "index.html#autotoc_md30", null ],
-        [ "Documentation", "index.html#autotoc_md31", null ],
-        [ "Slack, Contact and Support", "index.html#autotoc_md32", null ]
+        [ "Documentation", "index.html#autotoc_md31", null ]
       ] ],
-      [ "Build Instructions", "index.html#autotoc_md33", null ],
-      [ "Quickstart Guide", "index.html#autotoc_md34", null ],
-      [ "Contributing", "index.html#autotoc_md35", [
-        [ "Run static checks and clang format locally", "index.html#autotoc_md36", null ],
-        [ "Generate Changelog", "index.html#autotoc_md37", null ]
+      [ "Build Instructions", "index.html#autotoc_md32", null ],
+      [ "Quickstart Guide", "index.html#autotoc_md33", null ],
+      [ "Contributing", "index.html#autotoc_md34", [
+        [ "Run static checks and clang format locally", "index.html#autotoc_md35", null ],
+        [ "Generate Changelog", "index.html#autotoc_md36", null ]
       ] ],
-      [ "Academic Context", "index.html#autotoc_md38", null ],
-      [ "Licensing", "index.html#autotoc_md39", null ],
-      [ "Disclaimer", "index.html#autotoc_md40", null ]
+      [ "Academic Context", "index.html#autotoc_md37", null ],
+      [ "Licensing", "index.html#autotoc_md38", null ],
+      [ "Disclaimer", "index.html#autotoc_md39", null ]
     ] ],
     [ "LICENSE", "md__home_runner_work_hal-fpga-netlist-analyser_hal-fpga-netlist-analyser_plugins_gui_resources_fonts__l_i_c_e_n_s_e.html", [
       [ "SIL Open Font License v1.1", "md__home_runner_work_hal-fpga-netlist-analyser_hal-fpga-netlist-analyser_plugins_gui_resources_fonts__l_i_c_e_n_s_e.html#autotoc_md13", [
@@ -81,7 +80,7 @@ var NAVTREE =
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
-        [ "Properties", "functions_prop.html", null ],
+        [ "Properties", "functions_prop.html", "functions_prop" ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -103,39 +102,40 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about__dialog_8cpp.html",
-"classhal_1_1_action_open_netlist_file.html#ac23ab8467d6ec7f49a74a42b3f002247",
-"classhal_1_1_boolean_function_table_model.html#a416b249ea8c9a9348296e160997f9dda",
-"classhal_1_1_common_successor_predecessor.html#a8e5c6a2f93987f70411e2aee23774c52",
-"classhal_1_1_dock_button.html#a45a5ff92f5310ed48e31093e4d2258f4",
-"classhal_1_1_gate.html#a2145f24fcfc657d151fac1382755e6a6",
-"classhal_1_1_general_table_widget.html",
-"classhal_1_1_graph_shader.html#a0053088ce8c43fa66cd90cd6e13893c2",
-"classhal_1_1_grouping_event.html#ad0d01ce67e65c0bab6e13308f15666c8ab07286ebbb5bc7aa91cc3eaa8bc19711",
-"classhal_1_1_gui_plugin_manager.html#a28489a3af29d2c36cd6dbaa6bdf0f59f",
-"classhal_1_1_latch_component.html#abaf37f1927310e4ef2e5bad676913777",
-"classhal_1_1_main_window.html#ae3e170bb9748ea88f10c6e3ef04af329",
-"classhal_1_1_module_select_model.html#a563d7f745bbb21601b052ce4f7670ebc",
-"classhal_1_1_net_layout_junction_wire.html#a858ac35c515f85a1cee53add137f71d4",
-"classhal_1_1_netlist_relay.html#ac909d23f8dfc8bd143cb471e7eb8165e",
-"classhal_1_1_project_json.html#aea999126232130aacf35259e93403a37",
-"classhal_1_1_python_qss_adapter.html#af456bc67c5202547b935594d38c29866",
-"classhal_1_1_selection_relay.html#a4d6a07a842974b3526afc6055620cc1a",
-"classhal_1_1_settings_widget.html#a78c62b527aa8e1b21ad507a705baac67",
-"classhal_1_1_user_action.html#abc1fb9965ce68186b8422114b58e2cc4",
-"community__detection_8cpp.html",
-"dir_7c750ac7d7398768b8029f5632912b7a.html",
-"functions_func_e.html",
-"graph__context__manager_8h.html",
-"groupings__of__item__widget_8cpp.html",
-"module__ports__tree_8h_source.html",
-"netlist_2netlist__utils_8cpp.html#af2c5370e1cfb407c98dd5c855e1e9022",
-"plugin__graph__algorithm_8cpp.html",
-"python__bindings_2bindings_2netlist__modification__decorator_8cpp.html",
-"shadow__effect_8cpp_source.html",
-"struct_abc___frame__t__.html#a7cd6cd20580e3657122591a1a158c62a",
-"structhal_1_1_enum_strings.html#aee875702a9d377079d6c923a3eae8386",
-"symbolic__execution_8cpp.html#acd0c2d4f53295e35342dfc868fce51df",
-"vhdl__parser_8h.html"
+"classhal_1_1_action_move_node.html#a2ff76403942330096c9be06b5f2fd489",
+"classhal_1_1_boolean_function.html#aac7bb4fda3bf06664f6bc717c3be92fbac487892e83456269ce717a99dffe1d49",
+"classhal_1_1_comment_item.html#a2837ae35cf6661f36ddc1ed649ec8828",
+"classhal_1_1_data_table_model.html#abaf721eefeb1e848ea710a7d94513c2e",
+"classhal_1_1_fac_extension_interface.html#a356ab41fcbc5ff2a996936f92987e2cd",
+"classhal_1_1_gate_select_proxy.html#aeba438ce717b356584e16ef9d5becefa",
+"classhal_1_1_graph_context_manager.html#aea77eca602b648beb3c42a89de25fe72",
+"classhal_1_1_graphics_qss_adapter.html#a7da6ae5f136c602258eec37192eabaae",
+"classhal_1_1_groupings_of_item_model.html#a6d829c3c3ad15d176a8a45f735be893f",
+"classhal_1_1_input_dialog.html#a13d3b77966122ea648956fe1b0cc73c8",
+"classhal_1_1_logger_qss_adapter.html#ab091f7cd7b63171a82296ff90238433b",
+"classhal_1_1_module.html#af771e486709f93e4abab9f0fe092010b",
+"classhal_1_1_module_widget.html#ac0776b1a22e2de7493c52cb69db6b298",
+"classhal_1_1_netlist.html#a349e8a245c3c36d2ce27196958dcd824",
+"classhal_1_1_open_file_widget.html#a30bf5665a4ed8a4fffe610c0d2a0b387",
+"classhal_1_1_project_manager.html#a744f5d5a389ae7e8d18edb0f6a09202c",
+"classhal_1_1_python_thread.html",
+"classhal_1_1_selection_details_widget.html#ab3e209462aed3084f6482d2c23d9251b",
+"classhal_1_1_settings_widget_spinbox.html#a76dc3b0ad56cd4f60660d7941df64880",
+"classhal_1_1_user_action_object_type.html#a2de00e63df4cf86816f688fad6754d79a27ddb6799ad5d95abaead6018bd2e1cb",
+"configuration_8py.html#abe29b3e7c2c694b884bcb0f08ca5d735",
+"dir_891860499eebd6e4fb852edf393abac6.html",
+"functions_func_h.html",
+"globals_func.html",
+"grouping__color__serializer_8cpp_source.html",
+"module__details__tab__widget_8h_source.html",
+"netlist_2gate__library_2gate__library_8cpp.html",
+"physical__graph__layouter_8cpp_source.html",
+"program__arguments_8cpp.html",
+"searchcolumndialog_8h.html",
+"special__log__content__manager_8h_source.html",
+"struct_hop___man__t__.html",
+"structhal_1_1dataflow_1_1_configuration.html#aa68e649ceb526265d7c7c444fc0d75b2",
+"types_8cpp.html#a04ea14e7af004d0e444ea51a2667bcb6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

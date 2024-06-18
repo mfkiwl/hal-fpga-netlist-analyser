@@ -1,8 +1,8 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/dataflow_analysis/include/dataflow_analysis/evaluation/result.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/dataflow_analysis/include/dataflow_analysis/evaluation/result.h">
 <area shape="rect" id="node1" title=" " alt="" coords="26,5,221,105"/>
-<area shape="rect" id="node2" href="$plugins_2dataflow__analysis_2include_2dataflow__analysis_2common_2grouping_8h.html" title=" " alt="" coords="131,153,331,195"/>
+<area shape="rect" id="node2" href="$plugins_2dataflow__analysis_2include_2dataflow__analysis_2common_2grouping_8h.html" title="This file contains the class that holds all information of a dataflow analysis grouping." alt="" coords="131,153,331,195"/>
 <area shape="rect" id="node6" title=" " alt="" coords="5,332,129,359"/>
-<area shape="rect" id="node3" href="$netlist__abstraction_8h.html" title=" " alt="" coords="419,243,619,284"/>
+<area shape="rect" id="node3" href="$netlist__abstraction_8h.html" title="This file contains the struct that holds all information on the netlist abstraction used for dataflow..." alt="" coords="419,243,619,284"/>
 <area shape="rect" id="node4" href="$defines_8h.html" title=" " alt="" coords="621,332,761,359"/>
 <area shape="rect" id="node5" title=" " alt="" coords="202,332,245,359"/>
 <area shape="rect" id="node7" title=" " alt="" coords="333,332,447,359"/>

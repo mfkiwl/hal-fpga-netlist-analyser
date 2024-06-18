@@ -130,6 +130,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 , <a class="el" href="classhal_1_1_action_fold_module_factory.html#ad6ed201af559973571a369e1c39ee810">hal::ActionFoldModuleFactory</a>
 , <a class="el" href="classhal_1_1_action_move_node_factory.html#a6343f70b10cf4e33cf0cf60ab080f1f7">hal::ActionMoveNodeFactory</a>
 , <a class="el" href="classhal_1_1_action_open_netlist_file_factory.html#a76cd9bf2e3623c9c5ad6a332cbbf4e38">hal::ActionOpenNetlistFileFactory</a>
+, <a class="el" href="classhal_1_1_action_pingroup_factory.html#ae7b9cacceff1bad4e6ff897b8234afc0">hal::ActionPingroupFactory</a>
 , <a class="el" href="classhal_1_1_action_remove_items_from_object_factory.html#a799e02a36f28b01880e09c6c772fdbc1">hal::ActionRemoveItemsFromObjectFactory</a>
 , <a class="el" href="classhal_1_1_action_rename_object_factory.html#a73e5d8a5c9422a30ff96f3bce9a334b8">hal::ActionRenameObjectFactory</a>
 , <a class="el" href="classhal_1_1_action_reorder_object_factory.html#acf210e8599d5dd2fc30fb44dae12a124">hal::ActionReorderObjectFactory</a>
@@ -148,11 +149,6 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 </li>
 <li>sIconSizeSetting
 : <a class="el" href="classhal_1_1_selection_details_icon_provider.html#a7c8a210c0727720f08cb7b05bf86d9cb">hal::SelectionDetailsIconProvider</a>
-</li>
-<li>sIdColumn
-: <a class="el" href="classhal_1_1_module_tree_model.html#a02d21f1c8696f727a912b5b4ed32f121">hal::ModuleTreeModel</a>
-, <a class="el" href="classhal_1_1_netlist_elements_tree_model.html#a2e7ff79f4f50e4e1db6ded0185abadc2">hal::NetlistElementsTreeModel</a>
-, <a class="el" href="classhal_1_1_selection_tree_model.html#a671717e1bbd102962723f4a5dc386915">hal::SelectionTreeModel</a>
 </li>
 <li>sink_type
 : <a class="el" href="structhal_1_1_log_manager_1_1log__sink.html#a105f6ac5b730584b21bdc0f994f13e62">hal::LogManager::log_sink</a>
@@ -175,21 +171,9 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>Slt
 : <a class="el" href="structhal_1_1_boolean_function_1_1_node_type.html#a39c83575d0cf1fb736bb137da924c4b7">hal::BooleanFunction::NodeType</a>
 </li>
-<li>sMaxColumn
-: <a class="el" href="classhal_1_1_selection_tree_model.html#aa6ba1cc698c5445a97e0375aa37a1cbc">hal::SelectionTreeModel</a>
-</li>
-<li>sMaxInf
-: <a class="el" href="classhal_1_1_net_layout_junction_range.html#a14a6476aaa068e3738c3c01ffc02c0b5">hal::NetLayoutJunctionRange</a>
-</li>
-<li>sMinInf
-: <a class="el" href="classhal_1_1_net_layout_junction_range.html#aee2f1a89b1141bd4986880456ef81465">hal::NetLayoutJunctionRange</a>
-</li>
 <li>sNameColumn
 : <a class="el" href="classhal_1_1_gate_pins_tree_model.html#afa5c676fcda3fa06507d6c56c19a5699">hal::GatePinsTreeModel</a>
 , <a class="el" href="classhal_1_1_module_pins_tree_model.html#a8c1bcdf6bb63b75615afa53911ad9fda">hal::ModulePinsTreeModel</a>
-, <a class="el" href="classhal_1_1_module_tree_model.html#a0e4d43b3589c114f7ee88eacdf68cf26">hal::ModuleTreeModel</a>
-, <a class="el" href="classhal_1_1_netlist_elements_tree_model.html#a2b252b0314a9c1e021b7f0d9070fc229">hal::NetlistElementsTreeModel</a>
-, <a class="el" href="classhal_1_1_selection_tree_model.html#a4f57e51500289e6e7b242cdbf7be3eb7">hal::SelectionTreeModel</a>
 </li>
 <li>sNetColumn
 : <a class="el" href="classhal_1_1_module_pins_tree_model.html#a4e1994334782b12b7225ca7e60fdd61c">hal::ModulePinsTreeModel</a>
@@ -209,20 +193,17 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>Srem
 : <a class="el" href="structhal_1_1_boolean_function_1_1_node_type.html#a4f11f23d527f0eb92dff9d046ab2fc2a">hal::BooleanFunction::NodeType</a>
 </li>
-<li>sSceneDelta
-: <a class="el" href="classhal_1_1_net_layout_junction_range.html#a8b08637294f4f233c2d9cc4a5ccde12d">hal::NetLayoutJunctionRange</a>
-</li>
-<li>sSceneFirst
-: <a class="el" href="classhal_1_1_net_layout_junction_range.html#a2a0ba85263a03308e8b07164a185a0e7">hal::NetLayoutJunctionRange</a>
-</li>
-<li>sSceneGap
-: <a class="el" href="classhal_1_1_net_layout_junction_range.html#af21e5fca92cf17cd3ee29a6df95d68c3">hal::NetLayoutJunctionRange</a>
-</li>
 <li>sSelectionColor
 : <a class="el" href="classhal_1_1_graphics_item.html#a0e7db914a6246eab0c451fbbc2f34793">hal::GraphicsItem</a>
 </li>
+<li>sSettingDeleteItem
+: <a class="el" href="classhal_1_1_content_manager.html#a90b16edc31e80cb9769bcaf767d7b1d7">hal::ContentManager</a>
+</li>
 <li>sSettingNetGroupingToPins
 : <a class="el" href="classhal_1_1_graph_context_manager.html#a97d0b3e9b5b552dc336755ed6ea80d14">hal::GraphContextManager</a>
+</li>
+<li>sSettingPanOnMiddleButton
+: <a class="el" href="classhal_1_1_graph_context_manager.html#a95e126a27756de62ffd0300bc586b9c6">hal::GraphContextManager</a>
 </li>
 <li>sSettingSearch
 : <a class="el" href="classhal_1_1_content_manager.html#aa592d2466761cd85a0a5d5ae6459f2d3">hal::ContentManager</a>
@@ -249,15 +230,15 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>sTypeColumn
 : <a class="el" href="classhal_1_1_gate_pins_tree_model.html#a8f68c5ec068ab16aebef17b0ff4a7483">hal::GatePinsTreeModel</a>
 , <a class="el" href="classhal_1_1_module_pins_tree_model.html#aaf26e133491939e6a7e4ab8350590171">hal::ModulePinsTreeModel</a>
-, <a class="el" href="classhal_1_1_module_tree_model.html#af9378cd0a664f42dea6b7744569c4489">hal::ModuleTreeModel</a>
-, <a class="el" href="classhal_1_1_netlist_elements_tree_model.html#ad6cca15083813e50445140b17f8ece4d">hal::NetlistElementsTreeModel</a>
-, <a class="el" href="classhal_1_1_selection_tree_model.html#a6f581e52f943c2f075501de5cfa4858a">hal::SelectionTreeModel</a>
 </li>
 <li>Sub
 : <a class="el" href="structhal_1_1_boolean_function_1_1_node_type.html#a87fbe95430e42250924cadb6fc699ceb">hal::BooleanFunction::NodeType</a>
 </li>
 <li>suc_cache
 : <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#aad8cb32b0a6e61f3d1ebf36d459a6eea">hal::dataflow::Grouping</a>
+</li>
+<li>suc_known_group_cache
+: <a class="el" href="structhal_1_1dataflow_1_1_grouping.html#a282d7bafdee826c0b726a2d8a11b97ed">hal::dataflow::Grouping</a>
 </li>
 <li>sVersion
 : <a class="el" href="struct_abc___frame__t__.html#a643c4b85ff7bfd8a2af3f1560dc6fe4d">Abc_Frame_t_</a>
@@ -268,7 +249,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 22 2023 07:28:50 for HAL by
+    <li class="footer">Generated on Tue Jun 18 2024 21:58:47 for HAL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

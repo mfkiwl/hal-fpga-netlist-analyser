@@ -1,0 +1,11 @@
+<map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/graph_algorithm/include/graph_algorithm/algorithms/shortest_path.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/graph_algorithm/include/graph_algorithm/algorithms/shortest_path.h">
+<area shape="rect" id="node1" title="This file contains functions related to shortest paths in graphs." alt="" coords="290,5,602,91"/>
+<area shape="rect" id="node2" href="$netlist__graph_8h.html" title="This file contains the class that holds a netlist graph." alt="" coords="359,139,533,180"/>
+<area shape="rect" id="node3" href="$defines_8h.html" title=" " alt="" coords="67,317,207,344"/>
+<area shape="rect" id="node7" href="$include_2hal__core_2utilities_2result_8h.html" title=" " alt="" coords="25,228,155,269"/>
+<area shape="rect" id="node8" title=" " alt="" coords="534,235,654,262"/>
+<area shape="rect" id="node9" title=" " alt="" coords="678,235,721,262"/>
+<area shape="rect" id="node4" href="$include_2hal__core_2netlist_2netlist_8h.html" title=" " alt="" coords="230,235,409,262"/>
+<area shape="rect" id="node5" title=" " alt="" coords="276,317,363,344"/>
+<area shape="rect" id="node6" title=" " alt="" coords="411,317,535,344"/>
+</map>
