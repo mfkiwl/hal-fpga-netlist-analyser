@@ -2,7 +2,6 @@ var group__gate__lib =
 [
     [ "Gate Library Parser", "group__gate__lib__parser.html", "group__gate__lib__parser" ],
     [ "Gate Library Writer", "group__gate__lib__writer.html", "group__gate__lib__writer" ],
-    [ "gate_library_manager", "namespacehal_1_1gate__library__manager.html", null ],
     [ "GateLibrary", "classhal_1_1_gate_library.html", [
       [ "GateLibrary", "classhal_1_1_gate_library.html#a5ad57ba019b35e2ceb386c3b0be1e0b1", null ],
       [ "~GateLibrary", "classhal_1_1_gate_library.html#ad1f31f7dcb83c976fdaaa2bc22a9a8bf", null ],
@@ -21,8 +20,12 @@ var group__gate__lib =
       [ "get_vcc_gate_types", "classhal_1_1_gate_library.html#a4f3f32d464c6cc8bc93704d317e86428", null ],
       [ "mark_gnd_gate_type", "classhal_1_1_gate_library.html#a82ab1b37d4070635bc32d99e927024ae", null ],
       [ "mark_vcc_gate_type", "classhal_1_1_gate_library.html#a365e5c3131c9a1c9d753a43468aced8d", null ],
+      [ "remove_gate_type", "classhal_1_1_gate_library.html#a3da57c17da586b0570744712487f782a", null ],
+      [ "replace_gate_type", "classhal_1_1_gate_library.html#a0372abbc16439f3286b44e80d7edca18", null ],
       [ "set_gate_location_data_category", "classhal_1_1_gate_library.html#a7bfa20c066532a2e405200b30f719348", null ],
-      [ "set_gate_location_data_identifiers", "classhal_1_1_gate_library.html#a97adde8cf19b82707a3b99dd1d7c2ef1", null ]
+      [ "set_gate_location_data_identifiers", "classhal_1_1_gate_library.html#a97adde8cf19b82707a3b99dd1d7c2ef1", null ],
+      [ "set_name", "classhal_1_1_gate_library.html#a604b952da7b1a9415bed357ea8f410aa", null ],
+      [ "set_path", "classhal_1_1_gate_library.html#a5a43b831cc73cde1aa6e45327cc911d6", null ]
     ] ],
     [ "GateType", "classhal_1_1_gate_type.html", [
       [ "add_boolean_function", "classhal_1_1_gate_type.html#a442f9f880418eef2c01c91e69d1b0f7e", null ],

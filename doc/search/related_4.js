@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['module_39574',['Module',['../classhal_1_1_netlist_internal_manager.html#a21f639900c480510650969df9c74d17d',1,'hal::NetlistInternalManager']]]
+  ['initwizardpage_41215',['InitWizardPage',['../classhal_1_1_gate_library_wizard.html#aca69f628609e16c954ba83c6e7410790',1,'hal::GateLibraryWizard']]]
 ];

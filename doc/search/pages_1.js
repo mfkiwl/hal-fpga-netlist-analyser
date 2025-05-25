@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['license_39658',['LICENSE',['../md__home_runner_work_hal-fpga-netlist-analyser_hal-fpga-netlist-analyser_plugins_gui_resources_fonts__l_i_c_e_n_s_e.html',1,'']]]
+  ['license_41312',['LICENSE',['../md__home_runner_work_hal_fpga_netlist_analyser_hal_fpga_netlist_analyser_plugins_gui_resources_fonts__l_i_c_e_n_s_e.html',1,'']]]
 ];

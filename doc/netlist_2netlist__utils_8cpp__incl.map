@@ -8,7 +8,7 @@
 <area shape="rect" id="node14" href="$include_2hal__core_2netlist_2grouping_8h.html" title=" " alt="" coords="1303,221,1497,247"/>
 <area shape="rect" id="node15" href="$module_8h.html" title=" " alt="" coords="756,221,943,247"/>
 <area shape="rect" id="node16" href="$net_8h.html" title=" " alt="" coords="967,221,1126,247"/>
-<area shape="rect" id="node17" href="$netlist__factory_8h.html" title=" " alt="" coords="1498,303,1665,344"/>
+<area shape="rect" id="node17" href="$netlist__factory_8h.html" title="This file contains various functions to create and load netlists." alt="" coords="1498,303,1665,344"/>
 <area shape="rect" id="node18" href="$log_8h.html" title=" " alt="" coords="1713,303,1844,344"/>
 <area shape="rect" id="node19" title=" " alt="" coords="1842,131,1905,158"/>
 <area shape="rect" id="node20" title=" " alt="" coords="1929,131,1991,158"/>

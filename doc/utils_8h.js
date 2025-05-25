@@ -19,11 +19,13 @@ var utils_8h =
     [ "get_open_source_licenses", "utils_8h.html#a7b4623be57665e39318991c7344de89d", null ],
     [ "get_plugin_directories", "utils_8h.html#aa84f04771420e5c67784826253d48901", null ],
     [ "get_share_directory", "utils_8h.html#a56092ec04728c373dc56e7b6dd9f162a", null ],
+    [ "get_unique_temp_directory", "utils_8h.html#a57de478cba76d9207aeed95d5f2982f5", null ],
     [ "get_user_config_directory", "utils_8h.html#a90b1bccb0d75d10c94b959cdebf2ce36", null ],
     [ "get_user_share_directory", "utils_8h.html#a38383c74e49cb831f05ce87992e69c9d", null ],
     [ "is_digits", "utils_8h.html#a0fc4367e2b10cb8ed7c83998e231797d", null ],
     [ "is_floating_point", "utils_8h.html#ac066333866ab6d67d66f1d9ec5671d79", null ],
     [ "is_integer", "utils_8h.html#a94d00e2a6c7e4945e1301d5e96377459", null ],
+    [ "is_subset", "utils_8h.html#aff6c8cb44c715f0dbfe5f0ace8701cdd", null ],
     [ "join", "utils_8h.html#a6da84185634d8a00ea82c3b3bf6798b3", null ],
     [ "join", "utils_8h.html#a6cb70a4b78fcbc3a2cfe1bc7b4bc7313", null ],
     [ "join", "utils_8h.html#a63e9eeee5acde021a4c6643e679531c8", null ],
@@ -35,6 +37,7 @@ var utils_8h =
     [ "split", "utils_8h.html#a43bf1ffd1c76cf2b5809c2346dd561c4", null ],
     [ "starts_with", "utils_8h.html#a2ca8da557f49866efbd3d79be8bf5815", null ],
     [ "to_lower", "utils_8h.html#a976e31871ae699ca28b23136fd728ee5", null ],
+    [ "to_set", "utils_8h.html#a460fb8ea2a5d11176b40a5dc6ca6f0e7", null ],
     [ "to_upper", "utils_8h.html#ac4b3b46a9b2575322a0a296daac79828", null ],
     [ "to_vector", "utils_8h.html#ad08c09cde6e4c84be543db4fac49f08c", null ],
     [ "toggle_bit", "utils_8h.html#a4a7452b760ebd68235319a6db5ff8965", null ],
@@ -42,6 +45,6 @@ var utils_8h =
     [ "unordered_vector_erase", "utils_8h.html#a99d0bad47b8889780fe90db4c3308b77", null ],
     [ "vectors_have_same_content", "utils_8h.html#a387d8f01579a42674ccd58d8651d9342", null ],
     [ "which", "utils_8h.html#abe865cd13e526c5228f269a9c7b2629b", null ],
-    [ "wrapped_stoul", "utils_8h.html#a91c042ba653895c25f31a95e8050cb5b", null ],
-    [ "wrapped_stoull", "utils_8h.html#aa9335da615de06a7a371e86cb8ca10a0", null ]
+    [ "wrapped_stoul", "utils_8h.html#a9394b4d75f96d92ca9ed37e34a0ae281", null ],
+    [ "wrapped_stoull", "utils_8h.html#a8a1df8fc6d689dc2e7f74a050282b9f7", null ]
 ];

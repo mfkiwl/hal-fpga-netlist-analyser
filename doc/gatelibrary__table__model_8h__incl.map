@@ -1,10 +1,16 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/gatelibrary_management/gatelibrary_table_model.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/plugins/gui/include/gui/gatelibrary_management/gatelibrary_table_model.h">
-<area shape="rect" id="node1" title=" " alt="" coords="105,5,396,91"/>
-<area shape="rect" id="node2" href="$defines_8h.html" title=" " alt="" coords="94,139,234,165"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,213,96,240"/>
-<area shape="rect" id="node7" title=" " alt="" coords="259,139,419,165"/>
-<area shape="rect" id="node8" title=" " alt="" coords="443,139,498,165"/>
-<area shape="rect" id="node4" title=" " alt="" coords="121,213,207,240"/>
-<area shape="rect" id="node5" title=" " alt="" coords="231,213,318,240"/>
-<area shape="rect" id="node6" title=" " alt="" coords="342,213,413,240"/>
+<area shape="rect" id="node1" title=" " alt="" coords="263,5,553,91"/>
+<area shape="rect" id="node2" href="$defines_8h.html" title=" " alt="" coords="190,235,330,262"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,317,96,344"/>
+<area shape="rect" id="node7" href="$gate__library_8h.html" title=" " alt="" coords="327,139,489,180"/>
+<area shape="rect" id="node13" title=" " alt="" coords="513,146,673,173"/>
+<area shape="rect" id="node14" title=" " alt="" coords="698,146,753,173"/>
+<area shape="rect" id="node4" title=" " alt="" coords="121,317,207,344"/>
+<area shape="rect" id="node5" title=" " alt="" coords="231,317,318,344"/>
+<area shape="rect" id="node6" title=" " alt="" coords="342,317,413,344"/>
+<area shape="rect" id="node8" href="$gate__type_8h.html" title=" " alt="" coords="456,228,611,269"/>
+<area shape="rect" id="node9" title=" " alt="" coords="437,317,488,344"/>
+<area shape="rect" id="node10" title=" " alt="" coords="512,317,555,344"/>
+<area shape="rect" id="node11" title=" " alt="" coords="643,317,701,344"/>
+<area shape="rect" id="node12" title=" " alt="" coords="635,235,698,262"/>
 </map>

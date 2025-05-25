@@ -10,7 +10,9 @@ HAL Plugins Documentation
    graph_algorithm
    gui
    hawkeye
+   module_identification
    netlist_preprocessing
+   resynthesis
    netlist_simulator
    netlist_simulator_controller
    verilator

@@ -1,5 +1,5 @@
 <map id="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/include/hal_core/netlist/netlist_factory.h" name="/home/runner/work/hal&#45;fpga&#45;netlist&#45;analyser/hal&#45;fpga&#45;netlist&#45;analyser/include/hal_core/netlist/netlist_factory.h">
-<area shape="rect" id="node1" title=" " alt="" coords="325,5,512,91"/>
+<area shape="rect" id="node1" title="This file contains various functions to create and load netlists." alt="" coords="325,5,512,91"/>
 <area shape="rect" id="node2" href="$defines_8h.html" title=" " alt="" coords="507,235,647,262"/>
 <area shape="rect" id="node7" href="$gate__library_8h.html" title=" " alt="" coords="148,139,311,180"/>
 <area shape="rect" id="node13" href="$program__options_8h.html" title=" " alt="" coords="345,139,493,180"/>

@@ -5,7 +5,7 @@
 <area shape="rect" id="node13" href="$net_8h.html" title=" " alt="" coords="1287,325,1445,351"/>
 <area shape="rect" id="node15" href="$gate_8h.html" title=" " alt="" coords="605,146,772,173"/>
 <area shape="rect" id="node18" href="$module_8h.html" title=" " alt="" coords="1610,325,1797,351"/>
-<area shape="rect" id="node19" href="$netlist__factory_8h.html" title=" " alt="" coords="5,139,172,180"/>
+<area shape="rect" id="node19" href="$netlist__factory_8h.html" title="This file contains various functions to create and load netlists." alt="" coords="5,139,172,180"/>
 <area shape="rect" id="node20" href="$utils_8h.html" title=" " alt="" coords="523,317,654,359"/>
 <area shape="rect" id="node3" href="$defines_8h.html" title=" " alt="" coords="603,496,743,523"/>
 <area shape="rect" id="node4" href="$boolean__function_8h.html" title=" " alt="" coords="729,317,907,359"/>
